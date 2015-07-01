@@ -6,6 +6,7 @@ use_plugin("python.flake8")
 use_plugin("python.coverage")
 use_plugin("python.distutils")
 use_plugin("python.pycharm")
+use_plugin("python.sphinx")
 use_plugin("python.install_dependencies")
 
 
@@ -23,5 +24,7 @@ def set_properties(project):
 	project.set_property('flake8_verbose_output', True)
 	project.set_property('flake8_include_test_sources', True)
 	project.set_property('flake8_max_line_length', 120)
+
+	project.set_property('sphinx_builder', 'html')
 
 

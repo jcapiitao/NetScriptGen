@@ -8,9 +8,19 @@ from os.path import join, dirname, abspath
 
 
 class ArrayParsing(object):
-    def __init__(self, xl_sheet):
+    """"
+    This class is used to parse a sheet which contains an array.
 
-        self.xl_sheet = xl_sheet
+    ..  note::
+        By default, if the cell A1 doesn't contain the words 'List' or 'Text', then the sheet
+        is considered as an Array.
+
+        # TODO finish the description
+    """"
+    # TODO description des méthodes
+
+    def __init__(self, xl_sheet):
+    self.xl_sheet = xl_sheet
         self.sheet_name = xl_sheet.name
         self.commands = self.get_all_commands()
         self.index = dict()
