@@ -15,23 +15,22 @@ class ArrayParsing(object):
         By default, if the cell A1 doesn't contain the words 'List' or 'Text', then the sheet
         is considered as an Array.
 
-        # TODO finish the description
-    """"
+    """""
     # TODO description des méthodes
 
     def __init__(self, xl_sheet):
-    self.xl_sheet = xl_sheet
+        self.xl_sheet = xl_sheet
         self.sheet_name = xl_sheet.name
         self.commands = self.get_all_commands()
         self.index = dict()
 
-        index_list = self.is_doublon(self.get_all_indexes())
+        index_list = self.is_duplication(self.get_all_indexes())
         if index_list[0] is True:
             print("The index(es) in tab '%s' are duplicated: %s" % (self.sheet_name, index_list[1:]))
 
-        header_list = self.is_doublon(self.get_all_headers())
+        header_list = self.is_duplication(self.get_all_headers())
         if header_list[0] is True:
-            print("The parameter in tab '%s' are duplicated: %s" % (self.sheet_name, header_list[1:]))
+            print("The parameter(s) in tab '%s' are duplicated: %s" % (self.sheet_name, header_list[1:]))
 
         for row_idx in range(1, xl_sheet.nrows):
             idx_value_obj = xl_sheet.cell(row_idx, 0)
@@ -104,7 +103,15 @@ class ArrayParsing(object):
         else:
             return False
 
-    def is_doublon(self, key_list):
+    def is_duplication(self, key_list):
+        """ This method controls if there is a duplicate header.
+
+        :param key_list: list of item
+        :type key_list: list()
+        :returns: an array. The first element is a boolean, if the value is 'True' then the list
+        contains a duplicate item, 'False' if not.
+        Finally, the array contains the duplicated items (if bool==true).
+        """""
         response = list()
         for key in key_list:
             count = key_list.count(str(key))
@@ -129,7 +136,6 @@ class ArrayParsing(object):
                 if (idx_value != ""):
                     commands[idx_value] = str(self.xl_sheet.cell(row_idx + 1, 0).value)
             return commands
-
 
     def get_row_where_value(self, value):
         for row_idx in range(1, self.xl_sheet.nrows):
