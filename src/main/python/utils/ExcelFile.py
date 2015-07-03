@@ -12,11 +12,9 @@ path = get_full_path('test.xlsx')
 def getExcelFile():
     return path
 
-def getExcelWorbook():
-    wb = xlrd.open_workbook(path)
-    my_sheet = wb.sheet_by_name('VLAN')
-    self.sheet = ArrayParsing(my_sheet)
+def getExcelWorkbook():
+    return xlrd.open_workbook(path)
 
 def getSheet(sheet_name):
-    wb = xlrd.open_workbook(path)
+    wb = getExcelWorkbook()
     return wb.sheet_by_name(sheet_name)
