@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # -*-coding:UTF-8 -*
 
 import sys
@@ -19,7 +18,7 @@ class ListParsing(object):
             self.sheet_name = xl_sheet.name
 
             bag_obj = xl_sheet.cell(row_idx, 0)
-            bag = bag_obj.value
+            bag = str(bag_obj.value)
             key_obj = xl_sheet.cell(row_idx, 1)
             value_obj = xl_sheet.cell(row_idx, 2)
 
@@ -33,8 +32,8 @@ class ListParsing(object):
             if not bag in my_dict.keys():
                 my_dict[bag] = dict()
 
-            my_dict2[key_obj.value] = value
-            my_dict[bag][key_obj.value] = value
+            my_dict2[str(key_obj.value)] = str(value)
+            my_dict[bag][str(key_obj.value)] = str(value)
 
     def get_value_by_bag_and_key(self, bag, key):
         try:
@@ -44,22 +43,35 @@ class ListParsing(object):
                   % (bag, key, self.sheet_name))
 
     def set_value_by_bag_and_key(self, bag, key, value):
-        my_dict[bag][key] = value
+        try:
+            my_dict[bag][key] = value
+        except KeyError:
+            print("The bag '%s' or the key '%s' doesn't exist in the tab '%s'." \
+                  % (bag, key, self.sheet_name))
 
     def display_value_by_bag_and_key(self, bag, key):
         print(self.get_value_by_bag_and_key(bag, key))
 
     def get_all_keys_by_bag(self, bag):
-        return my_dict[bag].keys()
+        try:
+            return my_dict[bag].keys()
+        except KeyError:
+            print("The bag '%s' doesn't exist in the tab '%s'." % (bag, self.sheet_name))
 
     def get_all_keys(self):
         return my_dict2.keys()
 
     def get_value_by_key(self, key):
-        return my_dict2[key]
+        try:
+            return my_dict2[key]
+        except KeyError:
+            print("The key '%s' doesn't exist in the tab '%s'." % (key, self.sheet_name))
 
     def set_value_by_key(self, key, value):
-        my_dict2[key] = value
+        try:
+            my_dict2[key] = value
+        except KeyError:
+            print("The key '%s' doesn't exist in the tab '%s'." % (key, self.sheet_name))
 
     def is_key(self, key):
         keys_list = self.get_all_keys()

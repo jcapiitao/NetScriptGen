@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # -*-coding:UTF-8 -*
 
 from unittest import TestCase
@@ -32,7 +31,7 @@ class ArrayParsingTests(TestCase):
         self.assertDictEqual(ref_dict, self.sheet.get_all_param_by_index('105'))
 
     def test_get_nbr_of_rows(self):
-        self.assertEqual(self.sheet.get_nbr_of_rows(), 35)
+        self.assertEqual(self.sheet.get_nbr_of_rows(), 29)
 
     def test_get_nbr_of_cols(self):
         self.assertEqual(self.sheet.get_nbr_of_cols(), 8)
@@ -45,15 +44,18 @@ class ArrayParsingTests(TestCase):
         ref_list = ['21', '22', '23', '41', '42', '43', '101', '102', '103', '104', '105', '106', '107', '108', '109']
         self.assertListEqual(ref_list, self.sheet.get_all_indexes())
 
-    def test_is_key_in_list(self):
+    def test_is_key_in_list_True(self):
         self.assertEqual(self.sheet.is_key_in_list('21', self.sheet.get_all_indexes()), True)
+
+    def test_is_key_in_list_False(self):
+        self.assertEqual(self.sheet.is_key_in_list('000', self.sheet.get_all_indexes()), False)
 
     def test_is_duplication_False(self):
         ref_list = [False]
         self.assertListEqual(ref_list, self.sheet.is_duplication(self.sheet.get_all_headers()))
 
     def test_get_all_commands(self):
-        ref_dict =  {'Default': 'test', 'Snooping': 'test', 'Inspection': 'test'}
+        ref_dict =  {'Default': 'test1', 'Snooping': 'test2', 'Inspection': 'test3'}
         self.assertDictEqual(ref_dict, self.sheet.get_all_commands())
 
     def test_get_row_where_value(self):
@@ -62,3 +64,5 @@ class ArrayParsingTests(TestCase):
     def test_get_row_where_value_failed(self):
         self.assertEqual(self.sheet.get_row_where_value(0000), -1)
 
+    def test_delimitation_between_indexes_and_commands(self):
+        self.assertEqual(self.sheet.delimitation_between_indexes_and_commands(), 17)

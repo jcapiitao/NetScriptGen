@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # -*-coding:UTF-8 -*
 
 # TODO : Use Sphinx for doc generation
@@ -9,12 +8,10 @@ from process.ListParsing import ListParsing
 from function.ReplaceValue import fill_out
 from equipment.feature.Vlan import Vlan
 from equipment.feature.Interface import Interface
-import xlrd
+from utils.ExcelFile import getExcelWorkbook
 
 
-fname = "/home/joel/ownCloud/Developpement/NetScriptGen/test.xlsx"
-#fname = r'D:\ownCloud\Developpement\NetScriptGen\test.xlsx'
-wb = xlrd.open_workbook(fname)
+wb = getExcelWorkbook()
 sheet_names = wb.sheet_names()
 tab = dict()
 
@@ -38,7 +35,6 @@ index = 'HOST1'
 my_feature_value = tab['Global'].get_param_by_index(index, feature)
 
 
-print(Interface.get_by_function_and_stack(Interface, 'CISCO WS-C3750v2-48PS-S', 'Uplink', '5'))
 '''
 vlans = Vlan(tab)
 print(vlans.get_functions())

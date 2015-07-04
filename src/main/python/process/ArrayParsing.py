@@ -1,11 +1,4 @@
-#!/usr/bin/python3
 # -*-coding:UTF-8 -*
-
-import sys
-import xlrd
-from xlrd.sheet import ctype_text
-from os.path import join, dirname, abspath
-
 
 class ArrayParsing(object):
     """"
@@ -48,6 +41,7 @@ class ArrayParsing(object):
                     else:
                         var_obj = var_obj.value
                     param_value = str(xl_sheet.cell(0, col_idx).value)
+
                     self.index[str(cell_value)][param_value] = str(var_obj)
 
 
@@ -97,19 +91,23 @@ class ArrayParsing(object):
 
     def get_all_indexes(self):
         """ This method get all the indexes of the array.
-        Note Indexes must be integers.
 
         Returns:
             This method returns a list of indexes.
         """
         indexes = list()
-        for row_idx in range(1, self.get_nbr_of_rows()):
+        for row_idx in range(1, self.delimitation_between_indexes_and_commands()):
             cell = self.xl_sheet.cell(row_idx, 0)
             # If cell.ctype == xlrd.XL_CELL_NUMBER and xlrd.XL_CELL_DATE
             # because xlrd get a float number
             if cell.ctype in (2, 3):
                 cell_value = int(cell.value)
-                indexes.append(str(cell_value))
+            else:
+                cell_value = cell.value
+            indexes.append(str(cell_value))
+        # Remove the empty value
+        for iterator in range(0, indexes.count('')):
+            indexes.remove('')
         return indexes
 
     def is_key_in_list(self, key, list):
@@ -159,7 +157,7 @@ class ArrayParsing(object):
         """
         commands = dict()
         command_row = self.get_row_where_value('Default')
-        if command_row != 0:
+        if command_row != -1:
             for row_idx in range(command_row, self.get_nbr_of_rows(), 2):
                 cell = self.xl_sheet.cell(row_idx, 0)
                 if cell.ctype in (2, 3):
@@ -190,3 +188,9 @@ class ArrayParsing(object):
             if str(cell_value) == str(value):
                 return row_idx
         return -1
+
+    def delimitation_between_indexes_and_commands(self):
+        if self.get_row_where_value('Default') == -1:
+            return self.get_nbr_of_rows()
+        else:
+            return self.get_row_where_value('Default')

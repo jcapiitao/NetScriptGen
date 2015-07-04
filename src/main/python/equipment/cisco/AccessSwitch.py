@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # -*-coding:UTF-8 -*
 
 from process.ArrayParsing import ArrayParsing
