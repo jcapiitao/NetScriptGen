@@ -1,7 +1,6 @@
 # -*-coding:UTF-8 -*
 
 from unittest import TestCase
-
 from process.ListParsing import ListParsing
 from utils.ExcelFile import getSheet
 
@@ -27,15 +26,17 @@ class ListParsingTests(TestCase):
 
     def test_get_all_keys_by_bag(self):
         ref_list = ['Radius Server 1', 'Radius Server 2']
-        self.assertListEqual(ref_list, self.sheet.get_all_keys_by_bag('Authentication'))
+        ref_list = sorted(ref_list)
+        self.assertListEqual(ref_list, sorted(self.sheet.get_all_keys_by_bag('Authentication')))
 
     def test_get_all_keys_by_bag_failed(self):
         self.assertRaises(KeyError, self.sheet.get_all_keys_by_bag('invalid_bag'))
 
     def test_get_all_keys(self):
-        ref_list = ['Code Site', 'Num Site', 'AS Number', 'DNS Domain-name', 'DNS Server 1', 'DNS Server 2'
-                    'DHCP Relay 1', 'DHCP Relay 2', 'DHCP Relay 3', 'Radius Server 1', 'Radius Server 2']
-        self.assertListEqual(ref_list, self.sheet.get_all_keys())
+        ref_list = ['Code Site', 'Num Site', 'AS Number', 'DNS Domain-name', 'DNS Server 1', 'DNS Server 2',
+                    'DHCP Relay 1', 'DHCP Relay 2', '123', 'Radius Server 1', 'Radius Server 2']
+        ref_list = sorted(ref_list)
+        self.assertListEqual(ref_list, sorted(self.sheet.get_all_keys()))
 
     def test_get_value_by_key(self):
         self.assertEqual(self.sheet.get_value_by_key('AS Number'), '65845')

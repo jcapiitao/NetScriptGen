@@ -1,7 +1,6 @@
 # -*-coding:UTF-8 -*
 
 from unittest import TestCase
-
 from process.ArrayParsing import ArrayParsing
 from utils.ExcelFile import getSheet
 
@@ -41,7 +40,7 @@ class ArrayParsingTests(TestCase):
         self.assertListEqual(ref_list, self.sheet.get_all_headers())
 
     def test_get_all_indexes(self):
-        ref_list = ['21', '22', '23', '41', '42', '43', '101', '102', '103', '104', '105', '106', '107', '108', '109']
+        ref_list = ['21', '22', '23', '41', '42', '43', '101', 'test', '103', '104', '105', '106', '107', '108', '109']
         self.assertListEqual(ref_list, self.sheet.get_all_indexes())
 
     def test_is_key_in_list_True(self):

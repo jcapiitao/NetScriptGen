@@ -1,12 +1,7 @@
 # -*-coding:UTF-8 -*
 
-import sys
-import xlrd, time
-from xlrd.sheet import ctype_text
-from os.path import join, dirname, abspath
-
-
 class ListParsing(object):
+    # TODO Description of the class and its method
     global my_dict, my_dict2
     my_dict = dict()
     my_dict2 = dict()
@@ -17,23 +12,18 @@ class ListParsing(object):
             self.xl_sheet = xl_sheet
             self.sheet_name = xl_sheet.name
 
-            bag_obj = xl_sheet.cell(row_idx, 0)
-            bag = str(bag_obj.value)
-            key_obj = xl_sheet.cell(row_idx, 1)
-            value_obj = xl_sheet.cell(row_idx, 2)
-
-            # Integer values in Excel are imported as floats in Python.
-            # So we have to convert floats (2, 3) into integer
-            if value_obj.ctype in (2, 3):
-                value = int(value_obj.value)
-            else:
-                value = value_obj.value
+            bag_cell = xl_sheet.cell(row_idx, 0)
+            bag = str(self.if_float_convert_to_int(bag_cell))
+            key_cell = xl_sheet.cell(row_idx, 1)
+            key = str(self.if_float_convert_to_int(key_cell))
+            value_cell = xl_sheet.cell(row_idx, 2)
+            value = str(self.if_float_convert_to_int(value_cell))
 
             if not bag in my_dict.keys():
                 my_dict[bag] = dict()
 
-            my_dict2[str(key_obj.value)] = str(value)
-            my_dict[bag][str(key_obj.value)] = str(value)
+            my_dict2[key] = value
+            my_dict[bag][key] = value
 
     def get_value_by_bag_and_key(self, bag, key):
         try:
@@ -80,17 +70,10 @@ class ListParsing(object):
         else:
             return False
 
-
-"""
-fname = "C:/Users/joec/Desktop/joware/joware-v2/test.xlsx"
-wb = xlrd.open_workbook(fname)
-my_sheet = wb.sheet_by_name('liste')
-
-config = ListParsing(my_sheet)
-config.display_value_by_bag_and_key('DNS', 'DNS Server 1')
-config.set_value_by_bag_and_key('DNS', 'DNS Server 1', '1.1.1.1')
-print(config.is_key('pouet'))
-print(config.is_key('DNS Server 1'))
-print(config.get_all_keys_by_bag('DNS'))
-config.display_value_by_bag_and_key('DNS', 'DNS Server 1')
-"""
+    def if_float_convert_to_int(self, cell):
+        # Integer values in Excel are imported as floats in Python.
+        # So we have to convert floats (2, 3) into integer
+        if cell.ctype in (2, 3):
+            return int(cell.value)
+        else:
+            return cell.value

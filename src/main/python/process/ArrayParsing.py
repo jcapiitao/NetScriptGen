@@ -33,16 +33,18 @@ class ArrayParsing(object):
 
             if cell.ctype in (2, 3):
                 cell_value = int(cell.value)
-                self.index[str(cell_value)] = dict()
-                for col_idx in range(0, xl_sheet.ncols):
-                    var_obj = xl_sheet.cell(row_idx, col_idx)
-                    if var_obj.ctype in (2, 3):
-                        var_obj = int(var_obj.value)
-                    else:
-                        var_obj = var_obj.value
-                    param_value = str(xl_sheet.cell(0, col_idx).value)
+            else:
+                cell_value = cell.value
+            self.index[str(cell_value)] = dict()
+            for col_idx in range(0, xl_sheet.ncols):
+                var_obj = xl_sheet.cell(row_idx, col_idx)
+                if var_obj.ctype in (2, 3):
+                    var_obj = int(var_obj.value)
+                else:
+                    var_obj = var_obj.value
+                param_value = str(xl_sheet.cell(0, col_idx).value)
 
-                    self.index[str(cell_value)][param_value] = str(var_obj)
+                self.index[str(cell_value)][param_value] = str(var_obj)
 
 
     def get_param_by_index(self, index_value, param_value):

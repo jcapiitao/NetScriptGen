@@ -4,6 +4,7 @@ import xlrd
 
 
 class TextParsing(object):
+    # TODO Description of the class and its method
     global my_dict
     my_dict = dict()
 
@@ -11,14 +12,22 @@ class TextParsing(object):
 
         for row_idx in range(1, xl_sheet.nrows):
             self.xl_sheet = xl_sheet
+            self.sheet_name = xl_sheet.name
 
             my_dict[xl_sheet.cell(row_idx, 0).value] = xl_sheet.cell(row_idx, 1).value
 
     def get_text_by_title(self, title):
-        return my_dict[title]
+        try:
+            return my_dict[title]
+        except KeyError:
+            print("The title '%s' doesn't exist in the tab '%s'." % (title, self.sheet_name))
 
     def set_text_by_title(self, title, text):
-        my_dict[title] = text
+        try:
+            my_dict[title] = text
+        except KeyError:
+            print("The title '%s' doesn't exist in the tab '%s'." % (title, self.sheet_name))
+
 
     def display_text_by_title(self, title):
         print(self.get_text_by_title(title))
@@ -26,7 +35,9 @@ class TextParsing(object):
     def get_all_titles(self):
         keys_list = list()
         for row_idx in range(1, self.xl_sheet.nrows):
-            keys_list.append(self.xl_sheet.cell(row_idx, 0).value)
+            title = self.xl_sheet.cell(row_idx, 0).value
+            if title != '':
+                keys_list.append(title)
         return keys_list
 
     def is_title(self, title):
