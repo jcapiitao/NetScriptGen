@@ -10,19 +10,32 @@ class ListParsingTests(TestCase):
     sheet = ListParsing(getSheet('listparsing_test'))
 
     def test_get_value_by_bag_and_key(self):
-        self.assertEqual(self.sheet.get_value_by_bag_and_key('Administrative', 'Code Site'), '')
+        values = list()
+        self.assertListEqual(self.sheet.get_value_by_bag_and_key('Administrative', 'Code Site'), values)
+
+    def test_get_value_by_bag_and_key_and_index(self):
+        self.assertEqual(self.sheet.get_value_by_bag_and_key_and_index('Administrative', 'Num Site', 1), '45')
+
+    def test_get_value_by_bag_and_key_and_index_failed(self):
+        self.assertRaises(IndexError, self.sheet.get_value_by_bag_and_key_and_index('Administrative', 'Num Site', 5))
+
+    def test_get_value_by_bag_and_key_and_index_failed2(self):
+        self.assertRaises(IndexError, self.sheet.get_value_by_bag_and_key_and_index('Administrative', 'Num Site', 1))
 
     def test_get_param_by_index_failed(self):
         self.assertRaises(KeyError, self.sheet.get_value_by_bag_and_key('invalid_bag', 'invalid_key'))
 
     def test_set_value_by_bag_and_key(self):
         bag, key, updated_value = 'DNS', 'DNS Server 1', '1.1.1.1'
-        self.sheet.set_value_by_bag_and_key(bag, key, updated_value)
-        self.assertEqual(self.sheet.get_value_by_bag_and_key(bag, key), updated_value)
+        values = list()
+        values.append(updated_value)
+        values.append(self.sheet.get_value_by_bag_and_key_and_index(bag, key, 1))
+        self.sheet.set_value_by_bag_and_key(bag, key, 0, updated_value)
+        self.assertListEqual(self.sheet.get_value_by_bag_and_key(bag, key), values)
 
     def test_set_value_by_bag_and_key_failed(self):
         bag, key, updated_value = '000', 'Gateway', '1.1.1.1'
-        self.assertRaises(KeyError, self.sheet.set_value_by_bag_and_key(bag, key, updated_value))
+        self.assertRaises(KeyError, self.sheet.set_value_by_bag_and_key(bag, key, 0, updated_value))
 
     def test_get_all_keys_by_bag(self):
         ref_list = ['Radius Server 1', 'Radius Server 2']
@@ -39,17 +52,22 @@ class ListParsingTests(TestCase):
         self.assertListEqual(ref_list, sorted(self.sheet.get_all_keys()))
 
     def test_get_value_by_key(self):
-        self.assertEqual(self.sheet.get_value_by_key('AS Number'), '65845')
+        values = list()
+        values.append('65845')
+        self.assertListEqual(self.sheet.get_value_by_key('AS Number'), values)
 
     def test_get_value_by_key_failed(self):
         self.assertRaises(KeyError, self.sheet.get_value_by_key('invalid_key'))
 
     def test_set_value_by_key(self):
-        self.sheet.set_value_by_key('Radius Server 1', '1.1.1.1')
-        self.assertEqual(self.sheet.get_value_by_key('Radius Server 1'), '1.1.1.1')
+        key, index, updated_value = 'Radius Server 1', 0, '1.1.1.1'
+        values = list()
+        values.append(updated_value)
+        self.sheet.set_value_by_key(key, index, updated_value)
+        self.assertListEqual(self.sheet.get_value_by_key(key), values)
 
     def test_set_value_by_key_failed(self):
-        self.assertRaises(KeyError, self.sheet.set_value_by_key('invalid_key', '1.1.1.1'))
+        self.assertRaises(KeyError, self.sheet.set_value_by_key('invalid_key', 1, '1.1.1.1'))
 
     def test_is_key_in_list_True(self):
         self.assertEqual(self.sheet.is_key('123'), True)

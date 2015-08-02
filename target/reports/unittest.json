@@ -1,0 +1,10 @@
+{
+  "errors": [], 
+  "failures": [
+    {
+      "test": "Interface_tests.InterfaceTests.test_get_by_function", 
+      "traceback": "Traceback (most recent call last):\n  File \"/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/Interface_tests.py\", line 14, in test_get_by_function\n    self.assertListEqual(ref_list, self.interface.get_by_equipment_and_function('CISCO WS-C3750-48PS-S', 'Uplink'))\nAssertionError: Second sequence is not a list: None\n"
+    }
+  ], 
+  "tests-run": 16
+}

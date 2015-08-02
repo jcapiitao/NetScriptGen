@@ -1,3 +1,50 @@
+
+
+Imbriquation de requêtes
+{{Feuille!{Global!Index:Parameter}:parameter}}
+
+Récupérer un bloc de script
+[[Feuille!Default]] ou [[Feuille]] --> que le bloc par défaut
+[[Feuille!Nom_du_bloc_du_script]] --> on spécifie le bloc qu'on veut
+[[Feuille!all]] -> tous les blocs de script
+
+
+
+hostname {{hostname}}
+
+! Vlan configuration
+
+vlan {{VLAN#Admin}}-11
+ name {VLAN![{$VLAN#Admin}, Name]}-EDBG-ADMRESEAU-1
+
+vlan {{VLAN#Data}}-101
+ name {VLAN![{$VLAN#Data}, Name]}-EDBG-DATA-01
+
+vlan {{VLAN#Voice}}-601
+ name {VLAN![{$VLAN#Voice}, Name]}-EDBG-VOIX-01
+
+vlan {{VLAN#Native}}-901
+ name {VLAN![{$VLAN#Native}, Name]}-EDBG-NATIF-01
+
+vlan {{VLAN#Wifi}}-21
+ name {VLAN![{$VLAN#Wifi}, Name]}-EDBG-ADMWIFI-1
+
+ip dhcp snooping vlan {{VLAN#Wifi}}-21,{{VLAN#Data}}-101,{{VLAN#Voice}}-601
+no ip dhcp snooping information option
+ip dhcp snooping database flash:dhcp-snooping.txt
+ip dhcp snooping database write-delay 60
+ip dhcp snooping
+ip device tracking
+ip arp inspection vlan {{VLAN#Wifi}}-21,{{VLAN#Data}}-101,{{VLAN#Voice}}-601
+ip arp inspection log-buffer entries 1024
+ip arp inspection log-buffer logs 10 interval 1
+
+arp access-list FIXED-IP-MAC
+permit ip {VLAN![{$VLAN#Data}, Subnet_arp]}-10.179.1.224 {VLAN![{$VLAN#Data}, Wildcard_arp]}-0.0.0.15 mac any
+
+ip arp inspection filter FIXED-IP-MAC vlan {{VLAN#Data}}-101
+--------------------------
+
 ! Configuration Basée sur le template telindus v0.9
 !
 ! Configuration Globale

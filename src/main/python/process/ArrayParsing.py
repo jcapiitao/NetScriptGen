@@ -1,5 +1,6 @@
 # -*-coding:UTF-8 -*
 
+
 class ArrayParsing(object):
     """"
     This class is used to parse a sheet which contains an array.
@@ -26,17 +27,15 @@ class ArrayParsing(object):
         if header_list[0] is True:
             raise SystemExit("The parameter(s) in tab '%s' are duplicated: %s" % (self.sheet_name, header_list[1:]))
 
-
         # We parse the array to get the value of the cells
         for row_idx in range(1, xl_sheet.nrows):
             cell = xl_sheet.cell(row_idx, 0)
-
             if cell.ctype in (2, 3):
                 cell_value = int(cell.value)
             else:
                 cell_value = cell.value
             self.index[str(cell_value)] = dict()
-            for col_idx in range(0, xl_sheet.ncols):
+            for col_idx in range(0, self.get_nbr_of_cols_in_row(0)):
                 var_obj = xl_sheet.cell(row_idx, col_idx)
                 if var_obj.ctype in (2, 3):
                     var_obj = int(var_obj.value)
@@ -46,19 +45,19 @@ class ArrayParsing(object):
 
                 self.index[str(cell_value)][param_value] = str(var_obj)
 
-
     def get_param_by_index(self, index_value, param_value):
         try:
             return self.index[index_value][param_value]
         except KeyError:
-            print("The index '%s' or the parameter '%s' doesn't exist in the tab '%s'." \
+            print("The index '%s' or the parameter '%s' doesn't exist in the tab '%s'."
                   % (index_value, param_value, self.sheet_name))
+            return KeyError
 
     def set_param_by_index(self, index_value, param_value, updated_value):
         try:
             self.index[index_value][param_value] = updated_value
         except KeyError:
-            print("The index '%s' or the parameter '%s' doesn't exist in the tab '%s'." \
+            print("The index '%s' or the parameter '%s' doesn't exist in the tab '%s'."
                   % (index_value, param_value, self.sheet_name))
 
     def get_all_param_by_index(self, index_value):
@@ -80,6 +79,11 @@ class ArrayParsing(object):
         """
         return self.xl_sheet.ncols
 
+    def get_nbr_of_cols_in_row(self, row):
+        """ This method returns the number of columns in the specified row.
+        """
+        return self.xl_sheet.row_len(row)
+
     def get_all_headers(self):
         """ This method get all the headers of the array.
 
@@ -87,7 +91,7 @@ class ArrayParsing(object):
             This method returns a list of headers.
         """
         headers = list()
-        for col_idx in range(0, self.get_nbr_of_cols()):
+        for col_idx in range(0, self.get_nbr_of_cols_in_row(0)):
             headers.append(str(self.xl_sheet.cell(0, col_idx).value))
         return headers
 
@@ -166,8 +170,10 @@ class ArrayParsing(object):
                     cell_value = int(cell.value)
                 else:
                     cell_value = cell.value
-                if (cell_value != ""):
+                if (cell_value != "" and (row_idx + 1) < self.get_nbr_of_rows()):
                     commands[cell_value] = str(self.xl_sheet.cell(row_idx + 1, 0).value)
+                else:
+                    commands[cell_value] = ""
             return commands
 
     def get_row_where_value(self, value):

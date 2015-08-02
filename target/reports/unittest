@@ -1,0 +1,13 @@
+...............F
+======================================================================
+FAIL: test_get_by_function (Interface_tests.InterfaceTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/Interface_tests.py", line 14, in test_get_by_function
+    self.assertListEqual(ref_list, self.interface.get_by_equipment_and_function('CISCO WS-C3750-48PS-S', 'Uplink'))
+AssertionError: Second sequence is not a list: None
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+FAILED (failures=1)

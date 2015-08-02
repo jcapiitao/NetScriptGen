@@ -3,10 +3,12 @@
 # TODO : Use Sphinx for doc generation
 
 import os
+import io
 from process.ArrayParsing import ArrayParsing
 from process.TextParsing import TextParsing
 from process.ListParsing import ListParsing
-from function.ReplaceValue import fill_out
+from equipment.Equipment import Equipment
+from function.ReplaceValue import *
 from equipment.feature.Vlan import Vlan
 from equipment.feature.Interface import Interface
 from utils.ExcelFile import getExcelWorkbook
@@ -16,11 +18,11 @@ from utils.files import get_full_path
 wb = getExcelWorkbook()
 global_template_file = get_full_path('ios_script_sample2.txt')
 sheet_names = wb.sheet_names()
-tab = dict()
+workbook = dict()
 
 try:
     if os.path.isfile(global_template_file):
-        template = open(global_template_file, 'r', -1,' UTF-8')
+        template = open(global_template_file, 'r',-1,' UTF-8').read()
     else:
         raise SystemExit("The file '%s' doesn't exit" % global_template_file)
 except OSError:
@@ -32,22 +34,40 @@ for sheet in sheet_names:
     if (xl_sheet.cell(0, 0).value == 'Function' and
                 xl_sheet.cell(0, 1).value == 'Variable' and
                 xl_sheet.cell(0, 2).value == 'Value'):
-        tab[sheet] = ListParsing(xl_sheet)
+        workbook[sheet] = ListParsing(xl_sheet)
     elif xl_sheet.cell(0, 0).value == 'Text':
-        tab[sheet] = TextParsing(xl_sheet)
+        workbook[sheet] = TextParsing(xl_sheet)
     elif sheet == 'Interfaces':
-        tab[sheet] = Interface(xl_sheet)
+        workbook[sheet] = Interface(xl_sheet)
     else:
-        print(xl_sheet.name)
-        tab[sheet] = ArrayParsing(xl_sheet)
+        #print(xl_sheet.name)
+        workbook[sheet] = ArrayParsing(xl_sheet)
+
+# Now we fill out the template
+
+list_of_equipments = list()
+#for hostname in workbook['Global'].get_all_indexes():
+hostname = 'HOST1'
+equipment = Equipment(hostname, template, workbook)
+list_of_equipments.append(equipment)
+print("-------------- Script Output --------------")
+print(equipment.get_script())
+#equipment.save_script_as(get_full_path(), hostname)
+#print("There is %s unfilled variable " % equipment.get_unfilled_variable_counter())
+
+'''
+filledTemplate = fill_out_the_template(template, workbook)
+print('------------------------------')
+print(filledTemplate)
+
 
 
 index = 'HOST1'
-informations = tab['Global'].get_param_by_index(index)
-script = fill_out(template, tab, index, informations)
+informations = workbook['Global'].get_param_by_index(index)
+script = fill_out(template, workbook, index, informations)
 print(script)
 
-'''
+
 feature = "VTP_Profile"
 index = 'HOST1'
 my_feature_value = tab['Global'].get_param_by_index(index, feature)

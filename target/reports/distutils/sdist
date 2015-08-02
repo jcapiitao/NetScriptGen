@@ -1,0 +1,31 @@
+running sdist
+running egg_info
+creating NetScriptGen.egg-info
+writing NetScriptGen.egg-info/PKG-INFO
+writing top-level names to NetScriptGen.egg-info/top_level.txt
+writing dependency_links to NetScriptGen.egg-info/dependency_links.txt
+writing entry points to NetScriptGen.egg-info/entry_points.txt
+writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'
+reading manifest file 'NetScriptGen.egg-info/SOURCES.txt'
+writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt
+
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
+
+creating NetScriptGen-1.0.dev0
+creating NetScriptGen-1.0.dev0/NetScriptGen.egg-info
+making hard links in NetScriptGen-1.0.dev0...
+hard linking setup.py -> NetScriptGen-1.0.dev0
+hard linking NetScriptGen.egg-info/PKG-INFO -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/SOURCES.txt -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/dependency_links.txt -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/entry_points.txt -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/top_level.txt -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/zip-safe -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
+Writing NetScriptGen-1.0.dev0/setup.cfg
+creating dist
+Creating tar archive
+removing 'NetScriptGen-1.0.dev0' (and everything under it)

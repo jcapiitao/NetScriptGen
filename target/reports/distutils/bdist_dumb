@@ -1,0 +1,16 @@
+running bdist_dumb
+running build
+installing to build/bdist.linux-x86_64/dumb
+running install
+running install_egg_info
+running egg_info
+writing NetScriptGen.egg-info/PKG-INFO
+writing top-level names to NetScriptGen.egg-info/top_level.txt
+writing dependency_links to NetScriptGen.egg-info/dependency_links.txt
+writing entry points to NetScriptGen.egg-info/entry_points.txt
+reading manifest file 'NetScriptGen.egg-info/SOURCES.txt'
+writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'
+Copying NetScriptGen.egg-info to build/bdist.linux-x86_64/dumb/usr/local/lib/python2.7/dist-packages/NetScriptGen-1.0.dev0.egg-info
+running install_scripts
+Creating tar archive
+removing 'build/bdist.linux-x86_64/dumb' (and everything under it)

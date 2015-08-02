@@ -1,35 +1,13 @@
 
-hostname {{hostname}}
+Récupérer la valeur d'un paramètre dans un tableau
+{{arrayparsing_test!21:Subnet}}
 
 
-! Vlan configuration
+Récupérer un paramètre d'une liste
+{{listparsing_test!DNS:DNS Server:1}}
 
-vlan {{VLAN#Admin}}-11
- name {VLAN![{$VLAN#Admin}, Name]}-EDBG-ADMRESEAU-1
+Récupérer un texte
+{{textparsing_test!banner}}
 
-vlan {{VLAN#Data}}-101
- name {VLAN![{$VLAN#Data}, Name]}-EDBG-DATA-01
 
-vlan {{VLAN#Voice}}-601
- name {VLAN![{$VLAN#Voice}, Name]}-EDBG-VOIX-01
 
-vlan {{VLAN#Native}}-901
- name {VLAN![{$VLAN#Native}, Name]}-EDBG-NATIF-01
-
-vlan {{VLAN#Wifi}}-21
- name {VLAN![{$VLAN#Wifi}, Name]}-EDBG-ADMWIFI-1
-
-ip dhcp snooping vlan {{VLAN#Wifi}}-21,{{VLAN#Data}}-101,{{VLAN#Voice}}-601
-no ip dhcp snooping information option
-ip dhcp snooping database flash:dhcp-snooping.txt
-ip dhcp snooping database write-delay 60
-ip dhcp snooping
-ip device tracking
-ip arp inspection vlan {{VLAN#Wifi}}-21,{{VLAN#Data}}-101,{{VLAN#Voice}}-601
-ip arp inspection log-buffer entries 1024
-ip arp inspection log-buffer logs 10 interval 1
-
-arp access-list FIXED-IP-MAC
-permit ip {VLAN![{$VLAN#Data}, Subnet_arp]}-10.179.1.224 {VLAN![{$VLAN#Data}, Wildcard_arp]}-0.0.0.15 mac any
-
-ip arp inspection filter FIXED-IP-MAC vlan {{VLAN#Data}}-101
