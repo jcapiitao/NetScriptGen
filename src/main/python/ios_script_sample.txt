@@ -1,7 +1,7 @@
 
 
 Imbriquation de requêtes
-{{Feuille!{Global!Index:Parameter}:parameter}}
+{{VLAN!{{Global!HOST1:VLAN#Admin}}:Name}}
 
 Récupérer un bloc de script
 [[Feuille!Default]] ou [[Feuille]] --> que le bloc par défaut

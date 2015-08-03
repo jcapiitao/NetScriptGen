@@ -58,7 +58,7 @@ class ArrayParsingTests(TestCase):
 
     def test_get_all_commands(self):
         ref_dict = {'Default': 'test1', 'Snooping': 'test2', 'Inspection': ''}
-        self.assertDictEqual(ref_dict, self.sheet.get_all_commands())
+        self.assertDictEqual(ref_dict, self.sheet.get_local_templates())
 
     def test_get_row_where_value(self):
         self.assertEqual(self.sheet.get_row_where_value(105), 11)

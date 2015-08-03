@@ -14,20 +14,22 @@ class Equipment(object):
         self.template = template
         self.workbook = workbook
         self.unfilled_variable_counter = 0
-        self.pattern_to_fill_regexp = '{{.*}}'
+        self.pattern_contains_brackets = '{{.*}}'
+        self.pattern_contains_exclamation_and_colon = '[!,:]'
 
     def get_script(self):
-        script = self.fill_out_the_template(self.template, self.workbook)
+        script = self.fill_out_the_template()
         if self.unfilled_variable_counter != 0:
             line = "! /!\----- Warning : There is %s unfilled variable -----/!\\\n" % self.unfilled_variable_counter
             script = line + script
         return script
 
-    def fill_out_the_template(self, template, workbook):
-        pattern_to_fill = re.findall(self.pattern_to_fill_regexp, template)
+    def fill_out_the_template(self):
+        pattern_to_fill = re.findall(self.pattern_contains_brackets, self.template)
+        template = self.template
         if pattern_to_fill:
             for pattern in pattern_to_fill:
-                template = template.replace(pattern, self.get_value_of_pattern(self.remove_brackets(pattern), workbook))
+                template = template.replace(pattern, self.get_value_of_pattern(pattern, self.workbook))
         return template
 
     def save_script_as(self, path_of_the_folder, file_name):
@@ -37,7 +39,44 @@ class Equipment(object):
         file.close()
 
     def get_value_of_pattern(self, pattern, workbook):
-        global unfilled_variable_counter
+        match_brackets = re.findall(self.pattern_contains_brackets, pattern)
+        if match_brackets:
+            for match in match_brackets:
+                if re.findall(self.pattern_contains_exclamation_and_colon, match):
+                    return self.get_value_pattern_with_exclamation_and_colon(match, workbook)
+                else:
+                    return self.get_value_from_global_sheet(match)
+
+
+    def get_value_from_global_sheet(self, parameter):
+        # If the parameter is a title of a sheet, we need to get data from this sheet
+        parameter = self.remove_brackets(parameter)
+        if parameter in self.workbook.keys():
+            print("The parameter '%s 'is title of a sheet" %parameter)
+            index = self.workbook['Global'].get_param_by_index(self.hostname, parameter)
+            data_of_the_index = self.workbook[parameter].get_all_param_by_index(index)
+            local_templates = self.workbook[parameter].get_local_templates()
+            local_template = local_templates[self.workbook[parameter].get_param_by_index(index, "Template")]
+            print("---------ouet---------")
+            return self.fill_local_template(data_of_the_index, local_template)
+        else:
+            return self.workbook['Global'].get_param_by_index(self.hostname, parameter)
+
+    def fill_local_template(self, data, local_template):
+        is_brackets = re.findall(self.pattern_contains_brackets, local_template)
+        if is_brackets:
+            for value in is_brackets:
+                local_template = local_template.replace(value, data[self.remove_brackets(value)])
+        return local_template
+
+
+    def get_value_pattern_with_exclamation_and_colon(self, pattern, workbook):
+        pattern = self.remove_brackets(pattern)
+        is_brackets = re.findall(self.pattern_contains_brackets, pattern)
+        if is_brackets:
+            for pattern_with_backets in is_brackets:
+                value = self.get_value_pattern_with_exclamation_and_colon(pattern_with_backets, workbook)
+                pattern = re.sub(self.pattern_contains_brackets, value, pattern)
         splitPattern = re.split("[!,:]+", pattern)
         instanceOfSplitPattern = workbook[splitPattern[0]]
         if isinstance(instanceOfSplitPattern, ArrayParsing):
@@ -65,6 +104,7 @@ class Equipment(object):
         else:
             self.unfilled_variable_counter = self.unfilled_variable_counter + 1
             return "<unavailable to fill out>"
+
 
     def remove_brackets(self, string):
         return string[2:-2]

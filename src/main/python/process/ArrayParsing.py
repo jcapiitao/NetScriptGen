@@ -15,7 +15,7 @@ class ArrayParsing(object):
     def __init__(self, xl_sheet):
         self.xl_sheet = xl_sheet
         self.sheet_name = xl_sheet.name
-        self.commands = self.get_all_commands()
+        self.commands = self.get_local_templates()
         self.index = dict()
 
         # We check if there is duplications in the headers and indexes
@@ -154,8 +154,8 @@ class ArrayParsing(object):
             response.insert(0, True)
         return response
 
-    def get_all_commands(self):
-        """ Get all the command templates. These templates are used to generate auto-formatted commands with the
+    def get_local_templates(self):
+        """ Get all the local templates. These templates are used to generate auto-formatted commands with the
          data contained into the array.
 
          Returns:

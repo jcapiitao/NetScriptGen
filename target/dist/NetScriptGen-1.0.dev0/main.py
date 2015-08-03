@@ -47,7 +47,7 @@ print(vlans.get_vlan_names())
 
 if my_feature_value != "":
     my_dict = tab[feature].get_all_param_by_index(my_feature_value)
-    my_commands = tab[feature].get_all_commands()
+    my_commands = tab[feature].get_local_templates()
     sub_template = my_commands[tab[feature].get_param_by_index(my_feature_value, "Template")]
     script = fill_out(sub_template, tab, index, my_dict)
     print(script)
