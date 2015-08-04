@@ -57,7 +57,6 @@ class Equipment(object):
             data_of_the_index = self.workbook[parameter].get_all_param_by_index(index)
             local_templates = self.workbook[parameter].get_local_templates()
             local_template = local_templates[self.workbook[parameter].get_param_by_index(index, "Template")]
-            print("---------ouet---------")
             return self.fill_local_template(data_of_the_index, local_template)
         else:
             return self.workbook['Global'].get_param_by_index(self.hostname, parameter)
@@ -81,7 +80,7 @@ class Equipment(object):
         instanceOfSplitPattern = workbook[splitPattern[0]]
         if isinstance(instanceOfSplitPattern, ArrayParsing):
             result = workbook[splitPattern[0]].get_param_by_index(splitPattern[1], splitPattern[2])
-            if result is KeyError:
+            if result is None:
                 self.unfilled_variable_counter = self.unfilled_variable_counter + 1
                 return "<unavailable to fill out>"
             else:
@@ -89,14 +88,14 @@ class Equipment(object):
         elif isinstance(instanceOfSplitPattern, ListParsing):
             result = workbook[splitPattern[0]].get_value_by_bag_and_key_and_index(splitPattern[1], splitPattern[2],
                                                                                   int(splitPattern[3]))
-            if result is KeyError:
+            if result is None:
                 self.unfilled_variable_counter = self.unfilled_variable_counter + 1
                 return "<unavailable to fill out>"
             else:
                 return result
         elif isinstance(instanceOfSplitPattern, TextParsing):
             result = workbook[splitPattern[0]].get_text_by_title(splitPattern[1])
-            if result is KeyError:
+            if result is None:
                 self.unfilled_variable_counter = self.unfilled_variable_counter + 1
                 return "<unavailable to fill out>"
             else:

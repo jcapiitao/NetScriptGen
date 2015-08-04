@@ -1,16 +1,100 @@
 running bdist_dumb
 running build
-installing to build/bdist.linux-x86_64/dumb
+running build_py
+creating build
+creating build/lib
+copying __init__.py -> build/lib
+copying main.py -> build/lib
+creating build/lib/equipment
+copying equipment/__init__.py -> build/lib/equipment
+copying equipment/Equipment.py -> build/lib/equipment
+creating build/lib/function
+copying function/__init__.py -> build/lib/function
+copying function/ReplaceValue.py -> build/lib/function
+creating build/lib/process
+copying process/__init__.py -> build/lib/process
+copying process/ArrayParsing.py -> build/lib/process
+copying process/ExtractExcelData.py -> build/lib/process
+copying process/ListParsing.py -> build/lib/process
+copying process/TextParsing.py -> build/lib/process
+creating build/lib/utils
+copying utils/__init__.py -> build/lib/utils
+copying utils/ExcelFile.py -> build/lib/utils
+copying utils/files.py -> build/lib/utils
+creating build/lib/equipment/cisco
+copying equipment/cisco/__init__.py -> build/lib/equipment/cisco
+copying equipment/cisco/AccessSwitch.py -> build/lib/equipment/cisco
+creating build/lib/equipment/feature
+copying equipment/feature/__init__.py -> build/lib/equipment/feature
+copying equipment/feature/Interface.py -> build/lib/equipment/feature
+copying equipment/feature/Vlan.py -> build/lib/equipment/feature
+installing to build/bdist.macosx-10.6-x86_64/dumb
 running install
+running install_lib
+creating build/bdist.macosx-10.6-x86_64
+creating build/bdist.macosx-10.6-x86_64/dumb
+creating build/bdist.macosx-10.6-x86_64/dumb/Users
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages
+copying build/lib/__init__.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment
+copying build/lib/equipment/__init__.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/cisco
+copying build/lib/equipment/cisco/__init__.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/cisco
+copying build/lib/equipment/cisco/AccessSwitch.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/cisco
+copying build/lib/equipment/Equipment.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/feature
+copying build/lib/equipment/feature/__init__.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/feature
+copying build/lib/equipment/feature/Interface.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/feature
+copying build/lib/equipment/feature/Vlan.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/feature
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/function
+copying build/lib/function/__init__.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/function
+copying build/lib/function/ReplaceValue.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/function
+copying build/lib/main.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process
+copying build/lib/process/__init__.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process
+copying build/lib/process/ArrayParsing.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process
+copying build/lib/process/ExtractExcelData.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process
+copying build/lib/process/ListParsing.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process
+copying build/lib/process/TextParsing.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process
+creating build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/utils
+copying build/lib/utils/__init__.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/utils
+copying build/lib/utils/ExcelFile.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/utils
+copying build/lib/utils/files.py -> build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/utils
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/__init__.py to __init__.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/__init__.py to __init__.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/cisco/__init__.py to __init__.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/cisco/AccessSwitch.py to AccessSwitch.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/Equipment.py to Equipment.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/feature/__init__.py to __init__.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/feature/Interface.py to Interface.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/equipment/feature/Vlan.py to Vlan.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/function/__init__.py to __init__.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/function/ReplaceValue.py to ReplaceValue.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/main.py to main.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process/__init__.py to __init__.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process/ArrayParsing.py to ArrayParsing.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process/ExtractExcelData.py to ExtractExcelData.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process/ListParsing.py to ListParsing.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/process/TextParsing.py to TextParsing.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/utils/__init__.py to __init__.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/utils/ExcelFile.py to ExcelFile.cpython-34.pyc
+byte-compiling build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/utils/files.py to files.cpython-34.pyc
 running install_egg_info
 running egg_info
-writing NetScriptGen.egg-info/PKG-INFO
-writing top-level names to NetScriptGen.egg-info/top_level.txt
 writing dependency_links to NetScriptGen.egg-info/dependency_links.txt
 writing entry points to NetScriptGen.egg-info/entry_points.txt
+writing NetScriptGen.egg-info/PKG-INFO
+writing top-level names to NetScriptGen.egg-info/top_level.txt
 reading manifest file 'NetScriptGen.egg-info/SOURCES.txt'
 writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'
-Copying NetScriptGen.egg-info to build/bdist.linux-x86_64/dumb/usr/local/lib/python2.7/dist-packages/NetScriptGen-1.0.dev0.egg-info
+Copying NetScriptGen.egg-info to build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/NetScriptGen-1.0.dev0-py3.4.egg-info
 running install_scripts
 Creating tar archive
-removing 'build/bdist.linux-x86_64/dumb' (and everything under it)
+removing 'build/bdist.macosx-10.6-x86_64/dumb' (and everything under it)

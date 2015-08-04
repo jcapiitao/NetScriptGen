@@ -13,7 +13,7 @@ class ArrayParsingTests(TestCase):
         self.assertEqual(self.sheet.get_param_by_index('105', 'Gateway'), '10.2.2.254')
 
     def test_get_param_by_index_failed(self):
-        self.assertRaises(KeyError, self.sheet.get_param_by_index('200', 'invalid_param'))
+        self.assertRaises(KeyError, self.sheet.get_param_by_index('101', 'invalid_param'))
 
     def test_set_param_by_index(self):
         index_value, param_value, updated_value = '104', 'Gateway', '1.1.1.1'
@@ -30,10 +30,10 @@ class ArrayParsingTests(TestCase):
         self.assertDictEqual(ref_dict, self.sheet.get_all_param_by_index('105'))
 
     def test_get_nbr_of_rows(self):
-        self.assertEqual(self.sheet.get_nbr_of_rows(), 22)
+        self.assertEqual(self.sheet.get_nbr_of_rows(), 23)
 
     def test_get_nbr_of_cols(self):
-        self.assertEqual(self.sheet.get_nbr_of_cols(), 8)
+        self.assertEqual(self.sheet.get_nbr_of_cols(), 9)
 
     def test_get_nbr_of_cols_in_row(self):
         self.assertEquals(self.sheet.get_nbr_of_cols_in_row(0), 8)

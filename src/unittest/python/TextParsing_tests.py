@@ -15,14 +15,6 @@ class TextParsingTests(TestCase):
     def test_get_text_by_title_failed(self):
         self.assertRaises(KeyError, self.sheet.get_text_by_title('invalid_title'))
 
-    def test_set_text_by_title(self):
-        title, updated_text = 'banner', 'I edit the text'
-        self.sheet.set_text_by_title(title, updated_text)
-        self.assertEqual(self.sheet.get_text_by_title(title), updated_text)
-
-    def test_set_text_by_title_failed(self):
-        self.assertRaises(KeyError, self.sheet.set_text_by_title('invalid_title', 'test'))
-
     def test_get_all_titles(self):
         ref_list = ['banner', 'password', 'name']
         self.assertListEqual(ref_list, self.sheet.get_all_titles())
