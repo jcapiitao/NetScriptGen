@@ -2,12 +2,12 @@
 
 from unittest import TestCase
 from process.ListParsing import ListParsing
-from utils.ExcelFile import getSheet
+from utils.ExcelWorkbookManager import get_sheet
 
 
 class ListParsingTests(TestCase):
 
-    sheet = ListParsing(getSheet('listparsing_test'))
+    sheet = ListParsing(get_sheet('listparsing_test'))
 
     def test_get_value_by_bag_and_key(self):
         values = list()
@@ -21,6 +21,17 @@ class ListParsingTests(TestCase):
 
     def test_get_param_by_index_failed(self):
         self.assertRaises(KeyError, self.sheet.get_value_by_bag_and_key('invalid_bag', 'invalid_key'))
+
+    def test_set_value_by_bag_and_key(self):
+        bag, key, updated_value = 'DNS', 'DNS Server', '1.1.1.1'
+        values = list()
+        values.append(updated_value)
+        self.sheet.set_value_by_bag_and_key(bag, key, 1, updated_value)
+        self.assertListEqual(self.sheet.get_value_by_bag_and_key(bag, key), values)
+
+    def test_set_value_by_bag_and_key_failed(self):
+        bag, key, updated_value = '000', 'Gateway', '1.1.1.1'
+        self.assertRaises(KeyError, self.sheet.set_value_by_bag_and_key(bag, key, 0, updated_value))
 
     def test_get_all_keys_by_bag(self):
         ref_list = ['Radius Server 1', 'Radius Server 2']
@@ -43,6 +54,16 @@ class ListParsingTests(TestCase):
 
     def test_get_value_by_key_failed(self):
         self.assertRaises(KeyError, self.sheet.get_value_by_key('invalid_key'))
+
+    def test_set_value_by_key(self):
+        key, index, updated_value = 'Radius Server 1', 1, '1.1.1.1'
+        values = list()
+        values.append(updated_value)
+        self.sheet.set_value_by_key(key, index, updated_value)
+        self.assertListEqual(self.sheet.get_value_by_key(key), values)
+
+    def test_set_value_by_key_failed(self):
+        self.assertRaises(KeyError, self.sheet.set_value_by_key('invalid_key', 1, '1.1.1.1'))
 
     def test_is_key_in_list_True(self):
         self.assertEqual(self.sheet.is_key('123'), True)

@@ -2,12 +2,12 @@
 
 from unittest import TestCase
 from equipment.feature.Interface import Interface
-from utils.ExcelFile import getSheet
+from utils.ExcelWorkbookManager import get_sheet
 
 
 class InterfaceTests(TestCase):
 
-    interface = Interface(getSheet('interface_test'))
+    interface = Interface(get_sheet('interface_test'))
 
     def test_get_by_equipment_and_function(self):
         ref_list = ['Gigabit', '1', '0', '1-2']

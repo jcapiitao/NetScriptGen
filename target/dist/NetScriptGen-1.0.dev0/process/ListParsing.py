@@ -45,8 +45,6 @@ class ListParsing(object):
             values = self.get_value_by_bag_and_key(bag, key)
             try:
                 if values:
-                    print(values)
-                    print("The index = %s" % (index-1))
                     return values[index-1]
             except IndexError:
                 print("There is no such index in the list '%s->%s = %s'" % (bag, key, values))

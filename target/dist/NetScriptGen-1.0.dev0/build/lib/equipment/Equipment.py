@@ -29,7 +29,6 @@ class Equipment(object):
         template = self.template
         if pattern_to_fill:
             for pattern in pattern_to_fill:
-                print(pattern)
                 template = template.replace(pattern, self.get_value_of_pattern(pattern, self.workbook))
         return template
 
@@ -93,7 +92,7 @@ class Equipment(object):
                 self.unfilled_variable_counter = self.unfilled_variable_counter + 1
                 return "<unavailable to fill out>"
             else:
-                return None
+                return result
         elif isinstance(instanceOfSplitPattern, TextParsing):
             result = workbook[splitPattern[0]].get_text_by_title(splitPattern[1])
             if result is None:

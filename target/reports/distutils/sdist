@@ -3,8 +3,8 @@ running egg_info
 creating NetScriptGen.egg-info
 writing NetScriptGen.egg-info/PKG-INFO
 writing dependency_links to NetScriptGen.egg-info/dependency_links.txt
-writing entry points to NetScriptGen.egg-info/entry_points.txt
 writing top-level names to NetScriptGen.egg-info/top_level.txt
+writing entry points to NetScriptGen.egg-info/entry_points.txt
 writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'
 reading manifest file 'NetScriptGen.egg-info/SOURCES.txt'
 writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'

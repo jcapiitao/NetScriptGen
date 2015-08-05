@@ -2,12 +2,12 @@
 
 from unittest import TestCase
 from process.ArrayParsing import ArrayParsing
-from utils.ExcelFile import getSheet
+from utils.ExcelWorkbookManager import get_sheet
 
 
 class ArrayParsingTests(TestCase):
 
-    sheet = ArrayParsing(getSheet('arrayparsing_test'))
+    sheet = ArrayParsing(get_sheet('arrayparsing_test'))
 
     def test_get_param_by_index(self):
         self.assertEqual(self.sheet.get_param_by_index('105', 'Gateway'), '10.2.2.254')

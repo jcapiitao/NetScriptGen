@@ -11,11 +11,11 @@ from equipment.Equipment import Equipment
 from function.ReplaceValue import *
 from equipment.feature.Vlan import Vlan
 from equipment.feature.Interface import Interface
-from utils.ExcelFile import getExcelWorkbook
+from utils.ExcelWorkbookManager import get_excel_workbook
 from utils.files import get_full_path
 
 
-wb = getExcelWorkbook()
+wb = get_excel_workbook()
 global_template_file = get_full_path('ios_script_sample2.txt')
 sheet_names = wb.sheet_names()
 workbook = dict()
