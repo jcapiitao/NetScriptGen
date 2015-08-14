@@ -1,0 +1,188 @@
+Collecting mockito
+  Using cached mockito-0.5.2.tar.gz
+    Complete output from command python setup.py egg_info:
+    Downloading http://pypi.python.org/packages/source/d/distribute/distribute-0.6.10.tar.gz
+    Extracting in /var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/tmpr8yml5cw
+    Now working in /var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/tmpr8yml5cw/distribute-0.6.10
+    Building a Distribute egg in /private/var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/pip-build-kepvk1e6/mockito
+    creating build
+    creating build/src
+    creating build/src/docs
+    creating build/src/docs/_theme
+    creating build/src/docs/_theme/nature
+    creating build/src/docs/_theme/nature/static
+    creating build/src/docs/build
+    creating build/src/docs/build/html
+    creating build/src/docs/build/html/_sources
+    creating build/src/docs/build/html/_static
+    creating build/src/setuptools
+    creating build/src/setuptools/command
+    creating build/src/setuptools/tests
+    creating build/src/tests
+    creating build/src/tests/shlib_test
+    copying setuptools/__init__.py -> build/src/setuptools
+    copying setuptools/archive_util.py -> build/src/setuptools
+    copying setuptools/depends.py -> build/src/setuptools
+    copying setuptools/dist.py -> build/src/setuptools
+    copying setuptools/extension.py -> build/src/setuptools
+    copying setuptools/package_index.py -> build/src/setuptools
+    copying setuptools/sandbox.py -> build/src/setuptools
+    copying setuptools/tests/__init__.py -> build/src/setuptools/tests
+    copying setuptools/tests/doctest.py -> build/src/setuptools/tests
+    copying setuptools/tests/test_build_ext.py -> build/src/setuptools/tests
+    copying setuptools/tests/test_develop.py -> build/src/setuptools/tests
+    copying setuptools/tests/test_easy_install.py -> build/src/setuptools/tests
+    copying setuptools/tests/test_packageindex.py -> build/src/setuptools/tests
+    copying setuptools/tests/test_resources.py -> build/src/setuptools/tests
+    copying setuptools/tests/test_sandbox.py -> build/src/setuptools/tests
+    copying setuptools/tests/test_upload_docs.py -> build/src/setuptools/tests
+    copying setuptools/command/__init__.py -> build/src/setuptools/command
+    copying setuptools/command/alias.py -> build/src/setuptools/command
+    copying setuptools/command/bdist_egg.py -> build/src/setuptools/command
+    copying setuptools/command/bdist_rpm.py -> build/src/setuptools/command
+    copying setuptools/command/bdist_wininst.py -> build/src/setuptools/command
+    copying setuptools/command/build_ext.py -> build/src/setuptools/command
+    copying setuptools/command/build_py.py -> build/src/setuptools/command
+    copying setuptools/command/develop.py -> build/src/setuptools/command
+    copying setuptools/command/easy_install.py -> build/src/setuptools/command
+    copying setuptools/command/egg_info.py -> build/src/setuptools/command
+    copying setuptools/command/install.py -> build/src/setuptools/command
+    copying setuptools/command/install_egg_info.py -> build/src/setuptools/command
+    copying setuptools/command/install_lib.py -> build/src/setuptools/command
+    copying setuptools/command/install_scripts.py -> build/src/setuptools/command
+    copying setuptools/command/register.py -> build/src/setuptools/command
+    copying setuptools/command/rotate.py -> build/src/setuptools/command
+    copying setuptools/command/saveopts.py -> build/src/setuptools/command
+    copying setuptools/command/sdist.py -> build/src/setuptools/command
+    copying setuptools/command/setopt.py -> build/src/setuptools/command
+    copying setuptools/command/test.py -> build/src/setuptools/command
+    copying setuptools/command/upload.py -> build/src/setuptools/command
+    copying setuptools/command/upload_docs.py -> build/src/setuptools/command
+    copying setuptools/tests/win_script_wrapper.txt -> build/src/setuptools/tests
+    copying setuptools/cli.exe -> build/src/setuptools
+    copying setuptools/gui.exe -> build/src/setuptools
+    copying tests/install_test.py -> build/src/tests
+    copying tests/test_distribute_setup.py -> build/src/tests
+    copying tests/shlib_test/setup.py -> build/src/tests/shlib_test
+    copying tests/shlib_test/test_hello.py -> build/src/tests/shlib_test
+    copying tests/shlib_test/hello.c -> build/src/tests/shlib_test
+    copying tests/shlib_test/hellolib.c -> build/src/tests/shlib_test
+    copying tests/shlib_test/hello.pyx -> build/src/tests/shlib_test
+    copying tests/api_tests.txt -> build/src/tests
+    RefactoringTool: Skipping implicit fixer: buffer
+    RefactoringTool: Skipping implicit fixer: idioms
+    RefactoringTool: Skipping implicit fixer: set_literal
+    RefactoringTool: Skipping implicit fixer: ws_comma
+    RefactoringTool: Refactored build/src/tests/api_tests.txt
+    RefactoringTool: Files that were modified:
+    RefactoringTool: build/src/tests/api_tests.txt
+    --- build/src/tests/api_tests.txt	(original)
+    +++ build/src/tests/api_tests.txt	(refactored)
+    @@ -39,7 +39,7 @@
+         >>> dist.py_version == sys.version[:3]
+         True
+    
+    -    >>> print dist.platform
+    +    >>> print(dist.platform)
+         None
+    
+     Including various computed attributes::
+    @@ -199,7 +199,7 @@
+     You can ask a WorkingSet to ``find()`` a distribution matching a requirement::
+    
+         >>> from pkg_resources import Requirement
+    -    >>> print ws.find(Requirement.parse("Foo==1.0"))    # no match, return None
+    +    >>> print(ws.find(Requirement.parse("Foo==1.0")))    # no match, return None
+         None
+    
+         >>> ws.find(Requirement.parse("Bar==0.9"))  # match, return distribution
+    @@ -211,7 +211,7 @@
+         >>> try:
+         ...     ws.find(Requirement.parse("Bar==1.0"))
+         ... except VersionConflict:
+    -    ...     print 'ok'
+    +    ...     print('ok')
+         ok
+    
+     You can subscribe a callback function to receive notifications whenever a new
+    @@ -219,7 +219,7 @@
+     once for each existing distribution in the working set, and then is called
+     again for new distributions added thereafter::
+    
+    -    >>> def added(dist): print "Added", dist
+    +    >>> def added(dist): print("Added", dist)
+         >>> ws.subscribe(added)
+         Added Bar 0.9
+         >>> foo12 = Distribution(project_name="Foo", version="1.2", location="f12")
+    copying docs/conf.py -> build/src/docs
+    copying docs/easy_install.txt -> build/src/docs
+    copying docs/index.txt -> build/src/docs
+    copying docs/pkg_resources.txt -> build/src/docs
+    copying docs/python3.txt -> build/src/docs
+    copying docs/roadmap.txt -> build/src/docs
+    copying docs/setuptools.txt -> build/src/docs
+    copying docs/using.txt -> build/src/docs
+    copying docs/build/html/_sources/easy_install.txt -> build/src/docs/build/html/_sources
+    copying docs/build/html/_sources/index.txt -> build/src/docs/build/html/_sources
+    copying docs/build/html/_sources/pkg_resources.txt -> build/src/docs/build/html/_sources
+    copying docs/build/html/_sources/python3.txt -> build/src/docs/build/html/_sources
+    copying docs/build/html/_sources/roadmap.txt -> build/src/docs/build/html/_sources
+    copying docs/build/html/_sources/setuptools.txt -> build/src/docs/build/html/_sources
+    copying docs/build/html/_sources/using.txt -> build/src/docs/build/html/_sources
+    copying docs/_theme/nature/theme.conf -> build/src/docs/_theme/nature
+    copying docs/build/html/_static/basic.css -> build/src/docs/build/html/_static
+    copying docs/build/html/_static/nature.css -> build/src/docs/build/html/_static
+    copying docs/build/html/_static/pygments.css -> build/src/docs/build/html/_static
+    copying docs/_theme/nature/static/pygments.css -> build/src/docs/_theme/nature/static
+    copying docs/_theme/nature/static/nature.css_t -> build/src/docs/_theme/nature/static
+    copying docs/Makefile -> build/src/docs
+    copying distribute_setup.py -> build/src
+    copying easy_install.py -> build/src
+    copying pkg_resources.py -> build/src
+    copying setup.py -> build/src
+    copying site.py -> build/src
+    copying CHANGES.txt -> build/src
+    copying CONTRIBUTORS.txt -> build/src
+    copying DEVGUIDE.txt -> build/src
+    copying README.txt -> build/src
+    copying MANIFEST.in -> build/src
+    copying launcher.c -> build/src
+    Skipping implicit fixer: buffer
+    Skipping implicit fixer: idioms
+    Skipping implicit fixer: set_literal
+    Skipping implicit fixer: ws_comma
+    /Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/importlib/_bootstrap.py:321: UserWarning: Module __main__ was already imported from setup.py, but /Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/NetScriptGen-0.1.0-py3.4.egg is being added to sys.path
+      return f(*args, **kwds)
+    /Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/distutils/dist.py:260: UserWarning: Unknown distribution option: 'zip_safe'
+      warnings.warn(msg)
+    /Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/distutils/dist.py:260: UserWarning: Unknown distribution option: 'test_suite'
+      warnings.warn(msg)
+    /Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/distutils/dist.py:260: UserWarning: Unknown distribution option: 'entry_points'
+      warnings.warn(msg)
+    usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+       or: setup.py --help [cmd1 cmd2 ...]
+       or: setup.py --help-commands
+       or: setup.py cmd --help
+    
+    error: invalid command 'bdist_egg'
+    /private/var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/pip-build-kepvk1e6/mockito/distribute-0.6.10-py3.4.egg
+    Traceback (most recent call last):
+      File "/private/var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/pip-build-kepvk1e6/mockito/distribute_setup.py", line 143, in use_setuptools
+        raise ImportError
+    ImportError
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "<string>", line 20, in <module>
+      File "/private/var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/pip-build-kepvk1e6/mockito/setup.py", line 5, in <module>
+        use_setuptools()
+      File "/private/var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/pip-build-kepvk1e6/mockito/distribute_setup.py", line 145, in use_setuptools
+        return _do_download(version, download_base, to_dir, download_delay)
+      File "/private/var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/pip-build-kepvk1e6/mockito/distribute_setup.py", line 125, in _do_download
+        _build_egg(egg, tarball, to_dir)
+      File "/private/var/folders/gw/jhx_mp814kv3mk6lt5ljfs900000gn/T/pip-build-kepvk1e6/mockito/distribute_setup.py", line 116, in _build_egg
+        raise IOError('Could not build the egg.')
+    OSError: Could not build the egg.
+    
+    ----------------------------------------

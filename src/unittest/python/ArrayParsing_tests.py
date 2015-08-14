@@ -2,12 +2,13 @@
 
 from unittest import TestCase
 from process.ArrayParsing import ArrayParsing
-from utils.ExcelWorkbookManager import get_sheet
+from utils.ExcelWorkbookManager import get_sheet_test
 
 
 class ArrayParsingTests(TestCase):
 
-    sheet = ArrayParsing(get_sheet('arrayparsing_test'))
+    def setUp(self):
+        self.sheet = ArrayParsing(get_sheet_test('arrayParsing_test.xlsx'))
 
     def test_get_param_by_index(self):
         self.assertEqual(self.sheet.get_param_by_index('105', 'Gateway'), '10.2.2.254')
@@ -26,20 +27,22 @@ class ArrayParsingTests(TestCase):
 
     def test_get_all_param_by_index(self):
         ref_dict = {'Vlans ID': '105', 'Name': 'VLAN-VOICE-02', 'Subnet': '10.2.2.0', 'Mask': '255.255.255.0',
-                    'Gateway': '10.2.2.254', 'Description': '', 'Subnet_arp': '10.2.2.224', 'Wildcard_arp': '0.0.0.15'}
+                    'Gateway': '10.2.2.254', 'Description': '', 'Subnet_arp': '10.2.2.224', 'Wildcard_arp': '0.0.0.15',
+                    'Template Default': 'Non', 'Template Snooping': 'Non', 'Template Inspection': 'Non'}
         self.assertDictEqual(ref_dict, self.sheet.get_all_param_by_index('105'))
 
     def test_get_nbr_of_rows(self):
         self.assertEqual(self.sheet.get_nbr_of_rows(), 23)
 
     def test_get_nbr_of_cols(self):
-        self.assertEqual(self.sheet.get_nbr_of_cols(), 9)
+        self.assertEqual(self.sheet.get_nbr_of_cols(), 11)
 
     def test_get_nbr_of_cols_in_row(self):
-        self.assertEquals(self.sheet.get_nbr_of_cols_in_row(0), 8)
+        self.assertEquals(self.sheet.get_nbr_of_cols_in_row(0), 11)
 
     def test_get_all_headers(self):
-        ref_list = ['Vlans ID', 'Name', 'Subnet', 'Mask', 'Gateway', 'Description', 'Subnet_arp', 'Wildcard_arp']
+        ref_list = ['Vlans ID', 'Name', 'Subnet', 'Mask', 'Gateway', 'Description', 'Subnet_arp', 'Wildcard_arp',
+                    'Template Default', 'Template Snooping', 'Template Inspection']
         self.assertListEqual(ref_list, self.sheet.get_all_headers())
 
     def test_get_all_indexes(self):
@@ -57,8 +60,10 @@ class ArrayParsingTests(TestCase):
         self.assertListEqual(ref_list, self.sheet.is_duplication(self.sheet.get_all_headers()))
 
     def test_get_all_commands(self):
-        ref_dict = {'Default': 'test1', 'Snooping': 'test2', 'Inspection': ''}
-        self.assertDictEqual(ref_dict, self.sheet.get_local_templates())
+        expected = [('Default', '{{Name}} and {{Subnet}} and\n{{Gateway}}'),
+            ('Snooping', '{{Subnet_arp}}\n{{Wildcard_arp}}'), ('Inspection', '')]
+        got = self.sheet.get_local_templates()
+        self.assertListEqual(expected, got)
 
     def test_get_row_where_value(self):
         self.assertEqual(self.sheet.get_row_where_value(105), 11)

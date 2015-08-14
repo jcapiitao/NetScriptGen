@@ -2,12 +2,13 @@
 
 from unittest import TestCase
 from process.TextParsing import TextParsing
-from utils.ExcelWorkbookManager import get_sheet
+from utils.ExcelWorkbookManager import get_sheet_test
 
 
 class TextParsingTests(TestCase):
 
-    sheet = TextParsing(get_sheet('textparsing_test'))
+    def setUp(self):
+        self.sheet = TextParsing(get_sheet_test('textparsing_test.xlsx'))
 
     def test_get_text_by_title(self):
         self.assertEqual(self.sheet.get_text_by_title('banner'), 'test')

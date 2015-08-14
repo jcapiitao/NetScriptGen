@@ -1,10 +1,11 @@
 running sdist
 running egg_info
 creating NetScriptGen.egg-info
-writing NetScriptGen.egg-info/PKG-INFO
-writing dependency_links to NetScriptGen.egg-info/dependency_links.txt
-writing top-level names to NetScriptGen.egg-info/top_level.txt
+writing pbr to NetScriptGen.egg-info/pbr.json
 writing entry points to NetScriptGen.egg-info/entry_points.txt
+writing NetScriptGen.egg-info/PKG-INFO
+writing top-level names to NetScriptGen.egg-info/top_level.txt
+writing dependency_links to NetScriptGen.egg-info/dependency_links.txt
 writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'
 reading manifest file 'NetScriptGen.egg-info/SOURCES.txt'
 writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'
@@ -13,44 +14,35 @@ warning: sdist: standard file not found: should have one of README, README.rst, 
 running check
 warning: check: missing required meta-data: url
 
-warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
-
-creating NetScriptGen-1.0.dev0
-creating NetScriptGen-1.0.dev0/NetScriptGen.egg-info
-creating NetScriptGen-1.0.dev0/equipment
-creating NetScriptGen-1.0.dev0/equipment/cisco
-creating NetScriptGen-1.0.dev0/equipment/feature
-creating NetScriptGen-1.0.dev0/function
-creating NetScriptGen-1.0.dev0/process
-creating NetScriptGen-1.0.dev0/utils
-making hard links in NetScriptGen-1.0.dev0...
-hard linking __init__.py -> NetScriptGen-1.0.dev0
-hard linking main.py -> NetScriptGen-1.0.dev0
-hard linking setup.py -> NetScriptGen-1.0.dev0
-hard linking NetScriptGen.egg-info/PKG-INFO -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
-hard linking NetScriptGen.egg-info/SOURCES.txt -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
-hard linking NetScriptGen.egg-info/dependency_links.txt -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
-hard linking NetScriptGen.egg-info/entry_points.txt -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
-hard linking NetScriptGen.egg-info/top_level.txt -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
-hard linking NetScriptGen.egg-info/zip-safe -> NetScriptGen-1.0.dev0/NetScriptGen.egg-info
-hard linking equipment/Equipment.py -> NetScriptGen-1.0.dev0/equipment
-hard linking equipment/__init__.py -> NetScriptGen-1.0.dev0/equipment
-hard linking equipment/cisco/AccessSwitch.py -> NetScriptGen-1.0.dev0/equipment/cisco
-hard linking equipment/cisco/__init__.py -> NetScriptGen-1.0.dev0/equipment/cisco
-hard linking equipment/feature/Interface.py -> NetScriptGen-1.0.dev0/equipment/feature
-hard linking equipment/feature/Vlan.py -> NetScriptGen-1.0.dev0/equipment/feature
-hard linking equipment/feature/__init__.py -> NetScriptGen-1.0.dev0/equipment/feature
-hard linking function/ReplaceValue.py -> NetScriptGen-1.0.dev0/function
-hard linking function/__init__.py -> NetScriptGen-1.0.dev0/function
-hard linking process/ArrayParsing.py -> NetScriptGen-1.0.dev0/process
-hard linking process/ExtractExcelData.py -> NetScriptGen-1.0.dev0/process
-hard linking process/ListParsing.py -> NetScriptGen-1.0.dev0/process
-hard linking process/TextParsing.py -> NetScriptGen-1.0.dev0/process
-hard linking process/__init__.py -> NetScriptGen-1.0.dev0/process
-hard linking utils/ExcelFile.py -> NetScriptGen-1.0.dev0/utils
-hard linking utils/__init__.py -> NetScriptGen-1.0.dev0/utils
-hard linking utils/files.py -> NetScriptGen-1.0.dev0/utils
-Writing NetScriptGen-1.0.dev0/setup.cfg
+creating NetScriptGen-0.1.0
+creating NetScriptGen-0.1.0/NetScriptGen.egg-info
+creating NetScriptGen-0.1.0/equipment
+creating NetScriptGen-0.1.0/equipment/feature
+creating NetScriptGen-0.1.0/process
+creating NetScriptGen-0.1.0/utils
+making hard links in NetScriptGen-0.1.0...
+hard linking __init__.py -> NetScriptGen-0.1.0
+hard linking __main__.py -> NetScriptGen-0.1.0
+hard linking setup.py -> NetScriptGen-0.1.0
+hard linking NetScriptGen.egg-info/PKG-INFO -> NetScriptGen-0.1.0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/SOURCES.txt -> NetScriptGen-0.1.0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/dependency_links.txt -> NetScriptGen-0.1.0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/entry_points.txt -> NetScriptGen-0.1.0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/pbr.json -> NetScriptGen-0.1.0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/top_level.txt -> NetScriptGen-0.1.0/NetScriptGen.egg-info
+hard linking NetScriptGen.egg-info/zip-safe -> NetScriptGen-0.1.0/NetScriptGen.egg-info
+hard linking equipment/Equipment.py -> NetScriptGen-0.1.0/equipment
+hard linking equipment/__init__.py -> NetScriptGen-0.1.0/equipment
+hard linking equipment/feature/Interface.py -> NetScriptGen-0.1.0/equipment/feature
+hard linking equipment/feature/Vlan.py -> NetScriptGen-0.1.0/equipment/feature
+hard linking equipment/feature/__init__.py -> NetScriptGen-0.1.0/equipment/feature
+hard linking process/ArrayParsing.py -> NetScriptGen-0.1.0/process
+hard linking process/ListParsing.py -> NetScriptGen-0.1.0/process
+hard linking process/TextParsing.py -> NetScriptGen-0.1.0/process
+hard linking process/__init__.py -> NetScriptGen-0.1.0/process
+hard linking utils/ExcelWorkbookManager.py -> NetScriptGen-0.1.0/utils
+hard linking utils/__init__.py -> NetScriptGen-0.1.0/utils
+Writing NetScriptGen-0.1.0/setup.cfg
 creating dist
 Creating tar archive
-removing 'NetScriptGen-1.0.dev0' (and everything under it)
+removing 'NetScriptGen-0.1.0' (and everything under it)

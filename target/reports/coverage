@@ -1,18 +1,15 @@
 Name                          Stmts   Miss  Cover   Missing
 -----------------------------------------------------------
-__main__                         50     10    80%   25-27, 29-35
+__main__                         48     10    79%   24-26, 28-34
 equipment                         1      0   100%   
-equipment.Equipment              86     15    83%   23-24, 36-39, 84-85, 92-93, 99-100, 104-105, 112
+equipment.Equipment              88     10    89%   23-24, 37-40, 80, 106-107, 114
 equipment.feature                 1      0   100%   
 equipment.feature.Interface      28      0   100%   
-equipment.feature.Vlan           57     43    25%   16-51, 54-58, 61-69, 72-74, 77
-function                          1      0   100%   
-function.ReplaceValue            66     53    20%   16-20, 25-52, 55-59, 62-89, 92
 process                           1      0   100%   
-process.ArrayParsing            104      6    94%   24, 28, 69, 149, 153, 169
-process.ListParsing              82      5    94%   51-52, 62, 68, 93
-process.TextParsing              33      5    85%   26-29, 33
+process.ArrayParsing            104      6    94%   24, 28, 69, 151, 155, 171
+process.ListParsing              80      6    92%   43-44, 54, 59, 81-82
+process.TextParsing              31      5    84%   20-23, 26
 utils                             1      0   100%   
-utils.ExcelWorkbookManager       22      2    91%   22-23
+utils.ExcelWorkbookManager       30      2    93%   28-29
 -----------------------------------------------------------
-TOTAL                           533    139    74%   
+TOTAL                           413     39    91%   

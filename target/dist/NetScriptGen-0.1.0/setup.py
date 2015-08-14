@@ -13,7 +13,7 @@ if __name__ == '__main__':
           license = '',
           url = '',
           scripts = [],
-          packages = ['equipment', 'function', 'process', 'utils', 'equipment.cisco', 'equipment.feature'],
+          packages = ['equipment', 'process', 'utils', 'equipment.feature'],
           py_modules = ['__init__', '__main__'],
           classifiers = ['Development Status :: 3 - Alpha', 'Programming Language :: Python'],
           entry_points={

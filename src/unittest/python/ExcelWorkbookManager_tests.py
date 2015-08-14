@@ -7,8 +7,9 @@ import xlrd
 
 class ExcelWorkbookManagerTests(TestCase):
 
-    test_file = 'test.xlsx'
-    path = get_full_path(test_file)
+    def setUp(self):
+        self.test_file = 'test.xlsx'
+        self.path = get_full_path(self.test_file)
 
     def test_get_test_excel_file(self):
         self.assertEqual(get_full_path() + '/' + self.test_file, self.path)

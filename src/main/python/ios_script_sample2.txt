@@ -14,7 +14,7 @@ Récupérer un texte
 {{textparsing_test!banner}}
 
 Imbriquation de requêtes
-{{VLAN!{{Global!{{Global variable!hostname:host:1}}:VLAN#Admin}}:Name}}
+{{VLAN!((Global!((Global variable!hostname:host:1)):VLAN#Admin)):Name}}
 
 
 

@@ -115,7 +115,8 @@ class ArrayParsing(object):
             indexes.remove('')
         return indexes
 
-    def is_key_in_list(self, key, list):
+    @staticmethod
+    def is_key_in_list(key, my_list):
         """ This method check if a given key is present is a list.
 
         Args:
@@ -125,12 +126,13 @@ class ArrayParsing(object):
         Returns:
             This method return 'True' if the key is present, 'False' otherwise.
         """
-        if key in list:
+        if key in my_list:
             return True
         else:
             return False
 
-    def is_duplication(self, key_list):
+    @staticmethod
+    def is_duplication(key_list):
         """ This method controls if there is a duplicate header.
 
         Args:
@@ -145,7 +147,7 @@ class ArrayParsing(object):
         response = list()
         for key in key_list:
             count = key_list.count(str(key))
-            if count > 1 and not key in response and key != '':
+            if count > 1 and key not in response and key != '':
                 response.append(key)
         if len(response) == 0:
             response.append(False)
@@ -158,9 +160,9 @@ class ArrayParsing(object):
          data contained into the array.
 
          Returns:
-            A dictionary with the title of the commands as a key, and the commands associated.
+            A list which contains a dictionary with the title of the commands as a key, and the template associated.
         """
-        commands = dict()
+        template = list()
         command_row = self.get_row_where_value('Default')
         if command_row != -1:
             for row_idx in range(command_row, self.get_nbr_of_rows(), 2):
@@ -169,11 +171,11 @@ class ArrayParsing(object):
                     cell_value = int(cell.value)
                 else:
                     cell_value = cell.value
-                if (cell_value != "" and (row_idx + 1) < self.get_nbr_of_rows()):
-                    commands[cell_value] = str(self.xl_sheet.cell(row_idx + 1, 0).value)
+                if cell_value != '' and (row_idx + 1) < self.get_nbr_of_rows():
+                    template.append((cell_value, str(self.xl_sheet.cell(row_idx + 1, 0).value)))
                 else:
-                    commands[cell_value] = ""
-            return commands
+                    template.append((cell_value, ''))
+            return template
 
     def get_row_where_value(self, value):
         """ Get the number of the row where the value appears in the list of indexes.

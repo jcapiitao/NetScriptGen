@@ -5,31 +5,32 @@ from process.ArrayParsing import ArrayParsing
 from process.TextParsing import TextParsing
 from process.ListParsing import ListParsing
 
+
 class Equipment(object):
-    #localVariableRegexp = '{{.*}}'
-    #globalVariableRegexp = '\[\[.*\]\]'
 
     def __init__(self, hostname, template, workbook):
         self.hostname = hostname
         self.template = template
         self.workbook = workbook
-        self.unfilled_variable_counter = 0
-        self.pattern_contains_brackets = '{{.*}}'
+        self.unresolved = 0
+        self.pattern_contains_braces = '(?<=\{\{).+?(?=\}\})'
+        self.pattern_contains_brackets = '\(\((.*)\)\)'
         self.pattern_contains_exclamation_and_colon = '[!,:]'
 
     def get_script(self):
         script = self.fill_out_the_template()
-        if self.unfilled_variable_counter != 0:
-            line = "! /!\----- Warning : There is %s unfilled variable -----/!\\\n" % self.unfilled_variable_counter
+        if self.unresolved != 0:
+            line = "! ----- Warning : There is %s unresolved variable -----\n" % self.unresolved
             script = line + script
         return script
 
     def fill_out_the_template(self):
-        pattern_to_fill = re.findall(self.pattern_contains_brackets, self.template)
+        pattern_to_fill = re.findall(self.pattern_contains_braces, self.template)
         template = self.template
         if pattern_to_fill:
             for pattern in pattern_to_fill:
-                template = template.replace(pattern, self.get_value_of_pattern(pattern, self.workbook))
+                template = template.replace(''.join(['{{', pattern, '}}']),
+                                            self.get_value_of_var(pattern, self.workbook))
         return template
 
     def save_script_as(self, path_of_the_folder, file_name):
@@ -38,76 +39,76 @@ class Equipment(object):
             file.write(self.get_script())
         file.close()
 
-    def get_value_of_pattern(self, pattern, workbook):
-        match_brackets = re.findall(self.pattern_contains_brackets, pattern)
-        if match_brackets:
-            for match in match_brackets:
-                if re.findall(self.pattern_contains_exclamation_and_colon, match):
-                    return self.get_value_pattern_with_exclamation_and_colon(match, workbook)
-                else:
-                    return self.get_value_from_global_sheet(match)
+    def get_value_of_var(self, pattern, workbook):
+        if re.findall(self.pattern_contains_exclamation_and_colon, pattern):
+            return self.get_var_with_exclamation_and_colon(pattern, workbook)
+        else:
+            return self.get_var_from_global_sheet(pattern)
 
-
-    def get_value_from_global_sheet(self, parameter):
+    def get_var_from_global_sheet(self, parameter):
         # If the parameter is a title of a sheet, we need to get data from this sheet
-        parameter = self.remove_brackets(parameter)
+        # parameter = self.remove_braces(parameter)
         if parameter in self.workbook.keys():
-            print("The parameter '%s 'is title of a sheet" %parameter)
             index = self.workbook['Global'].get_param_by_index(self.hostname, parameter)
-            data_of_the_index = self.workbook[parameter].get_all_param_by_index(index)
+            data = self.workbook[parameter].get_all_param_by_index(index)
             local_templates = self.workbook[parameter].get_local_templates()
-            local_template = local_templates[self.workbook[parameter].get_param_by_index(index, "Template")]
-            return self.fill_local_template(data_of_the_index, local_template)
+            output = ''
+            for template in local_templates:
+                template_name = 'Template ' + template[0]
+                if template_name in self.workbook[parameter].get_all_headers():
+                    if self.workbook[parameter].get_param_by_index(index, template_name) == "Oui":
+                        output += self.fill_local_template(self, data, template[1])
+            return output
         else:
             return self.workbook['Global'].get_param_by_index(self.hostname, parameter)
 
+    @staticmethod
     def fill_local_template(self, data, local_template):
-        is_brackets = re.findall(self.pattern_contains_brackets, local_template)
+        is_brackets = re.findall(self.pattern_contains_braces, local_template)
         if is_brackets:
             for value in is_brackets:
-                local_template = local_template.replace(value, data[self.remove_brackets(value)])
+                local_template = local_template.replace(''.join(['{{', value, '}}']), data[value])
         return local_template
 
-
-    def get_value_pattern_with_exclamation_and_colon(self, pattern, workbook):
-        pattern = self.remove_brackets(pattern)
+    def get_var_with_exclamation_and_colon(self, pattern, workbook):
         is_brackets = re.findall(self.pattern_contains_brackets, pattern)
         if is_brackets:
-            for pattern_with_backets in is_brackets:
-                value = self.get_value_pattern_with_exclamation_and_colon(pattern_with_backets, workbook)
+            for pattern_with_brackets in is_brackets:
+                value = self.get_var_with_exclamation_and_colon(pattern_with_brackets, workbook)
                 pattern = re.sub(self.pattern_contains_brackets, value, pattern)
-        splitPattern = re.split("[!,:]+", pattern)
-        instanceOfSplitPattern = workbook[splitPattern[0]]
-        if isinstance(instanceOfSplitPattern, ArrayParsing):
-            result = workbook[splitPattern[0]].get_param_by_index(splitPattern[1], splitPattern[2])
+        if re.findall(self.pattern_contains_braces, pattern):
+            pattern = self.remove_braces(pattern)
+        split_pattern = re.split("[!,:]+", pattern)
+        instance_of_object = workbook[split_pattern[0]]
+        if isinstance(instance_of_object, ArrayParsing):
+            result = workbook[split_pattern[0]].get_param_by_index(split_pattern[1], split_pattern[2])
             if result is None:
-                self.unfilled_variable_counter = self.unfilled_variable_counter + 1
-                return "<unavailable to fill out>"
+                self.unresolved += 1
+                return "<unresolved>"
             else:
                 return result
-        elif isinstance(instanceOfSplitPattern, ListParsing):
-            result = workbook[splitPattern[0]].get_value_by_bag_and_key_and_index(splitPattern[1], splitPattern[2],
-                                                                                  int(splitPattern[3]))
+        elif isinstance(instance_of_object, ListParsing):
+            result = workbook[split_pattern[0]].get_value_by_bag_and_key_and_index(split_pattern[1], split_pattern[2],
+                                                                                   int(split_pattern[3]))
             if result is None:
-                self.unfilled_variable_counter = self.unfilled_variable_counter + 1
-                return "<unavailable to fill out>"
+                self.unresolved += 1
+                return "<unresolved>"
             else:
                 return result
-        elif isinstance(instanceOfSplitPattern, TextParsing):
-            result = workbook[splitPattern[0]].get_text_by_title(splitPattern[1])
+        elif isinstance(instance_of_object, TextParsing):
+            result = workbook[split_pattern[0]].get_text_by_title(split_pattern[1])
             if result is None:
-                self.unfilled_variable_counter = self.unfilled_variable_counter + 1
-                return "<unavailable to fill out>"
+                self.unresolved += 1
+                return "<unresolved>"
             else:
                 return result
         else:
-            self.unfilled_variable_counter = self.unfilled_variable_counter + 1
-            return "<unavailable to fill out>"
+            self.unresolved += 1
+            return "<unresolved>"
 
-
-    def remove_brackets(self, string):
+    @staticmethod
+    def remove_braces(string):
         return string[2:-2]
 
-    def get_unfilled_variable_counter(self):
-        return int(self.unfilled_variable_counter)
-
+    def get_unresolved_var(self):
+        return int(self.unresolved)

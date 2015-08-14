@@ -9,13 +9,12 @@ from process.ArrayParsing import ArrayParsing
 from process.TextParsing import TextParsing
 from process.ListParsing import ListParsing
 from equipment.Equipment import Equipment
-from function.ReplaceValue import *
-from equipment.feature.Vlan import Vlan
 from equipment.feature.Interface import Interface
 from utils.ExcelWorkbookManager import *
 
 
 def main(argv=None):
+
     excel_file = get_full_path('test.xlsx')
     template_file = get_full_path('ios_script_sample2.txt')
     if argv is None:
@@ -64,7 +63,7 @@ def main(argv=None):
     print("-------------- Script Output --------------")
     print(equipment.get_script())
     # quipment.save_script_as(get_full_path(), hostname)
-    # print("There is %s unfilled variable " % equipment.get_unfilled_variable_counter())
+    # print("There is %s unfilled variable " % equipment.get_unresolved_var())
 
 if __name__ == "__main__":
     main()

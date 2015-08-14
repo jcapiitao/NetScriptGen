@@ -2,12 +2,13 @@
 
 from unittest import TestCase
 from process.ListParsing import ListParsing
-from utils.ExcelWorkbookManager import get_sheet
+from utils.ExcelWorkbookManager import get_sheet_test
 
 
 class ListParsingTests(TestCase):
 
-    sheet = ListParsing(get_sheet('listparsing_test'))
+    def setUp(self):
+        self.sheet = ListParsing(get_sheet_test('listparsing_test.xlsx'))
 
     def test_get_value_by_bag_and_key(self):
         values = list()
