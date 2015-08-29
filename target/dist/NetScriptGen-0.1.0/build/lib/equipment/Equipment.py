@@ -25,12 +25,12 @@ class Equipment(object):
         return script
 
     def fill_out_the_template(self):
-        pattern_to_fill = re.findall(self.pattern_contains_braces, self.template)
+        var_to_fill = re.findall(self.pattern_contains_braces, self.template)
         template = self.template
-        if pattern_to_fill:
-            for pattern in pattern_to_fill:
-                template = template.replace(''.join(['{{', pattern, '}}']),
-                                            self.get_value_of_var(pattern, self.workbook))
+        if var_to_fill:
+            for var in var_to_fill:
+                template = template.replace(''.join(['{{', var, '}}']),
+                                            self.get_value_of_var(var, self.workbook))
         return template
 
     def save_script_as(self, path_of_the_folder, file_name):
@@ -39,69 +39,73 @@ class Equipment(object):
             file.write(self.get_script())
         file.close()
 
-    def get_value_of_var(self, pattern, workbook):
-        if re.findall(self.pattern_contains_exclamation_and_colon, pattern):
-            return self.get_var_with_exclamation_and_colon(pattern, workbook)
+    def get_value_of_var(self, var, workbook):
+        if re.findall(self.pattern_contains_exclamation_and_colon, var):
+            return self.get_value_of_var_with_exclamation_and_colon(var, workbook)
         else:
-            return self.get_var_from_global_sheet(pattern)
+            return self.get_value_of_var_from_global_sheet(var)
 
-    def get_var_from_global_sheet(self, parameter):
-        # If the parameter is a title of a sheet, we need to get data from this sheet
-        # parameter = self.remove_braces(parameter)
+    def get_value_of_var_from_global_sheet(self, parameter):
+        # If the parameter is a title of a sheet, we need to get the data from this sheet
         if parameter in self.workbook.keys():
-            index = self.workbook['Global'].get_param_by_index(self.hostname, parameter)
-            data = self.workbook[parameter].get_all_param_by_index(index)
+            value_of_the_parameter = self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
+            data = self.workbook[parameter].get_all_param_by_index(value_of_the_parameter)
             local_templates = self.workbook[parameter].get_local_templates()
             output = ''
             for template in local_templates:
                 template_name = 'Template ' + template[0]
                 if template_name in self.workbook[parameter].get_all_headers():
-                    if self.workbook[parameter].get_param_by_index(index, template_name) == "Oui":
+                    if self.workbook[parameter].get_value_of_var_by_index_and_param(value_of_the_parameter, template_name) == "Oui":
                         output += self.fill_local_template(self, data, template[1])
             return output
+        # If the parameter/feature is only a variable (there is not a sheet for this feature)
         else:
-            return self.workbook['Global'].get_param_by_index(self.hostname, parameter)
+            return self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
 
     @staticmethod
     def fill_local_template(self, data, local_template):
-        is_brackets = re.findall(self.pattern_contains_braces, local_template)
-        if is_brackets:
-            for value in is_brackets:
+        is_braces = re.findall(self.pattern_contains_braces, local_template)
+        if is_braces:
+            for value in is_braces:
                 local_template = local_template.replace(''.join(['{{', value, '}}']), data[value])
         return local_template
 
-    def get_var_with_exclamation_and_colon(self, pattern, workbook):
-        is_brackets = re.findall(self.pattern_contains_brackets, pattern)
+    def get_value_of_var_with_exclamation_and_colon(self, var_with_exclamation_and_colon, workbook):
+        is_brackets = re.findall(self.pattern_contains_brackets, var_with_exclamation_and_colon)
         if is_brackets:
             for pattern_with_brackets in is_brackets:
-                value = self.get_var_with_exclamation_and_colon(pattern_with_brackets, workbook)
-                pattern = re.sub(self.pattern_contains_brackets, value, pattern)
-        if re.findall(self.pattern_contains_braces, pattern):
-            pattern = self.remove_braces(pattern)
-        split_pattern = re.split("[!,:]+", pattern)
-        instance_of_object = workbook[split_pattern[0]]
+                value = self.get_value_of_var_with_exclamation_and_colon(pattern_with_brackets, workbook)
+                var_with_exclamation_and_colon = re.sub(self.pattern_contains_brackets,
+                                                        value,
+                                                        var_with_exclamation_and_colon)
+        # We need to remove braces if this method is called for local templates
+        if re.findall(self.pattern_contains_braces, var_with_exclamation_and_colon):
+            var_with_exclamation_and_colon = self.remove_braces(var_with_exclamation_and_colon)
+        splitted_var = re.split("[!,:]+", var_with_exclamation_and_colon)
+        instance_of_object = workbook[splitted_var[0]]
         if isinstance(instance_of_object, ArrayParsing):
-            result = workbook[split_pattern[0]].get_param_by_index(split_pattern[1], split_pattern[2])
-            if result is None:
+            value = workbook[splitted_var[0]].get_value_of_var_by_index_and_param(splitted_var[1], splitted_var[2])
+            if value is None:
                 self.unresolved += 1
                 return "<unresolved>"
             else:
-                return result
+                return value
         elif isinstance(instance_of_object, ListParsing):
-            result = workbook[split_pattern[0]].get_value_by_bag_and_key_and_index(split_pattern[1], split_pattern[2],
-                                                                                   int(split_pattern[3]))
-            if result is None:
+            value = workbook[splitted_var[0]].get_value_by_bag_and_key_and_index(splitted_var[1],
+                                                                                 splitted_var[2],
+                                                                                 int(splitted_var[3]))
+            if value is None:
                 self.unresolved += 1
                 return "<unresolved>"
             else:
-                return result
+                return value
         elif isinstance(instance_of_object, TextParsing):
-            result = workbook[split_pattern[0]].get_text_by_title(split_pattern[1])
-            if result is None:
+            value = workbook[splitted_var[0]].get_text_by_title(splitted_var[1])
+            if value is None:
                 self.unresolved += 1
                 return "<unresolved>"
             else:
-                return result
+                return value
         else:
             self.unresolved += 1
             return "<unresolved>"

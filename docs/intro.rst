@@ -1,0 +1,69 @@
+=============
+Introduction
+=============
+
+Overview
+---------
+
+NetScriptGen is a Python_ library, which generates script for network equipment. The scripts are generated from parsing an Excel Workbook and a global template. NetScriptGen needs:
+
+- An excel Workbook with network data contained in structured array and sub-templates
+- A global template with variables to be fill in 
+
+NetScriptGen read the global template and attempt to fill out the variable by finding a relationship between the variable and the data contained into the Excel workbook. This is how a template with variable looks like:
+
+.. sourcecode::
+   hostname {{hostname}}
+   username {{general_data!user:name:1}} privilege 15 secret {{general_data!user:name:1}}
+   !
+   interface Vlan {{VLAN#ADMIN}}
+   description {{VLAN!((VLAN#ADMIN)):description}}
+   ip address {{VLAN!((VLAN#ADMIN)):subnet}} {{VLAN!((VLAN#ADMIN)):mask}}
+   no shutdown
+   !
+   !
+   banner motd @
+   {{Text:banner}}
+   @
+   end
+
+
+What is netscriptgen good for?
+----------------------------------
+
+Let's suppose you are working on a fresh network projet and need to prepare thousand
+of equipments for the access layer. After diving yourself on the design, you write 
+a global script that can suits for every equipments except a few values which are 
+specific for each equipment (hostname, VLAN IDs, VTP, SNMP and so on).
+With netscriptgen, it's really easy... you transform the global script into a global 
+template, and put all the data within an Excel workbook and then run the process.
+
+
+
+netscriptgen is universal
+----------------------------------
+
+All the intelligence is based on the global template and the sub-templates, netscriptgen only fill
+it with the specific data provided on the Excel workbook. Therefore, netscriptgen works with all
+the quipment provider as:
+
+- Cisco (Cisco IOS, Cisco Nexus, Cisco IOS-XR, Cisco IOS-XE, Aironet OS, Cisco ASA, Cisco CatOS)
+- Juniper (Junos)
+- Brocade
+- HP Switches
+- Force 10 Switches
+- Dell PowerConnect Switches
+- Extreme Networks
+- Enterasys
+
+
+
+NetScriptGen 0.1.0, the current version
+---------------------------
+
+The first version 0.1.0 includes:
+
+- NetScriptGen is tested to work under python 3.4
+- The Microsoft Excel spreadsheet file must use the XLSX format. This format uses the Open XML format
+that makes it easy for other programs, such as OpenOffice, to read XLSX files.
+

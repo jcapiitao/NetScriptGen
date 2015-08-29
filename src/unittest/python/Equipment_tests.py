@@ -3,10 +3,11 @@ from equipment.Equipment import Equipment
 from process.ArrayParsing import ArrayParsing
 from process.ListParsing import ListParsing
 from process.TextParsing import TextParsing
-from utils.ExcelWorkbookManager import get_sheet_test, get_test_file
+from utils.ExcelWorkbookManager import get_sheet_test
 
 
 class EquipmentTests(TestCase):
+
     def setUp(self):
         array_test, list_test = 'arrayParsing_test', 'listParsing_test'
         text_test, global_test = 'textParsing_test', 'global_test'
@@ -37,48 +38,48 @@ class EquipmentTests(TestCase):
 
     def test_get_var_from_global_sheet_is_sheet(self):
         expected = 'ADMRESEAU-1 and 10.1.255.0 and\n10.179.255.6210.1.0.224\n0.0.0.15'
-        got = self.equipment.get_var_from_global_sheet('VLAN')
+        got = self.equipment.get_value_of_var_from_global_sheet('VLAN')
         self.assertEqual(expected, got)
 
     def test_get_var_from_global_sheet_is_var(self):
         expected = 'CISCO 3750 V3-48PS'
-        got = self.equipment.get_var_from_global_sheet('Equipment')
+        got = self.equipment.get_value_of_var_from_global_sheet('Equipment')
         self.assertEqual(expected, got)
 
     def test_get_var_with_exclamation_and_colon_ArrayParsing(self):
         var_to_fill = 'VLAN!((VLAN!104:Name)):Gateway'
         expected = '10.1.1.254'
-        got = self.equipment.get_var_with_exclamation_and_colon(var_to_fill, self.workbook)
+        got = self.equipment.get_value_of_var_with_exclamation_and_colon(var_to_fill, self.workbook)
         self.assertEqual(expected, got)
 
     def test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved(self):
         var_to_fill = 'VLAN!((VLAN!Parcher:Name)):Gateway'
         expected = '<unresolved>'
-        got = self.equipment.get_var_with_exclamation_and_colon(var_to_fill, self.workbook)
+        got = self.equipment.get_value_of_var_with_exclamation_and_colon(var_to_fill, self.workbook)
         self.assertEqual(expected, got)
 
     def test_get_var_with_exclamation_and_colon_ListParsing(self):
         var_to_fill = 'listParsing_test!DNS:DNS Server:1'
         expected = '10.100.10.1'
-        got = self.equipment.get_var_with_exclamation_and_colon(var_to_fill, self.workbook)
+        got = self.equipment.get_value_of_var_with_exclamation_and_colon(var_to_fill, self.workbook)
         self.assertEqual(expected, got)
 
     def test_get_var_with_exclamation_and_colon_ListParsing_unresolved(self):
         var_to_fill = 'listParsing_test!MalCobbs:DNS Server:1'
         expected = '<unresolved>'
-        got = self.equipment.get_var_with_exclamation_and_colon(var_to_fill, self.workbook)
+        got = self.equipment.get_value_of_var_with_exclamation_and_colon(var_to_fill, self.workbook)
         self.assertEqual(expected, got)
 
     def test_get_var_with_exclamation_and_colon_TextParsing(self):
         var_to_fill = 'textParsing_test!banner'
         expected = 'test'
-        got = self.equipment.get_var_with_exclamation_and_colon(var_to_fill, self.workbook)
+        got = self.equipment.get_value_of_var_with_exclamation_and_colon(var_to_fill, self.workbook)
         self.assertEqual(expected, got)
 
     def test_get_var_with_exclamation_and_colon_TextParsing_unresolved(self):
         var_to_fill = 'textParsing_test!TylerDurden'
         expected = '<unresolved>'
-        got = self.equipment.get_var_with_exclamation_and_colon(var_to_fill, self.workbook)
+        got = self.equipment.get_value_of_var_with_exclamation_and_colon(var_to_fill, self.workbook)
         self.assertEqual(expected, got)
 
     def test_remove_brackets(self):

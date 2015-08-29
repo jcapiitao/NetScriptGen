@@ -29,11 +29,11 @@ class Interface(ArrayParsing):
         """
         myList = list()
         for row in range(1, self.delimitation_between_indexes_and_commands()):
-            equip = self.get_param_by_index(str(row), EQUIPMENT)
-            func = self.get_param_by_index(str(row), FUNCTION)
+            equip = self.get_value_of_var_by_index_and_param(str(row), EQUIPMENT)
+            func = self.get_value_of_var_by_index_and_param(str(row), FUNCTION)
             if equip == equipment and func == function:
                 for item in (TYPE_OF_INTERFACE, SLOT, SUBLSLOT, INTERFACES):
-                    myList.append(self.get_param_by_index(str(row), item))
+                    myList.append(self.get_value_of_var_by_index_and_param(str(row), item))
         return myList
 
     def get_by_equipment_and_function_in_stack(self, equipment, function, stack=1):

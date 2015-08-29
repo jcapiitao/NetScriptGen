@@ -11,17 +11,26 @@ class TextParsingTests(TestCase):
         self.sheet = TextParsing(get_sheet_test('textparsing_test.xlsx'))
 
     def test_get_text_by_title(self):
-        self.assertEqual(self.sheet.get_text_by_title('banner'), 'test')
+        expected = 'test'
+        got = self.sheet.get_text_by_title('banner')
+        self.assertEqual(expected, got)
 
     def test_get_text_by_title_failed(self):
-        self.assertRaises(KeyError, self.sheet.get_text_by_title('invalid_title'))
+        expected = KeyError
+        got = self.sheet.get_text_by_title('invalid_title')
+        self.assertRaises(expected, got)
 
     def test_get_all_titles(self):
-        ref_list = ['banner', 'password', 'name']
-        self.assertListEqual(ref_list, self.sheet.get_all_titles())
+        expected = ['banner', 'password', 'name']
+        got = self.sheet.get_all_titles()
+        self.assertListEqual(expected, got)
 
     def test_is_title_true(self):
-        self.assertEqual(self.sheet.is_title('password'), True)
+        expected = True
+        got = self.sheet.is_title('password')
+        self.assertEqual(expected, got)
 
     def test_is_title_false(self):
-        self.assertEqual(self.sheet.is_title('invalid_title'), False)
+        expected = False
+        got = self.sheet.is_title('invalid_title')
+        self.assertEqual(expected, got)

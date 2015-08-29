@@ -2,33 +2,33 @@
 
 
 class ListParsing(object):
-    # TODO Description of the class and its method
+    # TODO Description of the class
 
     def __init__(self, xl_sheet):
         self.xl_sheet = xl_sheet
         self.sheet_name = xl_sheet.name
-        self.my_dict = dict()
-        self.my_dict2 = dict()
+        self.dict_bags_and_keys = dict()
+        self.dict_only_keys = dict()
         for row_idx in range(1, xl_sheet.nrows):
-            value = list()
-            bag_cell = xl_sheet.cell(row_idx, 0)
-            bag = str(self.if_float_convert_to_int(bag_cell))
-            key_cell = xl_sheet.cell(row_idx, 1)
-            key = str(self.if_float_convert_to_int(key_cell))
+            list_of_values = list()
+            bag_obj = xl_sheet.cell(row_idx, 0)
+            bag_value = self.to_string(bag_obj)
+            key_obj = xl_sheet.cell(row_idx, 1)
+            key_value = self.to_string(key_obj)
             col_idx = 2
             while col_idx < xl_sheet.ncols:
                 if xl_sheet.cell(row_idx, col_idx).ctype not in (0, 6):
-                    value_cell = xl_sheet.cell(row_idx, col_idx)
-                    value.append(str(self.if_float_convert_to_int(value_cell)))
+                    value_obj = xl_sheet.cell(row_idx, col_idx)
+                    list_of_values.append(self.to_string(value_obj))
                 col_idx += 1
-            if bag not in self.my_dict.keys():
-                self.my_dict[bag] = dict()
-            self.my_dict2[key] = value
-            self.my_dict[bag][key] = value
+            if bag_value not in self.dict_bags_and_keys.keys():
+                self.dict_bags_and_keys[bag_value] = dict()
+            self.dict_only_keys[key_value] = list_of_values
+            self.dict_bags_and_keys[bag_value][key_value] = list_of_values
 
     def get_value_by_bag_and_key(self, bag, key):
         try:
-            return self.my_dict[bag][key]
+            return self.dict_bags_and_keys[bag][key]
         except KeyError:
             print("The bag '%s' or the key '%s' doesn't exist in the tab '%s'." % (bag, key, self.sheet_name))
 
@@ -46,7 +46,7 @@ class ListParsing(object):
     def set_value_by_bag_and_key(self, bag, key, index, value):
         try:
             index -= 1
-            list_bag_and_key = self.my_dict[bag][key]
+            list_bag_and_key = self.dict_bags_and_keys[bag][key]
             if list_bag_and_key:
                 list_bag_and_key.pop(index)
                 list_bag_and_key.insert(index, value)
@@ -60,23 +60,23 @@ class ListParsing(object):
 
     def get_all_keys_by_bag(self, bag):
         try:
-            return self.my_dict[bag].keys()
+            return self.dict_bags_and_keys[bag].keys()
         except KeyError:
             print("The bag '%s' doesn't exist in the tab '%s'." % (bag, self.sheet_name))
 
     def get_all_keys(self):
-        return self.my_dict2.keys()
+        return self.dict_only_keys.keys()
 
     def get_value_by_key(self, key):
         try:
-            return self.my_dict2[key]
+            return self.dict_only_keys[key]
         except KeyError:
             print("The key '%s' doesn't exist in the tab '%s'." % (key, self.sheet_name))
 
     def set_value_by_key(self, key, index, value):
         try:
             index -= 1
-            list_of_values = self.my_dict2[key]
+            list_of_values = self.dict_only_keys[key]
             if list_of_values:
                 list_of_values.pop(index)
                 list_of_values.insert(index, value)
@@ -85,18 +85,12 @@ class ListParsing(object):
         except KeyError:
             print("The key '%s' doesn't exist in the tab '%s'." % (key, self.sheet_name))
 
-    def is_key(self, key):
-        keys_list = self.get_all_keys()
-        if key in keys_list:
-            return True
-        else:
-            return False
-
     @staticmethod
-    def if_float_convert_to_int(cell):
+    def to_string(cell_obj):
         # Integer values in Excel are imported as floats in Python.
         # So we have to convert floats (2, 3) into integer
-        if cell.ctype in (2, 3):
-            return int(cell.value)
+        if cell_obj.ctype in (2, 3):
+            cell_value = int(cell_obj.value)
+            return str(cell_value)
         else:
-            return cell.value
+            return cell_obj.value

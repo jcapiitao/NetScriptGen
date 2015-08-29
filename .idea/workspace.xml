@@ -16,13 +16,15 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_param_by_index_failed.coverage" NAME="Unittest ArrayParsingTests.test_get_param_by_index_failed Coverage Results" MODIFIED="1438718533694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ListParsing_tests.coverage" NAME="Unittests in ListParsing_tests Coverage Results" MODIFIED="1438804345648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ListParsing_tests.coverage" NAME="Unittests in ListParsing_tests Coverage Results" MODIFIED="1440703904707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_TextParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_TextParsing_unresolved Coverage Results" MODIFIED="1439035830549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_fill_out_the_template.coverage" NAME="Unittest EquipmentTests.test_fill_out_the_template Coverage Results" MODIFIED="1439224118094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_fill_out_the_template.coverage" NAME="Unittest EquipmentTests.test_fill_out_the_template Coverage Results" MODIFIED="1440588013576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_of_pattern_2.coverage" NAME="Unittest EquipmentTests.test_get_value_of_pattern_2 Coverage Results" MODIFIED="1439202070042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_EquipmentTests.coverage" NAME="Unittests in EquipmentTests Coverage Results" MODIFIED="1439147868813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$ArrayParsing.coverage" NAME="ArrayParsing Coverage Results" MODIFIED="1438718361349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/target/dist/NetScriptGen-1.0.dev0/process" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_TextParsing_tests.coverage" NAME="Unittests in TextParsing_tests Coverage Results" MODIFIED="1438719572859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved Coverage Results" MODIFIED="1440586964261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_TextParsingTests.coverage" NAME="Unittests in TextParsingTests Coverage Results" MODIFIED="1440704056668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_TextParsing.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_TextParsing Coverage Results" MODIFIED="1439035275216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key_and_index_failed.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key_and_index_failed Coverage Results" MODIFIED="1438515776994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ExcelWorkbookManager_tests.coverage" NAME="Unittests in ExcelWorkbookManager_tests Coverage Results" MODIFIED="1438811978647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
@@ -35,19 +37,22 @@
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key_and_index_failed2.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key_and_index_failed2 Coverage Results" MODIFIED="1438719513060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_set_value_by_bag_and_key.coverage" NAME="Unittest ListParsingTests.test_set_value_by_bag_and_key Coverage Results" MODIFIED="1437819415476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_nbr_of_cols_in_row.coverage" NAME="Unittest ArrayParsingTests.test_get_nbr_of_cols_in_row Coverage Results" MODIFIED="1438518835383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_all_keys_by_bag.coverage" NAME="Unittest ListParsingTests.test_get_all_keys_by_bag Coverage Results" MODIFIED="1440703638351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_edit_brackets_inside_var.coverage" NAME="Unittest EquipmentTests.test_edit_brackets_inside_var Coverage Results" MODIFIED="1439124346532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_set_value_by_key.coverage" NAME="Unittest ListParsingTests.test_set_value_by_key Coverage Results" MODIFIED="1438800366980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_is_duplication_False.coverage" NAME="Unittest ArrayParsingTests.test_is_duplication_False Coverage Results" MODIFIED="1440700822585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_all_commands.coverage" NAME="Unittest ArrayParsingTests.test_get_all_commands Coverage Results" MODIFIED="1439116690207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ListParsingTests.coverage" NAME="Unittests in ListParsingTests Coverage Results" MODIFIED="1438971838335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ArrayParsing_tests.coverage" NAME="Unittests in ArrayParsing_tests Coverage Results" MODIFIED="1439063735927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ArrayParsing_tests.coverage" NAME="Unittests in ArrayParsing_tests Coverage Results" MODIFIED="1440702976206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1440700519303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_from_global_sheet_is_sheet.coverage" NAME="Unittest EquipmentTests.test_get_value_from_global_sheet_is_sheet Coverage Results" MODIFIED="1439201621323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$ListParsing.coverage" NAME="ListParsing Coverage Results" MODIFIED="1437678351475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/process" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_of_pattern_1.coverage" NAME="Unittest EquipmentTests.test_get_value_of_pattern_1 Coverage Results" MODIFIED="1439198295590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ArrayParsingTests.coverage" NAME="Unittests in ArrayParsingTests Coverage Results" MODIFIED="1439116678943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ListParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ListParsing_unresolved Coverage Results" MODIFIED="1439035826735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$main.coverage" NAME="main Coverage Results" MODIFIED="1438721007867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_Equipment_tests.coverage" NAME="Unittests in Equipment_tests Coverage Results" MODIFIED="1439424184459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_var_with_exclamation_and_colon_ArrayParsing.coverage" NAME="Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing Coverage Results" MODIFIED="1439411812471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_Equipment_tests.coverage" NAME="Unittests in Equipment_tests Coverage Results" MODIFIED="1440588273227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_var_with_exclamation_and_colon_ArrayParsing.coverage" NAME="Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing Coverage Results" MODIFIED="1440587076529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_varf_rom_global_sheet_is_sheet.coverage" NAME="Unittest EquipmentTests.test_get_varf_rom_global_sheet_is_sheet Coverage Results" MODIFIED="1439412395531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ArrayParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ArrayParsing_unresolved Coverage Results" MODIFIED="1439035820548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key Coverage Results" MODIFIED="1437686020149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
@@ -66,35 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="__main__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/python/__main__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8472803">
-              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-              <folding>
-                <element signature="e#62#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Equipment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/python/equipment/Equipment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Equipment_tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unittest/python/Equipment_tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+              <caret line="54" column="63" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -102,52 +83,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy_docs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deploy_docs.py">
+      <file leaf-file-name="Interface.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/python/equipment/feature/Interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state vertical-scroll-proportion="1.1924686">
+              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListParsing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/python/process/ListParsing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-              <folding>
-                <marker date="1439494823000" expanded="true" signature="135:1053" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayParsing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/python/process/ArrayParsing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextParsing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/python/process/TextParsing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-              <folding>
-                <marker date="1439494823000" expanded="true" signature="49:1295" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HOST1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/python/HOST1">
+      <file leaf-file-name="coverage.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/reports/coverage.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -156,21 +103,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelWorkbookManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/python/utils/ExcelWorkbookManager.py">
+      <file leaf-file-name="unittest.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/reports/unittest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/unittest/excel_file/template1.txt">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coverage.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/reports/coverage.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="143.75">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -201,28 +158,28 @@
         <option value="$PROJECT_DIR$/src/main/python/process/ExtractExcelData.py" />
         <option value="$PROJECT_DIR$/src/main/python/equipment/cisco/AccessSwitch.py" />
         <option value="$PROJECT_DIR$/src/unittest/python/Inteface_test.py" />
-        <option value="$PROJECT_DIR$/src/main/python/equipment/feature/Interface.py" />
         <option value="$PROJECT_DIR$/src/main/python/equipment/feature/Sec.py" />
         <option value="$PROJECT_DIR$/src/main/python/function/ReplaceValue.py" />
         <option value="$PROJECT_DIR$/src/main/python/ios_script_sample.txt" />
         <option value="$PROJECT_DIR$/src/main/python/utils/ExcelFile.py" />
         <option value="$PROJECT_DIR$/src/main/python/main.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py" />
         <option value="$PROJECT_DIR$/src/unittest/python/Interface_tests.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/ExcelWorkbookManager_tests.py" />
         <option value="$PROJECT_DIR$/src/main/python/utils/ExcelWorkbookManager.py" />
         <option value="$PROJECT_DIR$/src/main/python/__main__.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py" />
         <option value="$PROJECT_DIR$/src/unittest/excel_file/template1.txt" />
         <option value="$PROJECT_DIR$/build.py" />
-        <option value="$PROJECT_DIR$/src/main/python/ios_script_sample2.txt" />
-        <option value="$PROJECT_DIR$/src/main/python/process/TextParsing.py" />
-        <option value="$PROJECT_DIR$/src/main/python/process/ListParsing.py" />
-        <option value="$PROJECT_DIR$/src/main/python/process/ArrayParsing.py" />
-        <option value="$PROJECT_DIR$/src/main/python/equipment/Equipment.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
         <option value="$PROJECT_DIR$/deploy_docs.py" />
+        <option value="$PROJECT_DIR$/src/main/python/equipment/Equipment.py" />
+        <option value="$PROJECT_DIR$/src/main/python/process/ListParsing.py" />
+        <option value="$PROJECT_DIR$/src/main/python/process/TextParsing.py" />
+        <option value="$PROJECT_DIR$/src/main/python/ios_script_sample2.txt" />
+        <option value="$PROJECT_DIR$/src/main/python/process/ArrayParsing.py" />
+        <option value="$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py" />
+        <option value="$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py" />
+        <option value="$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py" />
+        <option value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
+        <option value="$PROJECT_DIR$/src/unittest/python/ExcelWorkbookManager_tests.py" />
+        <option value="$PROJECT_DIR$/src/main/python/equipment/feature/Interface.py" />
       </list>
     </option>
   </component>
@@ -260,8 +217,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -277,6 +232,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="NetScriptGen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetScriptGen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetScriptGen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetScriptGen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetScriptGen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="install_dependencies" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,8 +483,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetScriptGen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NetScriptGen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="equipment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -523,8 +550,8 @@
       <recent name="$PROJECT_DIR$/src/main/python/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in Equipment_tests">
-    <configuration default="false" name="Unittests in Equipment_tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in TextParsingTests">
+    <configuration default="false" name="Unittests in ListParsing_tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -535,7 +562,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetScriptGen" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -547,25 +574,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Equipment" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/python/equipment" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NetScriptGen" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/python/equipment/Equipment.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ArrayParsing" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in ArrayParsing_tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -576,9 +585,32 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetScriptGen" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
-      <option name="CLASS_NAME" value="EquipmentTests" />
-      <option name="METHOD_NAME" value="test_get_value_pattern_with_exclamation_and_colon_ArrayParsing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest ArrayParsingTests.test_is_duplication_False" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NetScriptGen" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py" />
+      <option name="CLASS_NAME" value="ArrayParsingTests" />
+      <option name="METHOD_NAME" value="test_is_duplication_False" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -588,7 +620,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest ListParsingTests.test_get_all_keys_by_bag" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -599,9 +631,9 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetScriptGen" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
-      <option name="CLASS_NAME" value="EquipmentTests" />
-      <option name="METHOD_NAME" value="test_get_var_with_exclamation_and_colon_ArrayParsing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py" />
+      <option name="CLASS_NAME" value="ListParsingTests" />
+      <option name="METHOD_NAME" value="test_get_all_keys_by_bag" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -611,7 +643,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest EquipmentTests.test_get_varf_rom_global_sheet_is_sheet" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in TextParsingTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -622,11 +654,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetScriptGen" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
-      <option name="CLASS_NAME" value="EquipmentTests" />
-      <option name="METHOD_NAME" value="test_get_varf_rom_global_sheet_is_sheet" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py" />
+      <option name="CLASS_NAME" value="TextParsingTests" />
+      <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -823,19 +855,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Equipment_tests" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Equipment" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ArrayParsing" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest EquipmentTests.test_get_varf_rom_global_sheet_is_sheet" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ListParsing_tests" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ArrayParsing_tests" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest ArrayParsingTests.test_is_duplication_False" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest ListParsingTests.test_get_all_keys_by_bag" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in TextParsingTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Equipment_tests" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest EquipmentTests.test_get_varf_rom_global_sheet_is_sheet" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Equipment" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ArrayParsing" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in TextParsingTests" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in ListParsing_tests" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest ListParsingTests.test_get_all_keys_by_bag" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in ArrayParsing_tests" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest ArrayParsingTests.test_is_duplication_False" />
       </list>
     </recent_temporary>
   </component>
@@ -921,7 +953,7 @@
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35458168" sideWeight="0.45546874" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35458168" sideWeight="0.43671876" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39442232" sideWeight="0.49287927" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38778222" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -931,7 +963,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32802126" sideWeight="0.5445312" order="2" side_tool="true" content_ui="tabs" x="1680" y="0" width="1680" height="1044" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32802126" sideWeight="0.56328124" order="2" side_tool="true" content_ui="tabs" x="1680" y="0" width="1680" height="1044" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -967,11 +999,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/src/main/python/equipment/Equipment.py</url>
-          <line>2</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/build.py</url>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
@@ -991,75 +1018,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/Equipment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/utils/ExcelWorkbookManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#31#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding>
-            <element signature="e#22#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/feature/Vlan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/feature/Vlan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/process/TextParsing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="e#62#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/process/ArrayParsing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1086,7 +1044,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="11" />
           <folding>
-            <element signature="e#62#72#0" expanded="true" />
+            <element signature="e#62#72#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1118,7 +1076,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#62#72#0" expanded="true" />
+            <element signature="e#62#72#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1143,7 +1101,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#62#72#0" expanded="true" />
+            <element signature="e#62#72#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1168,7 +1126,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#62#72#0" expanded="true" />
+            <element signature="e#62#72#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1199,13 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="250" column="0" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/feature/Interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1241,57 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/Interface_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#22#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/ExcelWorkbookManager_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-          <folding>
-            <element signature="e#22#51#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1300,24 +1200,8 @@
         <state vertical-scroll-proportion="0.7217573">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/ios_script_sample.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/ios_script_sample2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,7 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,35 +1216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/process/TextParsing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <marker date="1439494823000" expanded="true" signature="49:1295" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/process/ListParsing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <marker date="1439494823000" expanded="true" signature="135:1053" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/process/ArrayParsing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1373,26 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/Equipment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/Equipment_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deploy_docs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1401,13 +1235,196 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/ios_script_sample2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/ios_script_sample.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/python/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8472803">
+        <state vertical-scroll-proportion="0.0">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding>
-            <element signature="e#62#72#0" expanded="true" />
+            <element signature="e#62#72#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/Equipment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="e#22#31#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/process/ListParsing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-44.48148">
+          <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/process/ArrayParsing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.333333">
+          <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/process/TextParsing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.555555">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/Interface_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/ExcelWorkbookManager_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/Equipment_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="63" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.coverage">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/logs/install_dependencies/coverage">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/logs/install_dependencies/flake8">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/logs/install_dependencies/mockito">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/reports/coverage.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="143.75">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/reports/coverage.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/reports/unittest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/reports/coverage">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/feature/Interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1924686">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

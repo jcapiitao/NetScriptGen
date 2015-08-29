@@ -63,9 +63,9 @@ class Vlan(object):
         for column in self.functions2[function]:
             vlanID = self.headers.index(column) - offset
             vlanName = self.headers[vlanID]
-            var = tab['Global'].get_param_by_index(index, column)
+            var = tab['Global'].get_value_of_var_by_index_and_param(index, column)
             if var == "YES":
-                vlans.append(str(tab['Global'].get_param_by_index(index, vlanName)))
+                vlans.append(str(tab['Global'].get_value_of_var_by_index_and_param(index, vlanName)))
         return vlans
 
     def get_vlan_IDs_by_function_with_delimiter(self, function, index, tab, delimiter = ','):

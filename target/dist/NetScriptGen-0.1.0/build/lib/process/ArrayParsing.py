@@ -10,7 +10,7 @@ class ArrayParsing(object):
         is considered as an Array.
 
     """
-    # TODO description des méthodes
+    # TODO finalise la description de la classe
 
     def __init__(self, xl_sheet):
         self.xl_sheet = xl_sheet
@@ -18,41 +18,35 @@ class ArrayParsing(object):
         self.commands = self.get_local_templates()
         self.index = dict()
 
-        # We check if there is duplications in the headers and indexes
-        index_list = self.is_duplication(self.get_all_indexes())
-        if index_list[0] is True:
-            raise SystemExit("The index(es) in tab '%s' are duplicated: %s" % (self.sheet_name, index_list[1:]))
+        is_duplication, indexes_duplicated = self.is_duplication(self.get_all_indexes())
+        if is_duplication is True:
+            raise SystemExit("The index(es) in sheet '%s' are duplicated: %s" %
+                             (self.sheet_name, indexes_duplicated))
 
-        header_list = self.is_duplication(self.get_all_headers())
-        if header_list[0] is True:
-            raise SystemExit("The parameter(s) in tab '%s' are duplicated: %s" % (self.sheet_name, header_list[1:]))
+        is_duplication, headers_duplicated = self.is_duplication(self.get_all_headers())
+        if is_duplication is True:
+            raise SystemExit("The parameter(s) in sheet '%s' are duplicated: %s" %
+                             (self.sheet_name, headers_duplicated))
 
-        # We parse the array to get the value of the cells
         for row_idx in range(1, xl_sheet.nrows):
-            cell = xl_sheet.cell(row_idx, 0)
-            if cell.ctype in (2, 3):
-                cell_value = int(cell.value)
-            else:
-                cell_value = cell.value
-            self.index[str(cell_value)] = dict()
+            index_obj = xl_sheet.cell(row_idx, 0)
+            index_value = self.to_string(index_obj)
+            self.index[index_value] = dict()
             for col_idx in range(0, self.get_nbr_of_cols_in_row(0)):
+                param_obj = xl_sheet.cell(0, col_idx)
+                param_value = self.to_string(param_obj)
                 var_obj = self.xl_sheet.cell(row_idx, col_idx)
-                if var_obj.ctype in (2, 3):
-                    var_obj = int(var_obj.value)
-                else:
-                    var_obj = var_obj.value
-                param_value = str(xl_sheet.cell(0, col_idx).value)
+                var_value = self.to_string(var_obj)
+                self.index[index_value][param_value] = var_value
 
-                self.index[str(cell_value)][param_value] = str(var_obj)
-
-    def get_param_by_index(self, index_value, param_value):
+    def get_value_of_var_by_index_and_param(self, index_value, param_value):
         try:
             return self.index[index_value][param_value]
         except KeyError:
             print("The index '%s' or the parameter '%s' doesn't exist in the tab '%s'."
                   % (index_value, param_value, self.sheet_name))
 
-    def set_param_by_index(self, index_value, param_value, updated_value):
+    def set_value_by_index_and_param(self, index_value, param_value, updated_value):
         try:
             self.index[index_value][param_value] = updated_value
         except KeyError:
@@ -60,146 +54,88 @@ class ArrayParsing(object):
                   % (index_value, param_value, self.sheet_name))
 
     def get_all_param_by_index(self, index_value):
-        my_dict = dict()
-        for param in self.get_all_headers():
-            my_dict[str(param)] = self.get_param_by_index(index_value, param)
-        return my_dict
+        dict_of_params = dict()
+        for param_value in self.get_all_headers():
+            dict_of_params[str(param_value)] = self.get_value_of_var_by_index_and_param(index_value, param_value)
+        return dict_of_params
 
     def display_param_by_index(self, index_value, param_value):
-        print(self.get_param_by_index(index_value, param_value))
+        print(self.get_value_of_var_by_index_and_param(index_value, param_value))
 
     def get_nbr_of_rows(self):
-        """ This method returns the number of rows in the sheet.
-        """
         return self.xl_sheet.nrows
 
     def get_nbr_of_cols(self):
-        """ This method returns the number of columns in the sheet.
-        """
         return self.xl_sheet.ncols
 
     def get_nbr_of_cols_in_row(self, row):
-        """ This method returns the number of columns in the specified row.
-        """
         return self.xl_sheet.row_len(row)
 
     def get_all_headers(self):
-        """ This method get all the headers of the array.
-
-        Returns:
-            This method returns a list of headers.
-        """
-        headers = list()
+        list_of_headers = list()
         for col_idx in range(0, self.get_nbr_of_cols_in_row(0)):
-            headers.append(str(self.xl_sheet.cell(0, col_idx).value))
-        return headers
+            header_obj = self.xl_sheet.cell(0, col_idx)
+            header_value = self.to_string(header_obj)
+            list_of_headers.append(header_value)
+        return list_of_headers
 
     def get_all_indexes(self):
-        """ This method get all the indexes of the array.
-
-        Returns:
-            This method returns a list of indexes.
-        """
         indexes = list()
         for row_idx in range(1, self.delimitation_between_indexes_and_commands()):
-            cell = self.xl_sheet.cell(row_idx, 0)
-            # If cell.ctype == xlrd.XL_CELL_NUMBER and xlrd.XL_CELL_DATE
-            # because xlrd get a float number
-            if cell.ctype in (2, 3):
-                cell_value = int(cell.value)
-            else:
-                cell_value = cell.value
-            indexes.append(str(cell_value))
-        # Remove the empty value
+            index_obj = self.xl_sheet.cell(row_idx, 0)
+            index_value = self.to_string(index_obj)
+            indexes.append(index_value)
         for iterator in range(0, indexes.count('')):
             indexes.remove('')
         return indexes
 
-    @staticmethod
-    def is_key_in_list(key, my_list):
-        """ This method check if a given key is present is a list.
+    def get_local_templates(self):
+        local_templates = list()
+        command_row = self.get_row_where_value('Default')
+        if command_row != -1:
+            for row_idx in range(command_row, self.get_nbr_of_rows(), 2):
+                template_name_obj = self.xl_sheet.cell(row_idx, 0)
+                template_name = self.to_string(template_name_obj)
+                if template_name != '' and (row_idx + 1) < self.get_nbr_of_rows():
+                    local_templates.append((template_name, str(self.xl_sheet.cell(row_idx + 1, 0).value)))
+                else:
+                    local_templates.append((template_name, ''))
+            return local_templates
 
-        Args:
-            param key: the key
-            param list: the list in which we have to looking for the key
+    def get_row_where_value(self, value):
+        for row_idx in range(1, self.xl_sheet.nrows):
+            cell_obj = self.xl_sheet.cell(row_idx, 0)
+            cell_value = self.to_string(cell_obj)
+            if cell_value == str(value):
+                return row_idx
+        return -1
 
-        Returns:
-            This method return 'True' if the key is present, 'False' otherwise.
-        """
-        if key in my_list:
-            return True
+    def delimitation_between_indexes_and_commands(self):
+        row_idx = self.get_row_where_value('Default')
+        if row_idx == -1:
+            return self.get_nbr_of_rows()
         else:
-            return False
+            return row_idx
 
     @staticmethod
     def is_duplication(key_list):
-        """ This method controls if there is a duplicate header.
-
-        Args:
-            param key_list: list of item
-            type key_list: list()
-
-        Returns:
-            An array. The first element is a boolean, if the value is 'True' then the list
-            contains a duplicate item, 'False' otherwise.
-            Finally, the array contains the duplicated items (if bool==true).
-        """
         response = list()
         for key in key_list:
             count = key_list.count(str(key))
             if count > 1 and key not in response and key != '':
                 response.append(key)
         if len(response) == 0:
-            response.append(False)
+            return False, response
         else:
-            response.insert(0, True)
-        return response
+            return True, response
 
-    def get_local_templates(self):
-        """ Get all the local templates. These templates are used to generate auto-formatted commands with the
-         data contained into the array.
 
-         Returns:
-            A list which contains a dictionary with the title of the commands as a key, and the template associated.
-        """
-        template = list()
-        command_row = self.get_row_where_value('Default')
-        if command_row != -1:
-            for row_idx in range(command_row, self.get_nbr_of_rows(), 2):
-                cell = self.xl_sheet.cell(row_idx, 0)
-                if cell.ctype in (2, 3):
-                    cell_value = int(cell.value)
-                else:
-                    cell_value = cell.value
-                if cell_value != '' and (row_idx + 1) < self.get_nbr_of_rows():
-                    template.append((cell_value, str(self.xl_sheet.cell(row_idx + 1, 0).value)))
-                else:
-                    template.append((cell_value, ''))
-            return template
-
-    def get_row_where_value(self, value):
-        """ Get the number of the row where the value appears in the list of indexes.
-
-        Args:
-            param value: value of the index
-
-        Returns:
-            The number of the row, -1 otherwise
-        """
-        for row_idx in range(1, self.xl_sheet.nrows):
-            cell = self.xl_sheet.cell(row_idx, 0)
-
-            if cell.ctype in (2, 3):
-                cell_value = int(cell.value)
-            else:
-                cell_value = cell.value
-
-            if str(cell_value) == str(value):
-                return row_idx
-        return -1
-
-    def delimitation_between_indexes_and_commands(self):
-        if self.get_row_where_value('Default') == -1:
-            return self.get_nbr_of_rows()
+    @staticmethod
+    def to_string(cell_obj):
+        # Integer values in Excel are imported as floats in Python.
+        # So we have to convert floats (2, 3) into integer
+        if cell_obj.ctype in (2, 3):
+            cell_value = int(cell_obj.value)
+            return str(cell_value)
         else:
-            return self.get_row_where_value('Default')
+            return str(cell_obj.value)

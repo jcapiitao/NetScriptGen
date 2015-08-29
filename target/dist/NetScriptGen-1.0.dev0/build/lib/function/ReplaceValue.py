@@ -26,7 +26,7 @@ def get_value_of_pattern(pattern, workbook):
     instanceOfSplitPattern = workbook[splitPattern[0]]
     print(instanceOfSplitPattern)
     if isinstance(instanceOfSplitPattern, ArrayParsing):
-        result = workbook[splitPattern[0]].get_param_by_index(splitPattern[1], splitPattern[2])
+        result = workbook[splitPattern[0]].get_value_of_var_by_index_and_param(splitPattern[1], splitPattern[2])
         if result is KeyError:
             nbr_of_error = nbr_of_error + 1
             return "<unavailable to fill out>"
@@ -63,20 +63,20 @@ def get_value(var, tab, index, dict):
     if is_brackets:
         test = var.replace(is_brackets[0], get_value(remove_brackets(is_brackets[0]), tab, index, dict))
         if test[0] == '$':
-            return str(tab['Global'].get_param_by_index(index, test[1:]))
+            return str(tab['Global'].get_value_of_var_by_index_and_param(index, test[1:]))
         elif re.search('!', test):
             # We split the "Sheet![Index,Parameter] in a list of [Sheet, Index, Parameter]
             test = re.split('\W+', test)
-            return str(tab[test[0]].get_param_by_index(test[1], test[2]))
+            return str(tab[test[0]].get_value_of_var_by_index_and_param(test[1], test[2]))
         else:
             return str(dict[test])
     else:
         if var[0] == '$':
-            return str(tab['Global'].get_param_by_index(index, var[1:]))
+            return str(tab['Global'].get_value_of_var_by_index_and_param(index, var[1:]))
         elif re.search('!', var):
             # We split the "Sheet![Index,Parameter] in a list of [Sheet, Index, Parameter]
             var = re.split('\W+', var)
-            return str(tab[var[0]].get_param_by_index(var[1], var[2]))
+            return str(tab[var[0]].get_value_of_var_by_index_and_param(var[1], var[2]))
         else:
             # We fist search in local variables
             if var in dict and dict[var] != "":

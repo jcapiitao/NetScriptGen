@@ -8,7 +8,7 @@ Mon type de switch est : {{type}}
 {{VTP_Profile}}
 
 Récupérer un paramètre d'une liste
-{{listparsing_test!DNS:DNS Server:1}}
+{{listparsing_test!DNS:DNS Server:2}}
 
 Récupérer un texte
 {{textparsing_test!banner}}

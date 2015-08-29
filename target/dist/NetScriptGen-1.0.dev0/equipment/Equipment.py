@@ -53,13 +53,13 @@ class Equipment(object):
         parameter = self.remove_brackets(parameter)
         if parameter in self.workbook.keys():
             print("The parameter '%s 'is title of a sheet" %parameter)
-            index = self.workbook['Global'].get_param_by_index(self.hostname, parameter)
+            index = self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
             data_of_the_index = self.workbook[parameter].get_all_param_by_index(index)
             local_templates = self.workbook[parameter].get_local_templates()
-            local_template = local_templates[self.workbook[parameter].get_param_by_index(index, "Template")]
+            local_template = local_templates[self.workbook[parameter].get_value_of_var_by_index_and_param(index, "Template")]
             return self.fill_local_template(data_of_the_index, local_template)
         else:
-            return self.workbook['Global'].get_param_by_index(self.hostname, parameter)
+            return self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
 
     def fill_local_template(self, data, local_template):
         is_brackets = re.findall(self.pattern_contains_brackets, local_template)
@@ -79,7 +79,7 @@ class Equipment(object):
         splitPattern = re.split("[!,:]+", pattern)
         instanceOfSplitPattern = workbook[splitPattern[0]]
         if isinstance(instanceOfSplitPattern, ArrayParsing):
-            result = workbook[splitPattern[0]].get_param_by_index(splitPattern[1], splitPattern[2])
+            result = workbook[splitPattern[0]].get_value_of_var_by_index_and_param(splitPattern[1], splitPattern[2])
             if result is None:
                 self.unfilled_variable_counter = self.unfilled_variable_counter + 1
                 return "<unavailable to fill out>"
