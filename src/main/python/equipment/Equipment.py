@@ -1,6 +1,7 @@
 # -*-coding:UTF-8 -*
 
 import re
+import sys
 from process.ArrayParsing import ArrayParsing
 from process.TextParsing import TextParsing
 from process.ListParsing import ListParsing
@@ -15,6 +16,7 @@ class Equipment(object):
         self.unresolved = 0
         self.pattern_contains_braces = '(?<=\{\{).+?(?=\}\})'
         self.pattern_contains_brackets = '\(\((.*)\)\)'
+        self.pattern_contains_interrogation = '[?]'
         self.pattern_contains_exclamation_and_colon = '[!,:]'
 
     def get_script(self):
@@ -31,7 +33,10 @@ class Equipment(object):
             for var in var_to_fill:
                 template = template.replace(''.join(['{{', var, '}}']),
                                             self.get_value_of_var(var, self.workbook))
-        return template
+            return template
+        else:
+            print('There is not variable to fill out')
+            sys.exit()
 
     def save_script_as(self, path_of_the_folder, file_name):
         extension = '.txt'
@@ -42,6 +47,8 @@ class Equipment(object):
     def get_value_of_var(self, var, workbook):
         if re.findall(self.pattern_contains_exclamation_and_colon, var):
             return self.get_value_of_var_with_exclamation_and_colon(var, workbook)
+        elif re.findall(self.pattern_contains_interrogation, var):
+            return self.get_value_of_var_with_interrogation(var, workbook)
         else:
             return self.get_value_of_var_from_global_sheet(var)
 
@@ -106,6 +113,16 @@ class Equipment(object):
                 return "<unresolved>"
             else:
                 return value
+        else:
+            self.unresolved += 1
+            return "<unresolved>"
+
+    def get_value_of_var_with_interrogation(self, var_with_interrogation, workbook):
+        splitted_var = re.split("[?]+", var_with_interrogation)
+        if splitted_var[0] in workbook['Global'].get_all_headers() and splitted_var[0] in self.workbook.keys():
+            return workbook[splitted_var[0]].get_value_of_var_by_index_and_param(
+                workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, splitted_var[0]),
+                splitted_var[1])
         else:
             self.unresolved += 1
             return "<unresolved>"

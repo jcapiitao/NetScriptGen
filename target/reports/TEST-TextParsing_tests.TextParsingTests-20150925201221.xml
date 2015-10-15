@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="5" failures="0" name="TextParsing_tests.TextParsingTests-20150925201221" tests="5" time="0.001">
+	<properties/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_get_all_titles" time="0.000">
+		<error message="[Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'" type="FileNotFoundError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/TextParsing_tests.py", line 11, in setUp
+    self.sheet = TextParsing(get_sheet_test('textparsing_test.xlsx'))
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 47, in get_sheet_test
+    wb = get_excel_workbook(file)
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 37, in get_excel_workbook
+    return xlrd.open_workbook(file)
+  File "/home/joel/ownCloud/Developpement/virtualenvs/linux/NetScriptGen_virtualenv/lib/python3.4/site-packages/xlrd/__init__.py", line 394, in open_workbook
+    f = open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'
+]]>		</error>
+	</testcase>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_get_text_by_title" time="0.000">
+		<error message="[Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'" type="FileNotFoundError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/TextParsing_tests.py", line 11, in setUp
+    self.sheet = TextParsing(get_sheet_test('textparsing_test.xlsx'))
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 47, in get_sheet_test
+    wb = get_excel_workbook(file)
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 37, in get_excel_workbook
+    return xlrd.open_workbook(file)
+  File "/home/joel/ownCloud/Developpement/virtualenvs/linux/NetScriptGen_virtualenv/lib/python3.4/site-packages/xlrd/__init__.py", line 394, in open_workbook
+    f = open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'
+]]>		</error>
+	</testcase>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_get_text_by_title_failed" time="0.000">
+		<error message="[Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'" type="FileNotFoundError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/TextParsing_tests.py", line 11, in setUp
+    self.sheet = TextParsing(get_sheet_test('textparsing_test.xlsx'))
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 47, in get_sheet_test
+    wb = get_excel_workbook(file)
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 37, in get_excel_workbook
+    return xlrd.open_workbook(file)
+  File "/home/joel/ownCloud/Developpement/virtualenvs/linux/NetScriptGen_virtualenv/lib/python3.4/site-packages/xlrd/__init__.py", line 394, in open_workbook
+    f = open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'
+]]>		</error>
+	</testcase>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_is_title_false" time="0.000">
+		<error message="[Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'" type="FileNotFoundError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/TextParsing_tests.py", line 11, in setUp
+    self.sheet = TextParsing(get_sheet_test('textparsing_test.xlsx'))
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 47, in get_sheet_test
+    wb = get_excel_workbook(file)
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 37, in get_excel_workbook
+    return xlrd.open_workbook(file)
+  File "/home/joel/ownCloud/Developpement/virtualenvs/linux/NetScriptGen_virtualenv/lib/python3.4/site-packages/xlrd/__init__.py", line 394, in open_workbook
+    f = open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'
+]]>		</error>
+	</testcase>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_is_title_true" time="0.000">
+		<error message="[Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'" type="FileNotFoundError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/TextParsing_tests.py", line 11, in setUp
+    self.sheet = TextParsing(get_sheet_test('textparsing_test.xlsx'))
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 47, in get_sheet_test
+    wb = get_excel_workbook(file)
+  File "/home/joel/ownCloud/Developpement/NetScriptGen/src/main/python/utils/ExcelWorkbookManager.py", line 37, in get_excel_workbook
+    return xlrd.open_workbook(file)
+  File "/home/joel/ownCloud/Developpement/virtualenvs/linux/NetScriptGen_virtualenv/lib/python3.4/site-packages/xlrd/__init__.py", line 394, in open_workbook
+    f = open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/joel/ownCloud/Developpement/NetScriptGen/src/unittest/excel_file/textparsing_test.xlsx'
+]]>		</error>
+	</testcase>
+</testsuite>

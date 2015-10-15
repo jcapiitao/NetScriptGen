@@ -24,7 +24,7 @@ default_task = "publish"
 def set_properties(project):
     project.build_depends_on('coverage')
     project.set_property("coverage_threshold_warn", 70)
-    project.set_property("coverage_break_build", True)
+    project.set_property("coverage_break_build", False)
 
     project.set_property('flake8_break_build', False)
     project.set_property('flake8_verbose_output', True)

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The Excel Workbook &mdash; NetScriptGen 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="NetScriptGen 0.1.0 documentation" href="index.html" />
+    <link rel="up" title="NetScriptGen Tutorial" href="tutorial.html" />
+    <link rel="next" title="The Excel Workbook" href="tutorial_template.html" />
+    <link rel="prev" title="NetScriptGen Tutorial" href="tutorial.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          NetScriptGen</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">NetScriptGen Installation and Python Basics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tutorial.html">NetScriptGen Tutorial</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">The Excel Workbook</a><ul>
+<li><a class="reference internal" href="#the-global-worksheet">The global worksheet</a></li>
+<li><a class="reference internal" href="#the-feature-worksheet">The feature worksheet</a></li>
+<li><a class="reference internal" href="#the-joint-between-the-global-worksheet-and-a-feature-worksheet">The joint between the global worksheet and a feature worksheet</a></li>
+<li><a class="reference internal" href="#fixed-common-variables">Fixed common variables</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="tutorial.html" title="Previous Chapter: NetScriptGen Tutorial"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; NetScriptGen ...</span>
+    </a>
+  </li>
+  <li>
+    <a href="tutorial_template.html" title="Next Chapter: The Excel Workbook"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">The Excel Wor... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/tutorial_workbook.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="the-excel-workbook">
+<h1>The Excel Workbook<a class="headerlink" href="#the-excel-workbook" title="Permalink to this headline">¶</a></h1>
+<p>The Excel Workbook has to be built in a specific way in order to allow NetScriptGen to be able to identify the data in a structured manner.
+The Excel Workbook will contains:</p>
+<ul class="simple">
+<li><strong>A global worksheet named &#8216;Global&#8217;</strong>: this is the main worksheet, it contains equipments per row, and the variables per column</li>
+<li><strong>A worksheet per feature</strong>: this is the worksheet which contains the data of the specified feature (VLAN, VTP, Port-Channel, and so on)</li>
+<li><strong>A set of worksheets</strong>: they contain fixed common variables (DNS, banner, user and so on)</li>
+</ul>
+<div class="section" id="the-global-worksheet">
+<h2>The global worksheet<a class="headerlink" href="#the-global-worksheet" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Open Microsoft Excel</li>
+<li>Renames the first sheet by &#8216;Global&#8217;.</li>
+<li>On the first row, fill the cells with your variables. For example: hostname, location, layer, equipment, stack, ip_mgmt, vtp_profile, engine_id, port-channel</li>
+<li>Then, from the second row, each row is an equipement, fill the cells with the appropriate value</li>
+</ol>
+<p>You can see an example of a global worksheet below :</p>
+<div class="figure" id="id1">
+<img alt="global worksheet overview" src="_images/global_sheet.png" />
+<p class="caption"><span class="caption-text">Figure 1, An Example of a global worksheet</span></p>
+</div>
+<p>As you can see above, each line is an equipment. Each of these equipments will have a configuration different from one another based on the values of the variables.
+You can add equipment and variable by inserting rows and columns respectively as much as you want. The only limit is the maximum number of rows and columns set by Microsoft.
+Of course, the more equipments and variables there are, the slower will be NetScriptGen to generate the scripts.</p>
+<p>In this global worksheet, the variables may be simple or complex :</p>
+<ul class="simple">
+<li><strong>the simple variable</strong> : NetScriptGen will replace the variable within double brackets <code class="docutils literal"><span class="pre">{{variable}}</span></code> by the value contained in the global worksheet. For instance, <code class="docutils literal"><span class="pre">{{hostname}}</span></code> will be replaced by <code class="docutils literal"><span class="pre">SW1</span></code></li>
+<li><strong>the complex variable</strong> : if there is a worksheet which its label is a variable, then this variable is a complex one and the worksheet is called a &#8220;feature worksheet&#8221;. In this case, NetScriptGen will not simply substitute the variable by the value, but it will replace the <code class="docutils literal"><span class="pre">{{variable}}</span></code> by one or more sub-templates filled by values contained into the feature worksheet.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">From now on, I will take the first equipment (SW1) as example.</p>
+</div>
+</div>
+<div class="section" id="the-feature-worksheet">
+<h2>The feature worksheet<a class="headerlink" href="#the-feature-worksheet" title="Permalink to this headline">¶</a></h2>
+<p>Now you know what is a complex variable, we have to take a look on how to set up a feature worksheet.
+We will do that for the variable <code class="docutils literal"><span class="pre">port-channel</span></code> which is now only a simple variable.</p>
+<ol class="arabic simple">
+<li>Create a new woorksheet and labeled it <code class="docutils literal"><span class="pre">port-channel</span></code> (case-sensitive).</li>
+</ol>
+<p>Therefore, <code class="docutils literal"><span class="pre">port-channel</span></code> is a complex variable.
+Now, This worksheet must be divided into two sections:</p>
+<ul class="simple">
+<li><strong>The table that contains the data</strong></li>
+<li><strong>The sub-templates</strong></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li>Create your table as you did for the global worksheet <strong>BUT</strong> in the first column you must put all the values that may take the complex variable. As you may have guessed, this is the joint connecting the global worksheet and the feature sheet.</li>
+</ol>
+<div class="figure" id="id2">
+<img alt="feature worksheet overview" src="_images/feature_sheet_table.png" />
+<p class="caption"><span class="caption-text">Figure 2, An Example of a feature worksheet</span></p>
+</div>
+<ol class="arabic" start="3">
+<li><dl class="first docutils">
+<dt>Then below the table, create one or more sub-templates.</dt>
+<dd><ol class="first last arabic simple">
+<li>Into the cell, enter title of the sub-template</li>
+<li>Into the cell just below write ALL the sub-template (Alt+Enter to wrap to the next line)</li>
+</ol>
+</dd>
+</dl>
+<p>Repeat the point 3. as many times as the number of sub-template you want.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">There must be at least one blank-line between the table and the sub-templates</p>
+</div>
+<div class="figure" id="id3">
+<img alt="a sub-template overview" src="_images/feature_sheet_subtemplate.png" />
+<p class="caption"><span class="caption-text">Figure 3, An Example of a sub-template</span></p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">As you can see above, the title of the template &#8220;Default&#8221; is in the cell A13, and the template itself is in the cell A14.
+You can then merge cells as I did, but the content must be is the column A.</p>
+</div>
+<p>The complex variable <code class="docutils literal"><span class="pre">port-channel</span></code> in the global template will be substitute by :</p>
+<div class="highlight-none"><div class="highlight"><pre>interface range TenGiga1/1/3, TenGiga1/1/3
+switchport trunk encapsulation dot1q
+<span class="hll">switchport trunk allowed vlan 101,401,51,61
+</span>switchport mode trunk
+switchport nonegotiate
+service-policy output QoS-Output
+ip arp inspection trust
+ip dhcp snooping trust
+channel-group 1 mode active
+no shut
+!
+interface TenGiga1/1/3
+description &quot;to VSS_1_TenGiga3/1/1&quot;
+interface TenGiga1/1/3
+description &quot;to VSS_1_TenGiga3/1/2&quot;
+!
+interface Port-channel 1
+description &quot;to VSS_1 - PO 101&quot;
+switchport trunk encapsulation dot1q
+<span class="hll">switchport trunk allowed vlan 101,401,51,61
+</span>switchport mode trunk
+switchport nonegotiate
+ip arp inspection trust
+ip dhcp snooping trust
+no shut
+exit
+port-channel load-balance src-dst-ip
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The variable <code class="docutils literal"><span class="pre">{{trunked_vlan}}}</span></code> has been replaced by <code class="docutils literal"><span class="pre">101,401,51,61</span></code> whereas it&#8217;s a simple variable from the global worksheet.
+To be short, you can reach the value of a variable from any worksheet. I clarify this into detail in the chapter template.</p>
+</div>
+</div>
+<div class="section" id="the-joint-between-the-global-worksheet-and-a-feature-worksheet">
+<h2>The joint between the global worksheet and a feature worksheet<a class="headerlink" href="#the-joint-between-the-global-worksheet-and-a-feature-worksheet" title="Permalink to this headline">¶</a></h2>
+<p>We know that pictures speak more than words, I drew an illustration to explain the joint between the global worksheet and a feature worksheet.</p>
+<div class="figure" id="id4">
+<img alt="The joint between the global and the feature worksheet" src="_images/global_to_feature_worksheet.png" />
+<p class="caption"><span class="caption-text">Figure 4, The joint between the global and the feature worksheet</span></p>
+</div>
+</div>
+<div class="section" id="fixed-common-variables">
+<h2>Fixed common variables<a class="headerlink" href="#fixed-common-variables" title="Permalink to this headline">¶</a></h2>
+<p>Although the configurations are different from one another, there are some fixed common variables.
+After all, you can put the values of these variables directly within the global template. However, fixed common variable gives you much more flexibility and clarity.
+Indeed, if you want to reuse a old project, you just have to change the values of the variables in the worksheet, and not spending time scratching your head to change the values in the global template. The strength of the variable, no more, no less...</p>
+<ol class="arabic simple">
+<li>Create a new woorksheet and labeled it as you want</li>
+<li><ol class="first arabic">
+<li>In the cell A1, enter &#8220;Function&#8221;</li>
+<li>In the cell A2, enter &#8220;Variable&#8221;</li>
+<li>In the cell A3, enter &#8220;Value&#8221;</li>
+</ol>
+</li>
+<li>Then, for each row, enter the variable, its function and value</li>
+</ol>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Joel Capitao.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

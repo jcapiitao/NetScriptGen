@@ -8,7 +8,7 @@ from utils.ExcelWorkbookManager import get_sheet_test
 class TextParsingTests(TestCase):
 
     def setUp(self):
-        self.sheet = TextParsing(get_sheet_test('textparsing_test.xlsx'))
+        self.sheet = TextParsing(get_sheet_test('textParsing_test.xlsx'))
 
     def test_get_text_by_title(self):
         expected = 'test'

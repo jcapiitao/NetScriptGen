@@ -8,7 +8,7 @@ from utils.ExcelWorkbookManager import get_sheet_test
 class ListParsingTests(TestCase):
 
     def setUp(self):
-        self.sheet = ListParsing(get_sheet_test('listparsing_test.xlsx'))
+        self.sheet = ListParsing(get_sheet_test('listParsing_test.xlsx'))
 
     def test_get_value_by_bag_and_key(self):
         values = list()

@@ -1,3 +1,7 @@
 {{hostname}}
+!
 {{VLAN}}
+!
 {{VLAN!((VLAN!104:Name)):Gateway}}
+!
+{{VLAN?Name}}

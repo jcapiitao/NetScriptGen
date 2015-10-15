@@ -36,6 +36,18 @@ class EquipmentTests(TestCase):
         got = self.equipment.get_value_of_var(var_to_fill, self.workbook)
         self.assertEqual(expected, got)
 
+    def test_get_value_of_var_with_interrogation(self):
+        var_to_fill = 'VLAN?Name'
+        expected = 'ADMRESEAU-1'
+        got = self.equipment.get_value_of_var(var_to_fill, self.workbook)
+        self.assertEqual(expected, got)
+
+    def test_get_value_of_var_with_interrogation_unresolved(self):
+        var_to_fill = 'Are you ok? Yep'
+        expected = '<unresolved>'
+        got = self.equipment.get_value_of_var(var_to_fill, self.workbook)
+        self.assertEqual(expected, got)
+
     def test_get_var_from_global_sheet_is_sheet(self):
         expected = 'ADMRESEAU-1 and 10.1.255.0 and\n10.179.255.6210.1.0.224\n0.0.0.15'
         got = self.equipment.get_value_of_var_from_global_sheet('VLAN')

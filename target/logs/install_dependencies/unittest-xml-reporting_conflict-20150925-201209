@@ -1,0 +1,5 @@
+Collecting unittest-xml-reporting
+  Downloading unittest_xml_reporting-1.12.0-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): six>=1.4.0 in /Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages (from unittest-xml-reporting)
+Installing collected packages: unittest-xml-reporting
+Successfully installed unittest-xml-reporting-1.12.0

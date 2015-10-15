@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="2" failures="0" name="Equipment_tests.EquipmentTests-20151002202648" tests="12" time="0.194">
+	<properties/>
+	<system-out>
+<![CDATA[The index 'Parcher' or the parameter 'Name' doesn't exist in the tab 'Sheet1'.
+The index '<unresolved>' or the parameter 'Gateway' doesn't exist in the tab 'Sheet1'.
+The bag 'MalCobbs' or the key 'DNS Server' doesn't exist in the tab 'Sheet1'.
+The title 'TylerDurden' doesn't exist in the tab 'Sheet1'.
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_value_of_var_1" time="0.016"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_from_global_sheet_is_sheet" time="0.016"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_from_global_sheet_is_var" time="0.015"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_ArrayParsing" time="0.015"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved" time="0.016"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_ListParsing" time="0.015"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_ListParsing_unresolved" time="0.017"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_TextParsing" time="0.015"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_TextParsing_unresolved" time="0.015"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_remove_brackets" time="0.015"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_fill_out_the_template" time="0.025">
+		<error message="nothing to repeat" type="error">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/Equipment_tests.py", line 24, in test_fill_out_the_template
+    got = self.equipment.fill_out_the_template()
+  File "/Users/joel/ownCloud/Developpement/NetScriptGen/src/main/python/equipment/Equipment.py", line 35, in fill_out_the_template
+    self.get_value_of_var(var, self.workbook))
+  File "/Users/joel/ownCloud/Developpement/NetScriptGen/src/main/python/equipment/Equipment.py", line 50, in get_value_of_var
+    elif re.findall(self.pattern_contains_interrogation, var):
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/re.py", line 206, in findall
+    return _compile(pattern, flags).findall(string)
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/re.py", line 288, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/sre_compile.py", line 465, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/sre_parse.py", line 748, in parse
+    p = _parse_sub(source, pattern, 0)
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/sre_parse.py", line 360, in _parse_sub
+    itemsappend(_parse(source, state))
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/sre_parse.py", line 569, in _parse
+    raise error("nothing to repeat")
+sre_constants.error: nothing to repeat
+]]>		</error>
+	</testcase>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_value_of_var_2" time="0.015">
+		<error message="nothing to repeat" type="error">
+<![CDATA[Traceback (most recent call last):
+  File "/Users/joel/ownCloud/Developpement/NetScriptGen/src/unittest/python/Equipment_tests.py", line 36, in test_get_value_of_var_2
+    got = self.equipment.get_value_of_var(var_to_fill, self.workbook)
+  File "/Users/joel/ownCloud/Developpement/NetScriptGen/src/main/python/equipment/Equipment.py", line 50, in get_value_of_var
+    elif re.findall(self.pattern_contains_interrogation, var):
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/re.py", line 206, in findall
+    return _compile(pattern, flags).findall(string)
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/re.py", line 288, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/sre_compile.py", line 465, in compile
+    p = sre_parse.parse(p, flags)
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/sre_parse.py", line 748, in parse
+    p = _parse_sub(source, pattern, 0)
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/sre_parse.py", line 360, in _parse_sub
+    itemsappend(_parse(source, state))
+  File "/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/sre_parse.py", line 569, in _parse
+    raise error("nothing to repeat")
+sre_constants.error: nothing to repeat
+]]>		</error>
+	</testcase>
+</testsuite>

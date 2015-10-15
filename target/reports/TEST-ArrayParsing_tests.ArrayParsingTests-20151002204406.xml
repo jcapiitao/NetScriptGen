@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="ArrayParsing_tests.ArrayParsingTests-20151002204406" tests="16" time="0.222">
+	<properties/>
+	<system-out>
+<![CDATA[The index '101' or the parameter 'invalid_param' doesn't exist in the tab 'Sheet1'.
+The index '000' or the parameter 'Gateway' doesn't exist in the tab 'Sheet1'.
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_delimitation_between_indexes_and_commands" time="0.027"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_all_commands" time="0.012"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_all_headers" time="0.012"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_all_indexes" time="0.012"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_all_param_by_index" time="0.013"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_nbr_of_cols" time="0.016"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_nbr_of_cols_in_row" time="0.018"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_nbr_of_rows" time="0.014"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_param_by_index" time="0.015"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_param_by_index_failed" time="0.013"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_row_where_value" time="0.012"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_get_row_where_value_failed" time="0.012"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_is_duplication_False" time="0.012"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_is_duplication_True" time="0.013"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_set_param_by_index" time="0.012"/>
+	<testcase classname="ArrayParsing_tests.ArrayParsingTests" name="test_set_param_by_index_failed" time="0.012"/>
+</testsuite>

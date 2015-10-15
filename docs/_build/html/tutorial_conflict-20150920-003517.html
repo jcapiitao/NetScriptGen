@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>NetScriptGen Tutorial &mdash; NetScriptGen 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="NetScriptGen 0.1.0 documentation" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          NetScriptGen</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">NetScriptGen Installation and Python Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">NetScriptGen Tutorial</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">NetScriptGen Tutorial</a><ul>
+<li><a class="reference internal" href="#the-excel-workbook">The Excel Workbook</a><ul>
+<li><a class="reference internal" href="#the-global-sheet">The global sheet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/tutorial_conflict-20150920-003517.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="netscriptgen-tutorial">
+<h1>NetScriptGen Tutorial<a class="headerlink" href="#netscriptgen-tutorial" title="Permalink to this headline">¶</a></h1>
+<p>In this tutorial, we will decribe first how to store the data in an Excel Workbook, and secondly, how to write the template.
+Finally, you will find some practical examples for more understanding.</p>
+<div class="section" id="the-excel-workbook">
+<h2>The Excel Workbook<a class="headerlink" href="#the-excel-workbook" title="Permalink to this headline">¶</a></h2>
+<p>The Excel Workbook has to be built in a specific way in order to allow NetScriptGen to be able to identify the data in a structured manner.
+The Excel Workbook will contains:</p>
+<ul class="simple">
+<li>A global sheet named &#8216;Global&#8217;: this is the main sheet, it contains equipments per row, and the features per column</li>
+<li>A sheet per feature: this is the sheet which contains the data of the specified feature (VLAN, VTP, DNS, and so on)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Excel workbook must contain a least the global sheet named as <code class="docutils literal"><span class="pre">Global</span></code>, otherwise NetScriptGen will throw an error.</p>
+</div>
+<p>test</p>
+<div class="section" id="the-global-sheet">
+<h3>The global sheet<a class="headerlink" href="#the-global-sheet" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-left" id="id1">
+<a class="reference internal image-reference" href="_images/global_sheet.png"><img alt="global sheet overview" src="_images/global_sheet.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Figure 1, An Example of a global sheet</span></p>
+</div>
+<p>As you can see above, each line is an equipment. Each of these equipments will have a configuration different from one another based on the values of the features.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2015, Joel Capitao.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

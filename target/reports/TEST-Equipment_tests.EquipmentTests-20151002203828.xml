@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="Equipment_tests.EquipmentTests-20151002203828" tests="13" time="0.296">
+	<properties/>
+	<system-out>
+<![CDATA[The index 'Parcher' or the parameter 'Name' doesn't exist in the tab 'Sheet1'.
+The index '<unresolved>' or the parameter 'Gateway' doesn't exist in the tab 'Sheet1'.
+The bag 'MalCobbs' or the key 'DNS Server' doesn't exist in the tab 'Sheet1'.
+The title 'TylerDurden' doesn't exist in the tab 'Sheet1'.
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_fill_out_the_template" time="0.023"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_value_of_var_1" time="0.023"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_value_of_var_2" time="0.022"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_value_of_var_with_interrogation" time="0.022"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_from_global_sheet_is_sheet" time="0.022"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_from_global_sheet_is_var" time="0.023"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_ArrayParsing" time="0.023"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved" time="0.025"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_ListParsing" time="0.022"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_ListParsing_unresolved" time="0.022"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_TextParsing" time="0.022"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_get_var_with_exclamation_and_colon_TextParsing_unresolved" time="0.024"/>
+	<testcase classname="Equipment_tests.EquipmentTests" name="test_remove_brackets" time="0.022"/>
+</testsuite>

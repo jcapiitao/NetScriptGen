@@ -19,7 +19,7 @@ class Interface(ArrayParsing):
         """ This method gets the interfaces which are used for a typical function (data, voice, wifi, printer, and so on)
         within an equipment.
 
-        Args:
+        Args:get_full_path() + '/' + self.test_file
             param equipment: the network equipment we want to get the interfaces
             param function: the function of the interfaces
 
