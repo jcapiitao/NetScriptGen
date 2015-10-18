@@ -68,9 +68,9 @@ running install_egg_info
 running egg_info
 writing pbr to NetScriptGen.egg-info/pbr.json
 writing dependency_links to NetScriptGen.egg-info/dependency_links.txt
+writing NetScriptGen.egg-info/PKG-INFO
 writing entry points to NetScriptGen.egg-info/entry_points.txt
 writing top-level names to NetScriptGen.egg-info/top_level.txt
-writing NetScriptGen.egg-info/PKG-INFO
 reading manifest file 'NetScriptGen.egg-info/SOURCES.txt'
 writing manifest file 'NetScriptGen.egg-info/SOURCES.txt'
 Copying NetScriptGen.egg-info to build/bdist.macosx-10.6-x86_64/dumb/Users/joel/ownCloud/Developpement/virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/NetScriptGen-0.1.0-py3.4.egg-info

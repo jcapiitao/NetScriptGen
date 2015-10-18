@@ -84,7 +84,10 @@
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">The Global Template</a><ul>
-<li><a class="reference internal" href="#the-variable">The variable</a></li>
+<li><a class="reference internal" href="#retrieving-data-from-the-global-worksheet">Retrieving data from the Global worksheet</a></li>
+<li><a class="reference internal" href="#retrieving-data-within-a-table-from-any-worksheet">Retrieving data within a table from any worksheet</a></li>
+<li><a class="reference internal" href="#retrieving-value-of-fixed-common-variables">Retrieving value of fixed common variables</a></li>
+<li><a class="reference internal" href="#retrieving-a-text">Retrieving a text</a></li>
 </ul>
 </li>
 </ul>
@@ -132,15 +135,31 @@
       
   <div class="section" id="the-global-template">
 <h1>The Global Template<a class="headerlink" href="#the-global-template" title="Permalink to this headline">¶</a></h1>
-<p>The Excel Workbook has to be built in a specific way in order to allow NetScriptGen to be able to identify the data in a structured manner.
-The Excel Workbook will contains:</p>
-<ul class="simple">
-<li><strong>A global worksheet named &#8216;Global&#8217;</strong>: this is the main worksheet, it contains equipments per row, and the variables per column</li>
-<li><strong>A worksheet per feature</strong>: this is the worksheet which contains the data of the specified feature (VLAN, VTP, Port-Channel, and so on)</li>
-<li><strong>A set of worksheets</strong>: they contain fixed common variables (DNS, banner, user and so on)</li>
-</ul>
-<div class="section" id="the-variable">
-<h2>The variable<a class="headerlink" href="#the-variable" title="Permalink to this headline">¶</a></h2>
+<p>The aims of this chapter is to learn how to write a template, in others words, how to retrieve data from the extraction.
+Several useable syntaxes exist for retrieving data, below you will find them.</p>
+<div class="section" id="retrieving-data-from-the-global-worksheet">
+<h2>Retrieving data from the Global worksheet<a class="headerlink" href="#retrieving-data-from-the-global-worksheet" title="Permalink to this headline">¶</a></h2>
+<p>If you want to get the value of a variable which is containded in the Global worksheet, use this syntax.</p>
+<p>Syntaxe : <code class="docutils literal"><span class="pre">{{variable}}</span></code></p>
+<p>For instance, <code class="docutils literal"><span class="pre">{{equipement}}</span></code> will be replaced by <code class="docutils literal"><span class="pre">Cisco</span> <span class="pre">3850</span> <span class="pre">Switches</span></code></p>
+</div>
+<div class="section" id="retrieving-data-within-a-table-from-any-worksheet">
+<h2>Retrieving data within a table from any worksheet<a class="headerlink" href="#retrieving-data-within-a-table-from-any-worksheet" title="Permalink to this headline">¶</a></h2>
+<p>If you want to get the value of a variable which is containded in any worksheet, use this syntax.</p>
+<p>Syntaxe : <code class="docutils literal"><span class="pre">{{worksheet!index:parameter}}</span></code></p>
+<p>For instance, <code class="docutils literal"><span class="pre">{{port-channel!101:protocol}}</span></code> will be replaced by <code class="docutils literal"><span class="pre">LACP</span></code></p>
+</div>
+<div class="section" id="retrieving-value-of-fixed-common-variables">
+<h2>Retrieving value of fixed common variables<a class="headerlink" href="#retrieving-value-of-fixed-common-variables" title="Permalink to this headline">¶</a></h2>
+<p>If you want to get the value of a variable which is containded in any worksheet, use this syntax.</p>
+<p>Syntaxe : <code class="docutils literal"><span class="pre">{{worksheet!bag:index:parameter}}</span></code></p>
+<p>For instance, <code class="docutils literal"><span class="pre">{{worksheet!SNMP:RW</span> <span class="pre">User:1}}</span></code> will be replaced by <code class="docutils literal"><span class="pre">SNMP_USER</span></code>
+Another example, <code class="docutils literal"><span class="pre">{{worksheet!DHCP:relay:3}}</span></code> will be replaced by <code class="docutils literal"><span class="pre">192.168.1.3</span></code></p>
+</div>
+<div class="section" id="retrieving-a-text">
+<h2>Retrieving a text<a class="headerlink" href="#retrieving-a-text" title="Permalink to this headline">¶</a></h2>
+<p>If you want to get the value of a variable which is containded in any worksheet, use this syntax.</p>
+<p>Syntaxe : <code class="docutils literal"><span class="pre">{{worksheet!variable}}</span></code></p>
 </div>
 </div>
 

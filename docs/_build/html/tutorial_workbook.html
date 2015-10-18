@@ -31,7 +31,7 @@
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="NetScriptGen 0.1.0 documentation" href="index.html" />
     <link rel="up" title="NetScriptGen Tutorial" href="tutorial.html" />
-    <link rel="next" title="The Excel Workbook" href="tutorial_template.html" />
+    <link rel="next" title="The Global Template" href="tutorial_template.html" />
     <link rel="prev" title="NetScriptGen Tutorial" href="tutorial.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -89,6 +89,7 @@
 <li><a class="reference internal" href="#the-feature-worksheet">The feature worksheet</a></li>
 <li><a class="reference internal" href="#the-joint-between-the-global-worksheet-and-a-feature-worksheet">The joint between the global worksheet and a feature worksheet</a></li>
 <li><a class="reference internal" href="#fixed-common-variables">Fixed common variables</a></li>
+<li><a class="reference internal" href="#how-to-store-a-text">How to store a text ?</a></li>
 </ul>
 </li>
 </ul>
@@ -104,7 +105,7 @@
     </a>
   </li>
   <li>
-    <a href="tutorial_template.html" title="Next Chapter: The Excel Workbook"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">The Excel Wor... &raquo;</span>
+    <a href="tutorial_template.html" title="Next Chapter: The Global Template"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">The Global Te... &raquo;</span>
     </a>
   </li>
               
@@ -218,7 +219,7 @@ Now, This worksheet must be divided into two sections:</p>
 <p class="last">As you can see above, the title of the template &#8220;Default&#8221; is in the cell A13, and the template itself is in the cell A14.
 You can then merge cells as I did, but the content must be is the column A.</p>
 </div>
-<p>The complex variable <code class="docutils literal"><span class="pre">port-channel</span></code> in the global template will be substitute by :</p>
+<p>The complex variable <code class="docutils literal"><span class="pre">{{port-channel}}</span></code> in the global template will be substitute by :</p>
 <div class="highlight-none"><div class="highlight"><pre>interface range TenGiga1/1/3, TenGiga1/1/3
 switchport trunk encapsulation dot1q
 <span class="hll">switchport trunk allowed vlan 101,401,51,61
@@ -266,7 +267,7 @@ To be short, you can reach the value of a variable from any worksheet. I clarify
 <h2>Fixed common variables<a class="headerlink" href="#fixed-common-variables" title="Permalink to this headline">¶</a></h2>
 <p>Although the configurations are different from one another, there are some fixed common variables.
 After all, you can put the values of these variables directly within the global template. However, fixed common variable gives you much more flexibility and clarity.
-Indeed, if you want to reuse a old project, you just have to change the values of the variables in the worksheet, and not spending time scratching your head to change the values in the global template. The strength of the variable, no more, no less...</p>
+Indeed, if you want to reuse a old project, you just have to change the values of the variables in the worksheet, and not spending time scratching your head to change the values in the global template. The strength of a variable, no more, no less...</p>
 <ol class="arabic simple">
 <li>Create a new woorksheet and labeled it as you want</li>
 <li><ol class="first arabic">
@@ -277,6 +278,18 @@ Indeed, if you want to reuse a old project, you just have to change the values o
 </li>
 <li>Then, for each row, enter the variable, its function and value</li>
 </ol>
+</div>
+<div class="section" id="how-to-store-a-text">
+<h2>How to store a text ?<a class="headerlink" href="#how-to-store-a-text" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you need to store a text, the MOTD banner that displays when the user logs in to the switch for example.
+To achieve this :</p>
+<ol class="arabic simple">
+<li>Create a new woorksheet and labeled it as you want</li>
+<li>In the cell A1, enter &#8220;Text&#8221;</li>
+<li>In the column A, choose a cell and enter the name of the variable that will contain the text</li>
+</ol>
+<p>3. In the right cell, enter the value of the text
+You can then merge cells, but the content must be in the rigth cell.</p>
 </div>
 </div>
 

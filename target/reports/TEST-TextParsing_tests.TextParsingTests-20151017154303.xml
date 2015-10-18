@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="TextParsing_tests.TextParsingTests-20151017154303" tests="5" time="0.021">
+	<properties/>
+	<system-out>
+<![CDATA[The title 'invalid_title' doesn't exist in the tab 'Sheet1'.
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_get_all_titles" time="0.004"/>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_get_text_by_title" time="0.004"/>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_get_text_by_title_failed" time="0.005"/>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_is_title_false" time="0.005"/>
+	<testcase classname="TextParsing_tests.TextParsingTests" name="test_is_title_true" time="0.004"/>
+</testsuite>

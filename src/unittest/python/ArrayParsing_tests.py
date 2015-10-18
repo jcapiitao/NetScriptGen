@@ -4,7 +4,6 @@ from unittest import TestCase
 from process.ArrayParsing import ArrayParsing
 from utils.ExcelWorkbookManager import get_sheet_test
 
-
 class ArrayParsingTests(TestCase):
 
     def setUp(self):

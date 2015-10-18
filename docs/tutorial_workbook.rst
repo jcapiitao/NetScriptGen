@@ -77,7 +77,7 @@ Now, This worksheet must be divided into two sections:
 .. warning:: As you can see above, the title of the template "Default" is in the cell A13, and the template itself is in the cell A14.
           You can then merge cells as I did, but the content must be is the column A.
 
-The complex variable ``port-channel`` in the global template will be substitute by :
+The complex variable ``{{port-channel}}`` in the global template will be substitute by :
 
 .. code-block:: none
    :emphasize-lines: 3,20
@@ -128,7 +128,7 @@ Fixed common variables
 ~~~~~~~~~~~~~~~~~~~~~~
 Although the configurations are different from one another, there are some fixed common variables. 
 After all, you can put the values of these variables directly within the global template. However, fixed common variable gives you much more flexibility and clarity.
-Indeed, if you want to reuse a old project, you just have to change the values of the variables in the worksheet, and not spending time scratching your head to change the values in the global template. The strength of the variable, no more, no less...
+Indeed, if you want to reuse a old project, you just have to change the values of the variables in the worksheet, and not spending time scratching your head to change the values in the global template. The strength of a variable, no more, no less...
 
 
 1. Create a new woorksheet and labeled it as you want
@@ -140,4 +140,18 @@ Indeed, if you want to reuse a old project, you just have to change the values o
 
 3. Then, for each row, enter the variable, its function and value
 
+
+How to store a text ?
+~~~~~~~~~~~~~~~~~~~~~~
+Sometimes you need to store a text, the MOTD banner that displays when the user logs in to the switch for example.
+To achieve this :
+
+1. Create a new woorksheet and labeled it as you want
+
+2. In the cell A1, enter "Text"
+
+3. In the column A, choose a cell and enter the name of the variable that will contain the text
+
+3. In the right cell, enter the value of the text
+You can then merge cells, but the content must be in the rigth cell.
 
