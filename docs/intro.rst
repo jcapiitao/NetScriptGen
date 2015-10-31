@@ -5,14 +5,15 @@ Introduction
 Overview
 ---------
 
-NetScriptGen is a Python_ library, which generates script for network equipment. The scripts are generated from parsing an Excel Workbook and a global template. NetScriptGen needs:
+NetScriptGen is a Python tool which generates script for network equipment. The scripts are generated from parsing an Excel Workbook and a global template.
+NetScriptGen needs:
 
 - An excel Workbook with network data contained in structured array and sub-templates
-- A global template with variables to be fill in 
+- A global template with variables to be filled in
 
 NetScriptGen read the global template and attempt to fill out the variable by finding a relationship between the variable and the data contained into the Excel workbook. This is how a template with variable looks like:
 
-.. sourcecode::
+.. code-block::
    hostname {{hostname}}
    username {{general_data!user:name:1}} privilege 15 secret {{general_data!user:name:1}}
    !
