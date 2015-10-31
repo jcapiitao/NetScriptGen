@@ -1,5 +1,5 @@
 __init__.py
-__main__.py
+netscriptgen.py
 setup.py
 NetScriptGen.egg-info/PKG-INFO
 NetScriptGen.egg-info/SOURCES.txt

@@ -1,11 +1,11 @@
 Name                          Stmts   Miss Branch BrMiss  Cover   Missing
 -------------------------------------------------------------------------
 __init__                          0      0      0      0   100%   
-__main__                         48     48     22     22     0%   5-69
 equipment                         1      0      0      0   100%   
 equipment.Equipment             100     15     42      7    85%   23-27, 38-39, 42-45, 90, 117-118, 135
 equipment.feature                 1      0      0      0   100%   
 equipment.feature.Interface      28      0      8      0   100%   
+netscriptgen                     59     59     30     30     0%   5-74
 process                           1      0      0      0   100%   
 process.ArrayParsing             98      4     36      3    95%   23, 28, 63, 102
 process.ListParsing              76      6     16      2    91%   43-44, 54, 59, 81-82
@@ -13,4 +13,4 @@ process.TextParsing              41      7     10      1    84%   24-27, 30, 53-
 utils                             1      0      0      0   100%   
 utils.ExcelWorkbookManager       30      3      2      1    88%   23, 28-29
 -------------------------------------------------------------------------
-TOTAL                           425     83    136     36    79%   
+TOTAL                           436     94    144     44    76%   

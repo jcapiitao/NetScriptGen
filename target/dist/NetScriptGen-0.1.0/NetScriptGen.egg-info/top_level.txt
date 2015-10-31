@@ -1,5 +1,5 @@
 __init__
-__main__
 equipment
+netscriptgen
 process
 utils
