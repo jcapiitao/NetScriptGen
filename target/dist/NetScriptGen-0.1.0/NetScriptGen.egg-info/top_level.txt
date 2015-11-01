@@ -1,5 +1,0 @@
-__init__
-equipment
-netscriptgen
-process
-utils

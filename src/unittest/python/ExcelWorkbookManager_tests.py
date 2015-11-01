@@ -9,12 +9,7 @@ class ExcelWorkbookManagerTests(TestCase):
 
     def setUp(self):
         self.test_file = 'test.xlsx'
-        self.path = get_full_path(self.test_file)
-
-    def test_get_test_excel_file(self):
-        expected = get_full_path() + '/' + self.test_file
-        got = self.path
-        self.assertEqual(expected, got)
+        self.path = get_test_file(self.test_file)
 
     def test_get_excel_workbook(self):
         self.assertIsInstance(get_excel_workbook(), type(xlrd.open_workbook(self.path)))

@@ -3,7 +3,6 @@
 # TODO : Use Sphinx for doc generation
 
 import getopt
-import sys
 from process.ArrayParsing import ArrayParsing
 from process.TextParsing import TextParsing
 from process.ListParsing import ListParsing
@@ -14,8 +13,6 @@ from utils.ExcelWorkbookManager import *
 
 def main(excel_file, template_file, directory):
     wb = get_excel_workbook(excel_file)
-    # wb = get_excel_workbook()
-    # template_file = get_full_path('ios_script_sample2.txt')
     sheet_names = wb.sheet_names()
     workbook = dict()
     template = open_file(template_file)
@@ -52,18 +49,19 @@ def main(excel_file, template_file, directory):
         equipment.save_script_as(directory, hostname)
 
 if __name__ == "__main__":
-    excel_file = get_full_path('test.xlsx')
-    template_file = get_full_path('ios_script_sample2.txt')
-    directory = ''
     argv = sys.argv
+    excel_file, template_file, directory = '', '', ''
+    if not argv[1:]:
+        print('netscriptgen -e <excelFile> -t <scriptTemplate> -o <directory>')
+        sys.exit(2)
     try:
         opts, args = getopt.getopt(argv[1:], "h:e:t:o:", ["excelFile=", "scriptTemplate=", "directory"])
     except getopt.GetoptError:
-        print('netscriptgen.py -e <excelFile> -t <scriptTemplate> -o <directory>')
+        print('netscriptgen -e <excelFile> -t <scriptTemplate> -o <directory>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('netscriptgen.py -e <excelFile> -t <scriptTemplate> -o <directory')
+            print('netscriptgen -e <excelFile> -t <scriptTemplate> -o <directory')
             sys.exit()
         elif opt in ("-e", "--excelFile"):
             excel_file = arg
@@ -71,4 +69,8 @@ if __name__ == "__main__":
             template_file = arg
         elif opt in ("-o", "--directory"):
             directory = arg
+    if not excel_file or template_file:
+        print('netscriptgen -e <excelFile> -t <scriptTemplate> -o <directory>')
+        sys.exit(2)
+
     main(excel_file, template_file, directory)

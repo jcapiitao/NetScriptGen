@@ -30,7 +30,7 @@ def open_file(file):
 
 
 def get_test_excel_file():
-    return get_full_path('test.xlsx')
+    return get_test_file('test.xlsx')
 
 
 def get_excel_workbook(file=get_test_excel_file()):

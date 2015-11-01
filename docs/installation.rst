@@ -31,7 +31,7 @@ You can check your python version with the ``-V`` switch...
 
 .. code-block:: none
 
-   jcapitao@SanJose:~$ python3 -V
+   jcapitao@SanJose:~$ python -V
    Python 3.4.0
    jcapitao@SanJose:~$ $
 
@@ -45,6 +45,16 @@ Install from the source
 
       python setup.py install
 
+Using NetScriptGen
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Once you have installed NetScriptGen on your system, it's time to run it.
+
+.. code-block:: shell
+
+   jcapitao@SanJose:~$ python netscriptgen
+   netscriptgen -e <excelFile> -t <scriptTemplate> -o <directory>
+
 
 Github
 ~~~~~~~~~~~~~~~~~~~~
@@ -52,6 +62,7 @@ Github
 If you're interested in the source, you can always pull from the `Github repository`_:
 
    ::
+
       git clone https://github.com/JoelCapitao/NetScriptGen.git
 
 

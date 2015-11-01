@@ -14,7 +14,7 @@ if __name__ == '__main__':
           url = '',
           scripts = [],
           packages = ['equipment', 'process', 'utils', 'equipment.feature'],
-          py_modules = ['__init__', 'netscriptgen'],
+          py_modules = ['__init__', '__main__'],
           classifiers = ['Development Status :: 3 - Alpha', 'Programming Language :: Python'],
           entry_points={
           'console_scripts':

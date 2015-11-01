@@ -1,4 +1,3 @@
-import sys
 from pybuilder.core import Author, use_plugin, init
 
 use_plugin('python.core')

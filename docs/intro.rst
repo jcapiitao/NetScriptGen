@@ -14,6 +14,7 @@ NetScriptGen needs:
 NetScriptGen read the global template and attempt to fill out the variable by finding a relationship between the variable and the data contained into the Excel workbook. This is how a template with variable looks like:
 
    ::
+
    hostname {{hostname}}
    username {{general_data!user:name:1}} privilege 15 secret {{general_data!user:name:1}}
    !
