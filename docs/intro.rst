@@ -13,7 +13,7 @@ NetScriptGen needs:
 
 NetScriptGen read the global template and attempt to fill out the variable by finding a relationship between the variable and the data contained into the Excel workbook. This is how a template with variable looks like:
 
-   ::
+   code-block:: python
 
    hostname {{hostname}}
    username {{general_data!user:name:1}} privilege 15 secret {{general_data!user:name:1}}
@@ -30,10 +30,10 @@ NetScriptGen read the global template and attempt to fill out the variable by fi
    end
 
 
-What is NetScripGen good for?
+What is NetScriptGen good for?
 ----------------------------------
 
-Let's suppose you are working on a fresh network projet and need to prepare thousand
+Let's suppose you are working on a fresh network project and need to prepare thousand
 of equipments for the access layer. After diving yourself on the design, you write 
 a global script that can suits for every equipments except a few values which are 
 specific for each equipment (hostname, VLAN IDs, VTP, SNMP and so on).
