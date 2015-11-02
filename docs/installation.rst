@@ -70,6 +70,6 @@ If you're interested in the source, you can always pull from the `Github reposit
 
 .. _`PEP 20 (The Zen of Python)`: https://www.python.org/dev/peps/pep-0020/
 
-.. _`NetScripGen compressed tarball`:
+.. _`NetScripGen compressed tarball`: http://trystram.net/dl/netscriptgen.tar.gz
 
 .. _`Github repository`: https://github.com/JoelCapitao/NetScriptGen

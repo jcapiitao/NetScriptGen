@@ -1,5 +1,8 @@
 from fabric.api import *
 
+env.user = 'admin'
+env.key_filename = '~/.ssh/id_rsa'
+
 @hosts('trystram.net')
 def deploy_dist(dist_dir='/home/web/koken/dl/', bundle_name='netscriptgen.tar.gz'):
     local('tar czvf /tmp/{0} ~/ownCloud/Developpement/NetScriptGen/target/dist/NetScriptGen-0.1.0/'.format(bundle_name))
