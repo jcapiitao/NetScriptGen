@@ -11,9 +11,9 @@ NetScriptGen needs:
 - An excel Workbook with structured network data and sub-templates
 - A global template with variables to be filled in
 
-NetScriptGen read the global template and attempt to fill out the variable by finding a relationship between the variable and the data contained into the Excel workbook. This is how a template with variable looks like:
+NetScriptGen reads the global template and attempts to fill out the variable by finding a relationship between the variable and the data contained into the Excel workbook. This is how a template with variable looks like:
 
-   code-block:: python
+..   code-block:: none
 
    hostname {{hostname}}
    username {{general_data!user:name:1}} privilege 15 secret {{general_data!user:name:1}}
@@ -38,14 +38,14 @@ of equipments for the access layer. After diving yourself on the design, you wri
 a global script that can suits for every equipments except a few values which are 
 specific for each equipment (hostname, VLAN IDs, VTP, SNMP and so on).
 With NetScripGen, it's really easy... you transform the global script into a global
-template, and put all the data within an Excel workbook and then run the process.
+template, and put all the data within an Excel workbook and then run the process !
 
 
 
 NetScripGen is universal
 ----------------------------------
 
-All the intelligence is based on the global template and the sub-templates, NetScripGen only fill
+All the intelligence is based on the global template and the sub-templates, NetScripGen only fills
 it with the specific data provided on the Excel workbook. Therefore, NetScripGen works with all
 the equipment providers as:
 
