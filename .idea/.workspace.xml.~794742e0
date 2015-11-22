@@ -15,83 +15,53 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_param_by_index_failed.coverage" NAME="Unittest ArrayParsingTests.test_get_param_by_index_failed Coverage Results" MODIFIED="1448190199540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ListParsing_tests.coverage" NAME="Unittests in ListParsing_tests Coverage Results" MODIFIED="1448209156564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_param_by_index_failed.coverage" NAME="Unittest ArrayParsingTests.test_get_param_by_index_failed Coverage Results" MODIFIED="1438718533694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ListParsing_tests.coverage" NAME="Unittests in ListParsing_tests Coverage Results" MODIFIED="1440703904707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_TextParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_TextParsing_unresolved Coverage Results" MODIFIED="1439035830549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_EquipmentTests.coverage" NAME="Unittests in EquipmentTests Coverage Results" MODIFIED="1445091046386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_fill_out_the_template.coverage" NAME="Unittest EquipmentTests.test_fill_out_the_template Coverage Results" MODIFIED="1440588013576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$ArrayParsing.coverage" NAME="ArrayParsing Coverage Results" MODIFIED="1438718361349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/target/dist/NetScriptGen-1.0.dev0/process" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_TextParsingTests.coverage" NAME="Unittests in TextParsingTests Coverage Results" MODIFIED="1440704056668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key_and_index_failed.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key_and_index_failed Coverage Results" MODIFIED="1448209143547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ExcelWorkbookManagerTests.coverage" NAME="Unittests in ExcelWorkbookManagerTests Coverage Results" MODIFIED="1438970611923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$ExcelWorkbookManager.coverage" NAME="ExcelWorkbookManager Coverage Results" MODIFIED="1438806330895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/utils" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Equipment.coverage" NAME="Equipment Coverage Results" MODIFIED="1439412048624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/equipment" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_find_var.coverage" NAME="Unittest EquipmentTests.test_find_var Coverage Results" MODIFIED="1439119933422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key_and_index_failed2.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key_and_index_failed2 Coverage Results" MODIFIED="1438719513060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_filling_ratio.coverage" NAME="Unittest EquipmentTests.test_get_filling_ratio Coverage Results" MODIFIED="1448213386652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_nbr_of_cols_in_row.coverage" NAME="Unittest ArrayParsingTests.test_get_nbr_of_cols_in_row Coverage Results" MODIFIED="1438518835383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_edit_brackets_inside_var.coverage" NAME="Unittest EquipmentTests.test_edit_brackets_inside_var Coverage Results" MODIFIED="1439124346532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_is_duplication_False.coverage" NAME="Unittest ArrayParsingTests.test_is_duplication_False Coverage Results" MODIFIED="1440700822585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_all_commands.coverage" NAME="Unittest ArrayParsingTests.test_get_all_commands Coverage Results" MODIFIED="1439116690207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ListParsingTests.coverage" NAME="Unittests in ListParsingTests Coverage Results" MODIFIED="1438971838335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ArrayParsing_tests.coverage" NAME="Unittests in ArrayParsing_tests Coverage Results" MODIFIED="1448209211590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_all_param_by_index.coverage" NAME="Unittest ArrayParsingTests.test_get_all_param_by_index Coverage Results" MODIFIED="1445089258579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1445091435775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_Interface_tests.coverage" NAME="Unittests in Interface_tests Coverage Results" MODIFIED="1448192014543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_Equipment_tests.coverage" NAME="Unittests in Equipment_tests Coverage Results" MODIFIED="1448216581047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_var_with_exclamation_and_colon_ArrayParsing.coverage" NAME="Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing Coverage Results" MODIFIED="1440587076529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key Coverage Results" MODIFIED="1437686020149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_fill_local_template.coverage" NAME="Unittest EquipmentTests.test_fill_local_template Coverage Results" MODIFIED="1439201214963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ExcelWorkbookManagerTests_test_open_file_not_exist.coverage" NAME="Unittest ExcelWorkbookManagerTests.test_open_file_not_exist Coverage Results" MODIFIED="1438806158256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ArrayParsing.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ArrayParsing Coverage Results" MODIFIED="1439235511694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_of_var_with_interrogation_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_of_var_with_interrogation_unresolved Coverage Results" MODIFIED="1448205824764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_of_pattern_2.coverage" NAME="Unittest EquipmentTests.test_get_value_of_pattern_2 Coverage Results" MODIFIED="1439202070042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_TextParsing_tests.coverage" NAME="Unittests in TextParsing_tests Coverage Results" MODIFIED="1448209241454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved Coverage Results" MODIFIED="1448203810479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test.coverage" NAME="Unittest EquipmentTests.test Coverage Results" MODIFIED="1448202730815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_fill_out_the_template.coverage" NAME="Unittest EquipmentTests.test_fill_out_the_template Coverage Results" MODIFIED="1440588013576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_EquipmentTests.coverage" NAME="Unittests in EquipmentTests Coverage Results" MODIFIED="1445091046386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_TextParsing_tests.coverage" NAME="Unittests in TextParsing_tests Coverage Results" MODIFIED="1438719572859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing_unresolved Coverage Results" MODIFIED="1440586964261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_TextParsingTests.coverage" NAME="Unittests in TextParsingTests Coverage Results" MODIFIED="1440704056668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_TextParsing.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_TextParsing Coverage Results" MODIFIED="1439035275216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ExcelWorkbookManager_tests.coverage" NAME="Unittests in ExcelWorkbookManager_tests Coverage Results" MODIFIED="1448191999297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key_and_index_failed.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key_and_index_failed Coverage Results" MODIFIED="1438515776994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ExcelWorkbookManager_tests.coverage" NAME="Unittests in ExcelWorkbookManager_tests Coverage Results" MODIFIED="1438811978647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_from_global_sheet_is_var.coverage" NAME="Unittest EquipmentTests.test_get_value_from_global_sheet_is_var Coverage Results" MODIFIED="1439201350000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ExcelWorkbookManagerTests.coverage" NAME="Unittests in ExcelWorkbookManagerTests Coverage Results" MODIFIED="1438970611923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Equipment.coverage" NAME="Equipment Coverage Results" MODIFIED="1439412048624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/equipment" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$ExcelWorkbookManager.coverage" NAME="ExcelWorkbookManager Coverage Results" MODIFIED="1438806330895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/utils" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_find_var.coverage" NAME="Unittest EquipmentTests.test_find_var Coverage Results" MODIFIED="1439119933422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key_and_index.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key_and_index Coverage Results" MODIFIED="1437686698101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key_and_index_failed2.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key_and_index_failed2 Coverage Results" MODIFIED="1438719513060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_set_value_by_bag_and_key.coverage" NAME="Unittest ListParsingTests.test_set_value_by_bag_and_key Coverage Results" MODIFIED="1437819415476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_set_value_by_key.coverage" NAME="Unittest ListParsingTests.test_set_value_by_key Coverage Results" MODIFIED="1438800366980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_nbr_of_cols_in_row.coverage" NAME="Unittest ArrayParsingTests.test_get_nbr_of_cols_in_row Coverage Results" MODIFIED="1438518835383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_all_keys_by_bag.coverage" NAME="Unittest ListParsingTests.test_get_all_keys_by_bag Coverage Results" MODIFIED="1440703638351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_from_global_sheet_is_sheet.coverage" NAME="Unittest EquipmentTests.test_get_value_from_global_sheet_is_sheet Coverage Results" MODIFIED="1439201621323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$ListParsing.coverage" NAME="ListParsing Coverage Results" MODIFIED="1437678351475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/process" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ArrayParsingTests.coverage" NAME="Unittests in ArrayParsingTests Coverage Results" MODIFIED="1448211131153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_of_pattern_1.coverage" NAME="Unittest EquipmentTests.test_get_value_of_pattern_1 Coverage Results" MODIFIED="1439198295590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ListParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ListParsing_unresolved Coverage Results" MODIFIED="1439035826735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$main.coverage" NAME="main Coverage Results" MODIFIED="1438721007867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_all_keys_by_bag_failed.coverage" NAME="Unittest ListParsingTests.test_get_all_keys_by_bag_failed Coverage Results" MODIFIED="1448208967521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-=======
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_edit_brackets_inside_var.coverage" NAME="Unittest EquipmentTests.test_edit_brackets_inside_var Coverage Results" MODIFIED="1439124346532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_set_value_by_key.coverage" NAME="Unittest ListParsingTests.test_set_value_by_key Coverage Results" MODIFIED="1438800366980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_is_duplication_False.coverage" NAME="Unittest ArrayParsingTests.test_is_duplication_False Coverage Results" MODIFIED="1440700822585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_all_commands.coverage" NAME="Unittest ArrayParsingTests.test_get_all_commands Coverage Results" MODIFIED="1439116690207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ListParsingTests.coverage" NAME="Unittests in ListParsingTests Coverage Results" MODIFIED="1438971838335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_all_commands.coverage" NAME="Unittest ArrayParsingTests.test_get_all_commands Coverage Results" MODIFIED="1439116690207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_is_duplication_False.coverage" NAME="Unittest ArrayParsingTests.test_is_duplication_False Coverage Results" MODIFIED="1440700822585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ArrayParsing_tests.coverage" NAME="Unittests in ArrayParsing_tests Coverage Results" MODIFIED="1445091755626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_all_param_by_index.coverage" NAME="Unittest ArrayParsingTests.test_get_all_param_by_index Coverage Results" MODIFIED="1445089258579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1445091435775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_from_global_sheet_is_sheet.coverage" NAME="Unittest EquipmentTests.test_get_value_from_global_sheet_is_sheet Coverage Results" MODIFIED="1439201621323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$ListParsing.coverage" NAME="ListParsing Coverage Results" MODIFIED="1437678351475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/process" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_of_pattern_1.coverage" NAME="Unittest EquipmentTests.test_get_value_of_pattern_1 Coverage Results" MODIFIED="1439198295590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ArrayParsingTests.coverage" NAME="Unittests in ArrayParsingTests Coverage Results" MODIFIED="1439116678943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ListParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ListParsing_unresolved Coverage Results" MODIFIED="1439035826735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_from_global_sheet_is_sheet.coverage" NAME="Unittest EquipmentTests.test_get_value_from_global_sheet_is_sheet Coverage Results" MODIFIED="1439201621323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$main.coverage" NAME="main Coverage Results" MODIFIED="1438721007867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ListParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ListParsing_unresolved Coverage Results" MODIFIED="1439035826735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_ArrayParsingTests.coverage" NAME="Unittests in ArrayParsingTests Coverage Results" MODIFIED="1439116678943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_of_pattern_1.coverage" NAME="Unittest EquipmentTests.test_get_value_of_pattern_1 Coverage Results" MODIFIED="1439198295590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittests_in_Equipment_tests.coverage" NAME="Unittests in Equipment_tests Coverage Results" MODIFIED="1445091060284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_var_with_exclamation_and_colon_ArrayParsing.coverage" NAME="Unittest EquipmentTests.test_get_var_with_exclamation_and_colon_ArrayParsing Coverage Results" MODIFIED="1440587076529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_varf_rom_global_sheet_is_sheet.coverage" NAME="Unittest EquipmentTests.test_get_varf_rom_global_sheet_is_sheet Coverage Results" MODIFIED="1439412395531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ArrayParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ArrayParsing_unresolved Coverage Results" MODIFIED="1439035820548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ListParsingTests_test_get_value_by_bag_and_key.coverage" NAME="Unittest ListParsingTests.test_get_value_by_bag_and_key Coverage Results" MODIFIED="1437686020149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
+    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ArrayParsing_unresolved.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ArrayParsing_unresolved Coverage Results" MODIFIED="1439035820548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ListParsing.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ListParsing Coverage Results" MODIFIED="1439035042390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_param_by_index.coverage" NAME="Unittest ArrayParsingTests.test_get_param_by_index Coverage Results" MODIFIED="1438715351347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-=======
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_fill_local_template.coverage" NAME="Unittest EquipmentTests.test_fill_local_template Coverage Results" MODIFIED="1439201214963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
-    <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ArrayParsingTests_test_get_param_by_index.coverage" NAME="Unittest ArrayParsingTests.test_get_param_by_index Coverage Results" MODIFIED="1438715351347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_ExcelWorkbookManagerTests_test_open_file_not_exist.coverage" NAME="Unittest ExcelWorkbookManagerTests.test_open_file_not_exist Coverage Results" MODIFIED="1438806158256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
     <SUITE FILE_PATH="coverage/NetScriptGen$Unittest_EquipmentTests_test_get_value_pattern_with_exclamation_and_colon_ArrayParsing.coverage" NAME="Unittest EquipmentTests.test_get_value_pattern_with_exclamation_and_colon_ArrayParsing Coverage Results" MODIFIED="1439235511694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/unittest/python" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -102,55 +72,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="__main__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/python/__main__.py">
+      <file leaf-file-name="index.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/index.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="24" />
-              <folding>
-                <element signature="e#22#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Equipment.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/python/equipment/Equipment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41935483">
-              <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Equipment_tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/unittest/python/Equipment_tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayParsing_tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py">
+      <file leaf-file-name="intro.rst" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/intro.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.4413793">
+              <caret line="47" column="98" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/unittest/excel_file/template1.txt">
+      <file leaf-file-name="tutorial_workbook.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/tutorial_workbook.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="13" />
+              <caret line="158" column="36" selection-start-line="158" selection-start-column="36" selection-end-line="158" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fabfile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fabfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="installation.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/installation.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tutorial.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/tutorial.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tutorial_template.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/tutorial_template.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelWorkbookManager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/python/utils/ExcelWorkbookManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelWorkbookManager_tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unittest/python/ExcelWorkbookManager_tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -187,41 +206,34 @@
         <option value="$PROJECT_DIR$/src/main/python/utils/ExcelFile.py" />
         <option value="$PROJECT_DIR$/src/main/python/main.py" />
         <option value="$PROJECT_DIR$/src/unittest/python/Interface_tests.py" />
+        <option value="$PROJECT_DIR$/src/main/python/process/ListParsing.py" />
+        <option value="$PROJECT_DIR$/src/main/python/process/TextParsing.py" />
         <option value="$PROJECT_DIR$/src/main/python/ios_script_sample2.txt" />
+        <option value="$PROJECT_DIR$/src/main/python/process/ArrayParsing.py" />
+        <option value="$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py" />
+        <option value="$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py" />
         <option value="$PROJECT_DIR$/src/main/python/equipment/feature/Interface.py" />
         <option value="$PROJECT_DIR$/deploy_docs.py" />
         <option value="$PROJECT_DIR$/src/unittest/python/main_tests.py" />
+        <option value="$PROJECT_DIR$/src/main/python/equipment/Equipment.py" />
         <option value="$PROJECT_DIR$/src/unittest/excel_file/template1.txt" />
+        <option value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
+        <option value="$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py" />
         <option value="$PROJECT_DIR$/docs/conf.py" />
         <option value="$PROJECT_DIR$/src/main/python/netscriptgen.py" />
         <option value="$PROJECT_DIR$/build.py" />
+        <option value="$PROJECT_DIR$/src/main/python/__main__.py" />
         <option value="$PROJECT_DIR$/src/main/python/utils/ExcelWorkbookManager.py" />
         <option value="$PROJECT_DIR$/src/unittest/python/ExcelWorkbookManager_tests.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/NetScriptGen.egg-info/deploy_dist.py" />
         <option value="$PROJECT_DIR$/deploy_dist.py" />
         <option value="$PROJECT_DIR$/fabfile.py" />
-        <option value="$PROJECT_DIR$/docs/tutorial_workbook.rst" />
-        <option value="$PROJECT_DIR$/docs/intro.rst" />
         <option value="$PROJECT_DIR$/docs/installation.rst" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/docs/tutorial_template.rst" />
-        <option value="$PROJECT_DIR$/src/main/python/__main__.py" />
-        <option value="$PROJECT_DIR$/docs/tutorial.rst" />
-        <option value="$PROJECT_DIR$/src/main/python/process/ArrayParsing.py" />
-        <option value="$PROJECT_DIR$/src/main/python/process/TextParsing.py" />
-        <option value="$PROJECT_DIR$/src/main/python/process/ListParsing.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py" />
-        <option value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
-        <option value="$PROJECT_DIR$/src/main/python/equipment/Equipment.py" />
-=======
         <option value="$PROJECT_DIR$/docs/tutorial.rst" />
         <option value="$PROJECT_DIR$/docs/tutorial_workbook.rst" />
         <option value="$PROJECT_DIR$/docs/tutorial_template.rst" />
         <option value="$PROJECT_DIR$/docs/intro.rst" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
       </list>
     </option>
   </component>
@@ -287,180 +299,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unittest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unittest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unittest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="excel_file" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="process" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NetScriptGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="equipment" />
-=======
               <option name="myItemId" value="docs" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -473,7 +319,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -498,7 +344,7 @@
       <recent name="$PROJECT_DIR$/src/main/python/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in Equipment_tests">
+  <component name="RunManager" selected="Python tests.Unittests in ArrayParsing_tests">
     <configuration default="false" name="Unittests in ArrayParsing_tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -522,7 +368,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in TextParsing_tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest ArrayParsingTests.test_get_all_param_by_index" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -533,11 +379,34 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetScriptGen" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py" />
-      <option name="CLASS_NAME" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py" />
+      <option name="CLASS_NAME" value="ArrayParsingTests" />
+      <option name="METHOD_NAME" value="test_get_all_param_by_index" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in EquipmentTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NetScriptGen" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
+      <option name="CLASS_NAME" value="EquipmentTests" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -568,50 +437,22 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in ArrayParsingTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/python" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NetScriptGen" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py" />
-      <option name="CLASS_NAME" value="ArrayParsingTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest EquipmentTests.test_get_filling_ratio" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/unittest/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="NetScriptGen" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/unittest/python/Equipment_tests.py" />
-      <option name="CLASS_NAME" value="EquipmentTests" />
-      <option name="METHOD_NAME" value="test_get_filling_ratio" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/python/__main__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -822,18 +663,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ArrayParsing_tests" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TextParsing_tests" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Equipment_tests" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in ArrayParsingTests" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest EquipmentTests.test_get_filling_ratio" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest ArrayParsingTests.test_get_all_param_by_index" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in EquipmentTests" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Equipment_tests" />
+      <item index="4" class="java.lang.String" itemvalue="Python.__main__" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Equipment_tests" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest EquipmentTests.test_get_filling_ratio" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in ArrayParsingTests" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TextParsing_tests" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in ArrayParsing_tests" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in ArrayParsing_tests" />
+        <item index="1" class="java.lang.String" itemvalue="Python.__main__" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Equipment_tests" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in EquipmentTests" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest ArrayParsingTests.test_get_all_param_by_index" />
       </list>
     </recent_temporary>
   </component>
@@ -918,24 +759,24 @@
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35458168" sideWeight="0.43359375" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39442232" sideWeight="0.49287927" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38778222" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30942896" sideWeight="0.56640625" order="2" side_tool="true" content_ui="tabs" x="1680" y="0" width="1680" height="1044" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38778222" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35458168" sideWeight="0.43671876" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39442232" sideWeight="0.49287927" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.374502" sideWeight="0.56328124" order="2" side_tool="true" content_ui="tabs" x="1680" y="0" width="1680" height="1044" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -958,15 +799,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.374502" sideWeight="0.56328124" order="2" side_tool="true" content_ui="tabs" x="1680" y="0" width="1680" height="1044" />
-=======
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.374502" sideWeight="0.56328124" order="2" side_tool="true" content_ui="tabs" x="1680" y="0" width="1680" height="1044" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1149,6 +984,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/process/ListParsing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-44.48148">
+          <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/target/logs/install_dependencies/coverage">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1191,10 +1033,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/unittest/python/Interface_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/excel_file/template1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1205,13 +1061,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/reports/coverage">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/process/TextParsing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.048275862">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/reports/coverage">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/process/ArrayParsing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/Equipment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/Equipment_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1222,10 +1120,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/__main__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../virtualenvs/netScriptGen_virtualenv/lib/python3.4/site-packages/NetScriptGen-0.1.0-py3.4.egg!/utils/ExcelWorkbookManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08275862">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/python/utils/ExcelWorkbookManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1252,106 +1172,7 @@
     <entry file="file://$PROJECT_DIR$/fabfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/tutorial_template.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/installation.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/intro.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/tutorial_workbook.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="79" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/tutorial.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.057251908">
-          <caret line="2" column="76" selection-start-line="2" selection-start-column="76" selection-end-line="2" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/ListParsing_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06097561">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/process/ListParsing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/TextParsing_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/python/process/ArrayParsing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14634146">
-          <caret line="49" column="58" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-          <folding>
-            <element signature="e#21#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/python/process/TextParsing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4878049">
-          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
-=======
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1360,80 +1181,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/ArrayParsing_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-=======
     <entry file="file://$PROJECT_DIR$/docs/installation.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/unittest/excel_file/template1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="13" />
-=======
     <entry file="file://$PROJECT_DIR$/docs/tutorial.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/python/utils/ExcelWorkbookManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42479676">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="54" />
-=======
     <entry file="file://$PROJECT_DIR$/docs/tutorial_workbook.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="158" column="36" selection-start-line="158" selection-start-column="36" selection-end-line="158" selection-end-column="36" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/python/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#22#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/reports/coverage_html/equipment_Equipment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35042736">
-          <caret line="268" column="252" selection-start-line="268" selection-start-column="252" selection-end-line="268" selection-end-column="252" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/python/Equipment_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-=======
     <entry file="file://$PROJECT_DIR$/docs/tutorial_template.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1444,21 +1219,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/intro.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.4413793">
           <caret line="47" column="98" selection-start-line="47" selection-start-column="98" selection-end-line="47" selection-end-column="98" />
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
           <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/python/equipment/Equipment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41935483">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -45,8 +45,13 @@ template, and put all the data within an Excel workbook and then run the process
 NetScriptGen is universal
 ----------------------------------
 
+<<<<<<< HEAD
 All the intelligence is based on the global template and the sub-templates, NetScriptGen only fills
 it with the specific data provided on the Excel workbook. Therefore, NetScriptGen works with all
+=======
+All the intelligence is based on the global template and the sub-templates, NetScripGen only fills
+it with the specific data provided on the Excel workbook. Therefore, NetScripGen works with all
+>>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
 the equipment providers as:
 
 - Cisco (Cisco IOS, Cisco Nexus, Cisco IOS-XR, Cisco IOS-XE, Aironet OS, Cisco ASA, Cisco CatOS)
