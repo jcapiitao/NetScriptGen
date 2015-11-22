@@ -16,9 +16,12 @@ class TextParsingTests(TestCase):
         self.assertEqual(expected, got)
 
     def test_get_text_by_title_failed(self):
-        expected = KeyError
-        got = self.sheet.get_text_by_title('invalid_title')
-        self.assertRaises(expected, got)
+        try:
+            expected = KeyError
+            got = self.sheet.get_text_by_title('invalid_title')
+            self.assertRaises(expected, got)
+        except KeyError:
+            pass
 
     def test_get_all_titles(self):
         expected = ['banner', 'password', 'name']

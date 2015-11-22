@@ -3,7 +3,6 @@ from equipment.Equipment import Equipment
 from process.ArrayParsing import ArrayParsing
 from process.ListParsing import ListParsing
 from process.TextParsing import TextParsing
-from utils.ExcelWorkbookManager import get_test_file
 from utils.ExcelWorkbookManager import get_sheet_test
 
 
@@ -19,6 +18,8 @@ class EquipmentTests(TestCase):
         self.workbook[text_test] = TextParsing(get_sheet_test(text_test + '.xlsx'))
         self.workbook['Global'] = ArrayParsing(get_sheet_test(global_test + '.xlsx'))
         self.equipment = Equipment('HOST1', my_template, self.workbook)
+        self.equipment.unresolved = 1
+        self.equipment.resolved = 2
 
     def test_fill_out_the_template(self):
         expected = "HOST1\nADMRESEAU-1 and 10.1.255.0 and\n10.179.255.6210.1.0.224\n0.0.0.15\n10.1.1.254"
@@ -99,3 +100,13 @@ class EquipmentTests(TestCase):
         expected = "Wuce Brayne"
         got = self.equipment.remove_braces("{{Wuce Brayne}}")
         self.assertEqual(expected, got)
+
+    def test_get_filling_ratio_in_percentage(self):
+        expected = '67%'
+        got = self.equipment.get_filling_ratio_in_percentage()
+        self.assertEqual(expected, got)
+
+    def test_get_filling_ratio(self):
+            expected = '2/3'
+            got = self.equipment.get_filling_ratio()
+            self.assertEqual(expected, got)

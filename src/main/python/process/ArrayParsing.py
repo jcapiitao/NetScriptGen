@@ -1,5 +1,6 @@
 # -*-coding:UTF-8 -*
-
+import sys
+import traceback
 
 class ArrayParsing(object):
     """"
@@ -17,6 +18,7 @@ class ArrayParsing(object):
         self.sheet_name = xl_sheet.name
         self.commands = self.get_local_templates()
         self.index = dict()
+        self.tb = list()
 
         is_duplication, indexes_duplicated = self.is_duplication(self.get_all_indexes())
         if is_duplication is True:
@@ -43,15 +45,23 @@ class ArrayParsing(object):
         try:
             return self.index[index_value][param_value]
         except KeyError:
-            print("The index '%s' or the parameter '%s' doesn't exist in the tab '%s'."
-                  % (index_value, param_value, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The index '{0}' or the parameter '{1}' " \
+                     "doesn't exist in the worksheet '{2}'".format(index_value, param_value, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     def set_value_by_index_and_param(self, index_value, param_value, updated_value):
         try:
             self.index[index_value][param_value] = updated_value
         except KeyError:
-            print("The index '%s' or the parameter '%s' doesn't exist in the tab '%s'."
-                  % (index_value, param_value, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The index '{0}' or the parameter '{1}' " \
+                     "doesn't exist in the worksheet '{2}'".format(index_value, param_value, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     def get_all_param_by_index(self, index_value):
         dict_of_params = dict()

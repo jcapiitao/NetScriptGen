@@ -1,5 +1,6 @@
 # -*-coding:UTF-8 -*
-
+import sys
+import traceback
 
 class ListParsing(object):
     # TODO Description of the class
@@ -30,7 +31,11 @@ class ListParsing(object):
         try:
             return self.dict_bags_and_keys[bag][key]
         except KeyError:
-            print("The bag '%s' or the key '%s' doesn't exist in the tab '%s'." % (bag, key, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The bag '{0}' or the key '{1}' doesn't exist in the tab '{2}'.".format(bag, key, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     def get_value_by_bag_and_key_and_index(self, bag, key, index):
         try:
@@ -39,9 +44,17 @@ class ListParsing(object):
                 if values:
                     return values[index-1]
             except IndexError:
-                print("There is no such index in the list '%s->%s = %s'" % (bag, key, values))
+                exc_type, exc_value, exc_traceback = sys.exc_info()
+                output = "There is no such index in the list '{0}->{1} = {2}'".format(bag, key, values)
+                print(output)
+                traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+                raise KeyError(output)
         except KeyError:
-            print("The index '%s' doesn't exist in the tab '%s'." % (index, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The index '{0}' doesn't exist in the tab '{1}'.".format(index, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     def set_value_by_bag_and_key(self, bag, key, index, value):
         try:
@@ -53,7 +66,11 @@ class ListParsing(object):
             else:
                 list_bag_and_key.insert(index, value)
         except KeyError:
-            print("The bag '%s' or the key '%s' doesn't exist in the tab '%s'." % (bag, key, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The bag '{0}' or the key '{1}' doesn't exist in the tab '{2}'.".format(bag, key, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     def display_value_by_bag_and_key(self, bag, key):
         print(self.get_value_by_bag_and_key(bag, key))
@@ -62,7 +79,11 @@ class ListParsing(object):
         try:
             return self.dict_bags_and_keys[bag].keys()
         except KeyError:
-            print("The bag '%s' doesn't exist in the tab '%s'." % (bag, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The bag '{0}' doesn't exist in the tab '{1}'.".format(bag, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError
 
     def get_all_keys(self):
         return self.dict_only_keys.keys()
@@ -71,7 +92,11 @@ class ListParsing(object):
         try:
             return self.dict_only_keys[key]
         except KeyError:
-            print("The key '%s' doesn't exist in the tab '%s'." % (key, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The key '{0}' doesn't exist in the tab '{1}'.".format(key, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     def set_value_by_key(self, key, index, value):
         try:
@@ -83,7 +108,11 @@ class ListParsing(object):
             else:
                 list_of_values.insert(index, value)
         except KeyError:
-            print("The key '%s' doesn't exist in the tab '%s'." % (key, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The key '{0}' doesn't exist in the tab '{1}'.".format(key, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     @staticmethod
     def to_string(cell_obj):

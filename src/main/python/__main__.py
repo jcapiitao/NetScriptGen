@@ -1,7 +1,5 @@
 # -*-coding:UTF-8 -*
 
-# TODO : Use Sphinx for doc generation
-
 import getopt
 from process.ArrayParsing import ArrayParsing
 from process.TextParsing import TextParsing

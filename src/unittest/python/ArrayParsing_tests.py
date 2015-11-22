@@ -15,9 +15,12 @@ class ArrayParsingTests(TestCase):
         self.assertEqual(expected, got)
 
     def test_get_param_by_index_failed(self):
-        expected = KeyError
-        got = self.sheet.get_value_of_var_by_index_and_param('101', 'invalid_param')
-        self.assertRaises(expected, got)
+        try:
+            expected = KeyError
+            got = self.sheet.get_value_of_var_by_index_and_param('101', 'invalid_param')
+            self.assertRaises(expected, got)
+        except KeyError:
+            pass
 
     def test_set_param_by_index(self):
         index_value, param_value, updated_value = '104', 'Gateway', '1.1.1.1'
@@ -26,10 +29,13 @@ class ArrayParsingTests(TestCase):
         self.assertEqual(updated_value, got)
 
     def test_set_param_by_index_failed(self):
-        index_value, param_value, updated_value = '000', 'Gateway', '1.1.1.1'
-        expected = KeyError
-        got = self.sheet.set_value_by_index_and_param(index_value, param_value, updated_value)
-        self.assertRaises(expected, got)
+        try:
+            index_value, param_value, updated_value = '000', 'Gateway', '1.1.1.1'
+            expected = KeyError
+            got = self.sheet.set_value_by_index_and_param(index_value, param_value, updated_value)
+            self.assertRaises(expected, got)
+        except KeyError:
+            pass
 
     def test_get_all_param_by_index(self):
         expected = {'Vlans ID': '105',

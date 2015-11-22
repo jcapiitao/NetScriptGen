@@ -1,10 +1,11 @@
 The Excel Workbook
 ------------------------
-The Excel Workbook has to be built in a specific way in order to allow NetScriptGen to be able to identify the data in a structured manner.
+The Excel Workbook has to be built in a specific way in order to allow NetScriptGen to be able to identify the data.
+
 The Excel Workbook will contains:
 
-* **A global worksheet named 'Global'**: this is the main worksheet, it contains equipments per row, and the variables per column 
-* **A worksheet per feature**: this is the worksheet which contains the data of the specified feature (VLAN, VTP, Port-Channel, and so on) 
+* **A global worksheet named** ``Global`` : this is the main worksheet, it contains equipments per row, and the variables per column
+* **A worksheet per feature**: this is a worksheet which contains the data of the specified feature (VLAN, VTP, Port-Channel, and so on)
 * **A set of worksheets**: they contain fixed common variables (DNS, banner, user and so on)
 
 
@@ -13,11 +14,13 @@ The global worksheet
 
 1. Open Microsoft Excel
 
-2. Renames the first sheet by 'Global'.
+2. Renames the first sheet by ``Global``.
 
-3. On the first row, fill the cells with your variables. For example: hostname, location, layer, equipment, stack, ip_mgmt, vtp_profile, engine_id, port-channel
+3. On the first row, fill the cells with your variables.
 
-4. Then, from the second row, each row is an equipement, fill the cells with the appropriate value
+For example: hostname, location, layer, equipment, stack, ip_mgmt, vtp_profile, engine_id, port-channel
+
+4. Then, from the second row, each row is an equipment, fill the cells with the appropriate value
 
 
 You can see an example of a global worksheet below :
@@ -28,7 +31,7 @@ You can see an example of a global worksheet below :
    Figure 1, An Example of a global worksheet
 
 As you can see above, each line is an equipment. Each of these equipments will have a configuration different from one another based on the values of the variables.
-You can add equipment and variable by inserting rows and columns respectively as much as you want. The only limit is the maximum number of rows and columns set by Microsoft.
+You can add equipments and variables by inserting rows and columns respectively as much as you want. The only limit is the maximum number of rows and columns set by Microsoft.
 Of course, the more equipments and variables there are, the slower will be NetScriptGen to generate the scripts.
 
 
@@ -36,7 +39,7 @@ In this global worksheet, the variables may be simple or complex :
 
 * **the simple variable** : NetScriptGen will replace the variable within double brackets ``{{variable}}`` by the value contained in the global worksheet. For instance, ``{{hostname}}`` will be replaced by ``SW1``
 
-* **the complex variable** : if there is a worksheet which its label is a variable, then this variable is a complex one and the worksheet is called a "feature worksheet". In this case, NetScriptGen will not simply substitute the variable by the value, but it will replace the ``{{variable}}`` by one or more sub-templates filled by values contained into the feature worksheet.
+* **the complex variable** : if there is a worksheet which is labeled with the variable name, then this variable is a complex one and the worksheet is called a "feature worksheet". In this case, NetScriptGen will not simply substitute the variable by the value, but it will replace the ``{{variable}}`` by one or more sub-templates filled by values contained into the feature worksheet.
 
 .. note:: From now on, I will take the first equipment (SW1) as example.
 
@@ -44,18 +47,19 @@ In this global worksheet, the variables may be simple or complex :
 The feature worksheet
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Now you know what is a complex variable, we have to take a look on how to set up a feature worksheet.
-We will do that for the variable ``port-channel`` which is now only a simple variable.
+Now you know what a complex variable is, we have to take a look on how to set up a feature worksheet.
+We will do that for the variable ``port-channel`` which is for now only a simple variable.
 
 1. Create a new woorksheet and labeled it ``port-channel`` (case-sensitive).
 
 Therefore, ``port-channel`` is a complex variable.
-Now, This worksheet must be divided into two sections:
+Now, this worksheet must be divided into two sections:
 
 * **The table that contains the data**
 * **The sub-templates**
 
-2. Create your table as you did for the global worksheet **BUT** in the first column you must put all the values that may take the complex variable. As you may have guessed, this is the joint connecting the global worksheet and the feature sheet.
+2. Create your table as you did for the global worksheet **BUT** in the first column you must put all the values that
+may take the complex variable. As you may have guessed, this is the joint connecting the global worksheet and the feature sheet.
 
 .. figure:: _static/feature_sheet_table.png
    :alt: feature worksheet overview
@@ -76,6 +80,12 @@ Now, This worksheet must be divided into two sections:
 
 .. warning:: As you can see above, the title of the template "Default" is in the cell A13, and the template itself is in the cell A14.
           You can then merge cells as I did, but the content must be is the column A.
+
+4. Finally, for each template, add a variable at the end of the table named as ``Template name_of_the_sub-template``.
+
+If you want to apply this sub-template to the complex variable, set ``Yes`` into the cell, if not set ``No``.
+You can apply templates to a complex variable as much as you want.
+
 
 The complex variable ``{{port-channel}}`` in the global template will be substitute by :
 
@@ -128,10 +138,10 @@ Fixed common variables
 ~~~~~~~~~~~~~~~~~~~~~~
 Although the configurations are different from one another, there are some fixed common variables. 
 After all, you can put the values of these variables directly within the global template. However, fixed common variable gives you much more flexibility and clarity.
-Indeed, if you want to reuse a old project, you just have to change the values of the variables in the worksheet, and not spending time scratching your head to change the values in the global template. The strength of a variable, no more, no less...
+Indeed, if you want to reuse an old project, you just have to change the values of the variables in the worksheet, and not spending time scratching your head to change the values in the global template. The strength of a variable, no more, no less...
 
 
-1. Create a new woorksheet and labeled it as you want
+1. Create a new woorksheet and label it as you want
 
 2. 
 	1. In the cell A1, enter "Function"
@@ -146,7 +156,7 @@ How to store a text ?
 Sometimes you need to store a text, the MOTD banner that displays when the user logs in to the switch for example.
 To achieve this :
 
-1. Create a new woorksheet and labeled it as you want
+1. Create a new woorksheet and label it as you want
 
 2. In the cell A1, enter "Text"
 

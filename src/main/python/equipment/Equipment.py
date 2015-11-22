@@ -2,6 +2,7 @@
 
 import re
 import sys
+import traceback
 from process.ArrayParsing import ArrayParsing
 from process.TextParsing import TextParsing
 from process.ListParsing import ListParsing
@@ -14,6 +15,8 @@ class Equipment(object):
         self.template = template
         self.workbook = workbook
         self.unresolved = 0
+        self.resolved = 0
+        self.tb = list()
         self.pattern_contains_braces = '(?<=\{\{).+?(?=\}\})'
         self.pattern_contains_brackets = '\(\((.*)\)\)'
         self.pattern_contains_interrogation = '[?]'
@@ -67,14 +70,26 @@ class Equipment(object):
             return output
         # If the parameter/feature is only a variable (there is not a sheet for this feature)
         else:
-            return self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
+            try:
+                value = self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
+                self.resolved += 1
+                return value
+            except KeyError as err:
+                self.unresolved += 1
+                self.tb += traceback.format_exception_only(KeyError, err)
+                return "<unresolved>"
 
     @staticmethod
     def fill_local_template(self, data, local_template):
         is_braces = re.findall(self.pattern_contains_braces, local_template)
         if is_braces:
             for value in is_braces:
-                local_template = local_template.replace(''.join(['{{', value, '}}']), data[value])
+                if value in data:
+                    local_template = local_template.replace(''.join(['{{', value, '}}']), data[value])
+                    self.resolved += 1
+                else:
+                    local_template = local_template.replace(''.join(['{{', value, '}}']),
+                                                            self.get_value_of_var(value, self.workbook))
         return local_template
 
     def get_value_of_var_with_exclamation_and_colon(self, var_with_exclamation_and_colon, workbook):
@@ -91,41 +106,52 @@ class Equipment(object):
         splitted_var = re.split("[!,:]+", var_with_exclamation_and_colon)
         instance_of_object = workbook[splitted_var[0]]
         if isinstance(instance_of_object, ArrayParsing):
-            value = workbook[splitted_var[0]].get_value_of_var_by_index_and_param(splitted_var[1], splitted_var[2])
-            if value is None:
-                self.unresolved += 1
-                return "<unresolved>"
-            else:
+            try:
+                value = workbook[splitted_var[0]].get_value_of_var_by_index_and_param(splitted_var[1], splitted_var[2])
+                self.resolved += 1
                 return value
+            except KeyError as err:
+                self.unresolved += 1
+                self.tb += traceback.format_exception_only(KeyError, err)
+                return "<unresolved>"
         elif isinstance(instance_of_object, ListParsing):
-            value = workbook[splitted_var[0]].get_value_by_bag_and_key_and_index(splitted_var[1],
+            try:
+                value = workbook[splitted_var[0]].get_value_by_bag_and_key_and_index(splitted_var[1],
                                                                                  splitted_var[2],
                                                                                  int(splitted_var[3]))
-            if value is None:
-                self.unresolved += 1
-                return "<unresolved>"
-            else:
+                self.resolved += 1
                 return value
+            except KeyError as err:
+                self.unresolved += 1
+                self.tb += traceback.format_exception_only(KeyError, err)
+                return "<unresolved>"
         elif isinstance(instance_of_object, TextParsing):
-            value = workbook[splitted_var[0]].get_text_by_title(splitted_var[1])
-            if value is None:
-                self.unresolved += 1
-                return "<unresolved>"
-            else:
+            try:
+                value = workbook[splitted_var[0]].get_text_by_title(splitted_var[1])
+                self.resolved += 1
                 return value
+            except KeyError as err:
+                self.unresolved += 1
+                self.tb += traceback.format_exception_only(KeyError, err)
+                return "<unresolved>"
         else:
+            err = "No match found for this variable '{0}'".format(var_with_exclamation_and_colon)
+            self.tb += traceback.format_exception_only(KeyError, err)
             self.unresolved += 1
             return "<unresolved>"
 
     def get_value_of_var_with_interrogation(self, var_with_interrogation, workbook):
         splitted_var = re.split("[?]+", var_with_interrogation)
-        if splitted_var[0] in workbook['Global'].get_all_headers() and splitted_var[0] in self.workbook.keys():
-            return workbook[splitted_var[0]].get_value_of_var_by_index_and_param(
-                workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, splitted_var[0]),
-                splitted_var[1])
-        else:
+        try:
+            value = workbook[splitted_var[0]].get_value_of_var_by_index_and_param(
+            workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, splitted_var[0]), splitted_var[1])
+            self.resolved += 1
+            return value
+        except KeyError as err:
             self.unresolved += 1
+            self.tb += traceback.format_exception_only(KeyError, err)
             return "<unresolved>"
+
 
     @staticmethod
     def remove_braces(string):
@@ -133,3 +159,12 @@ class Equipment(object):
 
     def get_unresolved_var(self):
         return int(self.unresolved)
+
+    def get_resolved_var(self):
+        return int(self.unresolved)
+
+    def get_filling_ratio(self):
+        return '{0}/{1}'.format(int(self.resolved),((int(self.resolved) + int(self.unresolved))))
+
+    def get_filling_ratio_in_percentage(self):
+        return '{:.0%}'.format(int(self.resolved)/(int(self.resolved) + int(self.unresolved)))

@@ -1,6 +1,6 @@
 The Global Template
 ------------------------
-The aims of this chapter is to learn how to write a template, in others words, how to retrieve data from the extraction.
+The aims of this chapter is to learn how to write a template, in others words, how to retrieve data from the Excel Workbook.
 Several useable syntaxes exist for retrieving data, below you will find them.
 
 
@@ -9,7 +9,7 @@ Retrieving data from the Global worksheet
 
 If you want to get the value of a variable which is containded in the Global worksheet, use this syntax.
 
-Syntaxe : ``{{variable}}``
+Syntax : ``{{variable}}``
 
 For instance, ``{{equipement}}`` will be replaced by ``Cisco 3850 Switches``
 
@@ -19,7 +19,7 @@ Retrieving data within a table from any worksheet
 
 If you want to get the value of a variable which is containded in any worksheet, use this syntax.
 
-Syntaxe : ``{{worksheet!index:parameter}}``
+Syntax : ``{{worksheet!index:parameter}}``
 
 For instance, ``{{port-channel!101:protocol}}`` will be replaced by ``LACP``
 
@@ -29,9 +29,10 @@ Retrieving value of fixed common variables
 
 If you want to get the value of a variable which is containded in any worksheet, use this syntax.
 
-Syntaxe : ``{{worksheet!bag:index:parameter}}``
+Syntax : ``{{worksheet!bag:index:parameter}}``
 
 For instance, ``{{worksheet!SNMP:RW User:1}}`` will be replaced by ``SNMP_USER``
+
 Another example, ``{{worksheet!DHCP:relay:3}}`` will be replaced by ``192.168.1.3``
 
 Retrieving a text
@@ -39,4 +40,4 @@ Retrieving a text
 
 If you want to get the value of a variable which is containded in any worksheet, use this syntax.
 
-Syntaxe : ``{{worksheet!variable}}``
+Syntax : ``{{worksheet!variable}}``

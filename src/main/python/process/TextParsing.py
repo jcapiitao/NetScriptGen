@@ -1,5 +1,6 @@
 # -*-coding:UTF-8 -*
-
+import sys
+import traceback
 
 class TextParsing(object):
 
@@ -18,13 +19,21 @@ class TextParsing(object):
         try:
             return self.dict_of_texts[title]
         except KeyError:
-            print("The title '%s' doesn't exist in the tab '%s'." % (title, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The title '{0}' doesn't exist in the tab '{1}'.".format(title, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     def set_text_by_title(self, title, text):
         try:
             self.dict_of_texts[title] = text
         except KeyError:
-            print("The title '%s' doesn't exist in the tab '%s'." % (title, self.sheet_name))
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            output = "The title '{0}' doesn't exist in the tab '{1}'.".format(title, self.sheet_name)
+            print(output)
+            traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+            raise KeyError(output)
 
     def display_text_by_title(self, title):
         print(self.get_text_by_title(title))
