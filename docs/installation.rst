@@ -21,11 +21,9 @@ If you want to dive yourself deeper in Python history, see the `Nick Coghlan's P
 
 Installing NetScriptGen
 ------------------------
-<<<<<<< HEAD
+
 NetScriptGen needs Python version 3.4+, the OS should not matter.
-=======
-NetScripGen needs Python version 3.4+, the OS should not matter.
->>>>>>> 124f8ecb8143a88bfb30c5afa33ca1eda508ece0
+
 I had to make a choice between Python 2.x and Python 3.x version. Personally, at this time, I think that it really depends on what third-party 
 libraries yo rely on. But in the future, when all the Python 2.x libraries will be ported to Python 3.x, it will be the most widely used version.
 
