@@ -11,6 +11,7 @@ os:
 
 install:
  - pip install pybuilder
+ - pip install xlrd
 
 script: pyb
 
