@@ -13,21 +13,21 @@ NetScriptGen needs:
 
 NetScriptGen read the global template and attempt to fill out the variable by finding a relationship between the variable and the data contained into the Excel workbook. This is how a template with variable looks like:
 
-   code-block:: python
-
-   hostname {{hostname}}
-   username {{general_data!user:name:1}} privilege 15 secret {{general_data!user:name:1}}
-   !
-   interface Vlan {{VLAN#ADMIN}}
-   description {{VLAN!((VLAN#ADMIN)):description}}
-   ip address {{VLAN!((VLAN#ADMIN)):subnet}} {{VLAN!((VLAN#ADMIN)):mask}}
-   no shutdown
-   !
-   !
-   banner motd @
-   {{Text:banner}}
-   @
-   end
+```
+hostname {{hostname}}
+username {{general_data!user:name:1}} privilege 15 secret {{general_data!user:name:1}}
+!
+interface Vlan {{VLAN#ADMIN}}
+description {{VLAN!((VLAN#ADMIN)):description}}
+ip address {{VLAN!((VLAN#ADMIN)):subnet}} {{VLAN!((VLAN#ADMIN)):mask}}
+no shutdown
+!
+!
+banner motd @
+{{Text:banner}}
+@
+end
+```
 
 
 What is NetScriptGen good for?
@@ -63,6 +63,6 @@ NetScriptGen 0.1.0, the current version
 
 The first version 0.1.0 includes:
 
-- NetScriptGen is tested to work under python 3.4
+- NetScriptGen is tested to work under python 3.x
 - The Microsoft Excel spreadsheet file must use the XLSX format. This format uses the Open XML format that makes it easy for other programs, such as OpenOffice, to read XLSX files.
 
