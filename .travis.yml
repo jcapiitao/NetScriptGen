@@ -10,11 +10,9 @@ os:
  - linux
 
 install:
- - pip install --upgrade -q pip
- - pip install --upgrade -q ciscoconfparse
+ - pip install pybuilder
 
-
-script: make test
+script: pyb
 
 matrix:
   allow_failures:
