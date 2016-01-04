@@ -14,6 +14,11 @@ class ArrayParsingTests(TestCase):
         got = self.sheet.get_value_of_var_by_index_and_param('105', 'Gateway')
         self.assertEqual(expected, got)
 
+    def test_get_param_by_index2(self):
+        expected = '105'
+        got = self.sheet.get_value_of_var_by_index_and_param('105', 'Vlans ID')
+        self.assertEqual(expected, got)
+
     def test_get_param_by_index_failed(self):
         try:
             expected = KeyError

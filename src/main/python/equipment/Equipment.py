@@ -1,6 +1,7 @@
 # -*-coding:UTF-8 -*
 
 import re
+import os
 import sys
 import traceback
 from process.ArrayParsing import ArrayParsing
@@ -43,7 +44,7 @@ class Equipment(object):
 
     def save_script_as(self, path_of_the_folder, file_name):
         extension = '.txt'
-        with open(path_of_the_folder + '/' + file_name + extension, "w") as file:
+        with open(os.path.join(path_of_the_folder, file_name, extension), "w") as file:
             file.write(self.get_script())
         file.close()
 

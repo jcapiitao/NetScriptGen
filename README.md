@@ -1,6 +1,6 @@
+NetScriptGen
 =============
-Introduction
-=============
+Travis [![Build Status](https://travis-ci.org/JoelCapitao/NetScriptGen.svg?branch=master)](https://travis-ci.org/JoelCapitao/NetScriptGen)
 
 Overview
 ---------
