@@ -2,15 +2,13 @@ language: python
 
 # http://docs.travis-ci.com/user/languages/python/
 python:
+ - 3.3
  - 3.4
  - 3.5
- - 3.6
 
 # http://docs.travis-ci.com/user/multi-os/
 os:
  - linux
- - osx
- - windows
 
 install:
  - pip install pybuilder
@@ -21,4 +19,3 @@ script: pyb
 matrix:
   allow_failures:
     # - python: 3.5
-    # - python: 3.6
