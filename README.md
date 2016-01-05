@@ -1,6 +1,8 @@
 NetScriptGen
 =============
-Travis [![Build Status](https://travis-ci.org/JoelCapitao/NetScriptGen.svg?branch=master)](https://travis-ci.org/JoelCapitao/NetScriptGen)
+[![Build Status](https://travis-ci.org/JoelCapitao/NetScriptGen.svg?branch=master)](https://travis-ci.org/JoelCapitao/NetScriptGen)
+[![Build status](https://ci.appveyor.com/api/projects/status/vd6tkdiwitdnlsrd?svg=true)](https://ci.appveyor.com/project/JoelCapitao/netscriptgen)
+[![Coverage Status](https://coveralls.io/repos/JoelCapitao/NetScriptGen/badge.svg?branch=master&service=github)](https://coveralls.io/github/JoelCapitao/NetScriptGen?branch=master)
 
 Overview
 ---------
