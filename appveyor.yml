@@ -5,32 +5,28 @@ environment:
     - PYTHON: "C:\\Python33"
       PYTHON_VERSION: "3.3.5"
       PYTHON_ARCH: "32"
-      DISTRIBUTIONS: "bdist_wheel"
 
     - PYTHON: "C:\\Python34"
       PYTHON_VERSION: "3.4.1"
       PYTHON_ARCH: "32"
-      DISTRIBUTIONS: "bdist_wheel"
 
     - PYTHON: "C:\\Python33-x64"
       PYTHON_VERSION: "3.3.5"
       PYTHON_ARCH: "64"
       WINDOWS_SDK_VERSION: "v7.1"
-      DISTRIBUTIONS: "bdist_wheel"
 
     - PYTHON: "C:\\Python34-x64"
       PYTHON_VERSION: "3.4.1"
       PYTHON_ARCH: "64"
       WINDOWS_SDK_VERSION: "v7.1"
-      DISTRIBUTIONS: "bdist_wheel"
 
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
-  - "%PYTHON%/Scripts/pip.exe install pybuilder"
-  - "%PYTHON%/Scripts/pip.exe install xlrd"
+  - "%PYTHON%\\python.exe -m pip nstall pybuilder"
+  - "%PYTHON%\\python.exe -m pip install xlrd"
 
 test_script:
-  - pyb_.exe
+  - "%PYTHON%\\python.exe build.py"
 

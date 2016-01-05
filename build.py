@@ -1,4 +1,7 @@
 from pybuilder.core import Author, use_plugin, init
+from pybuilder import bootstrap
+
+bootstrap()
 
 use_plugin('python.core')
 
