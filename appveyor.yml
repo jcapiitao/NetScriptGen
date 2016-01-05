@@ -24,11 +24,11 @@ init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
-  - %PYTHON%\\python.exe -m venv venv
+  - "%PYTHON%\\python.exe -m venv venv"
   - ps: .\venv\Scripts\Activate.ps1
-  - %PYTHON%\\python.exe -m pip install pybuilder
-  - %PYTHON%\\python.exe -m pip install xlrd
-  - %PYTHON%\\python.exe ./build.py install_dependencies -v -X
+  - "%PYTHON%\\python.exe -m pip install pybuilder"
+  - "%PYTHON%\\python.exe -m pip install xlrd"
+  - "%PYTHON%\\python.exe ./build.py install_dependencies -v -X"
 
 test_script:
-  - %PYTHON%\\python.exe ./build.py -v -X analyze install
+  - "%PYTHON%\\python.exe ./build.py -v -X analyze install"
