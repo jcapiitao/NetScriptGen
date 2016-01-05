@@ -24,7 +24,7 @@ init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
-  - "%PYTHON%\\python.exe -m pip nstall pybuilder"
+  - "%PYTHON%\\python.exe -m pip install pybuilder"
   - "%PYTHON%\\python.exe -m pip install xlrd"
 
 test_script:
