@@ -32,5 +32,5 @@ install:
   - "%PYTHON%/Scripts/pip.exe install xlrd"
 
 test_script:
-  - "pyb"
+  - pyb
 
