@@ -14,8 +14,12 @@ os:
 install:
  - pip install pybuilder
  - pip install xlrd
+ - pip install coveralls
 
 script: pyb
+
+after_success:
+  - coveralls --verbose
 
 matrix:
   allow_failures:
