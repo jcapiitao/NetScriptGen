@@ -1,6 +1,0 @@
-__init__
-equipment
-function
-main
-process
-utils

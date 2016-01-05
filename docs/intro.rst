@@ -33,12 +33,11 @@ NetScriptGen reads the global template and attempts to fill out the variable by 
 What is NetScriptGen good for?
 ----------------------------------
 
-Let's suppose you are working on a fresh network project and need to prepare thousand
-of equipments for the access layer. After diving yourself on the design, you write 
-a global script that can suits for every equipments except a few values which are 
-specific for each equipment (hostname, VLAN IDs, VTP, SNMP and so on).
-With NetScripGen, it's really easy... you transform the global script into a global
-template, and put all the data within an Excel workbook and then run the process !
+Let's suppose you are working on a fresh network project and need to prepare thousand of equipments for the access layer.
+After diving yourself on the design, you write a global script that can suits for every equipments except a few values
+which are specific for each equipment (hostname, VLAN IDs, VTP, SNMP and so on).
+With NetScripGen, it's really easy... you transform the global script into a global template, and put all the data
+within an Excel workbook and then run the process !
 
 
 
