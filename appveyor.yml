@@ -6,29 +6,29 @@ environment:
       PYTHON_VERSION: "3.3.5"
       PYTHON_ARCH: "32"
 
-    - PYTHON: "C:\\Python34"
-      PYTHON_VERSION: "3.4.1"
-      PYTHON_ARCH: "32"
+    #- PYTHON: "C:\\Python34"
+    #  PYTHON_VERSION: "3.4.1"
+    #  PYTHON_ARCH: "32"
 
-    - PYTHON: "C:\\Python33-x64"
-      PYTHON_VERSION: "3.3.5"
-      PYTHON_ARCH: "64"
-      WINDOWS_SDK_VERSION: "v7.1"
+    #- PYTHON: "C:\\Python33-x64"
+    #  PYTHON_VERSION: "3.3.5"
+    #  PYTHON_ARCH: "64"
+    #  WINDOWS_SDK_VERSION: "v7.1"
 
-    - PYTHON: "C:\\Python34-x64"
-      PYTHON_VERSION: "3.4.1"
-      PYTHON_ARCH: "64"
-      WINDOWS_SDK_VERSION: "v7.1"
+    #- PYTHON: "C:\\Python34-x64"
+    #  PYTHON_VERSION: "3.4.1"
+    #  PYTHON_ARCH: "64"
+    #  WINDOWS_SDK_VERSION: "v7.1"
 
 init:
   - "ECHO %PYTHON% %PYTHON_VERSION% %PYTHON_ARCH%"
 
 install:
-  - "%PYTHON%\\python.exe -m venv venv"
-  - ps: .\venv\Scripts\Activate.ps1
+  #- "%PYTHON%\\python.exe -m venv venv"
+  #- ps: .\venv\Scripts\Activate.ps1
   - "%PYTHON%\\python.exe -m pip install pybuilder"
   - "%PYTHON%\\python.exe -m pip install xlrd"
-  - "%PYTHON%\\python.exe ./build.py install_dependencies -v"
+  #- "%PYTHON%\\python.exe ./build.py install_dependencies -v"
 
 test_script:
   - "%PYTHON%\\python.exe ./build.py -v -X analyze install"
