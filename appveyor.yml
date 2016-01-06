@@ -28,7 +28,7 @@ install:
   #- ps: .\venv\Scripts\Activate.ps1
   - "%PYTHON%\\python.exe -m pip install pybuilder"
   - "%PYTHON%\\python.exe -m pip install xlrd"
-  #- "%PYTHON%\\python.exe ./build.py install_dependencies -v"
 
 test_script:
+  - "%PYTHON%\\python.exe ./build.py install_dependencies -v"
   - "%PYTHON%\\python.exe ./build.py -v -X analyze install"
