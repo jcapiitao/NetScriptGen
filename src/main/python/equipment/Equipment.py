@@ -44,7 +44,7 @@ class Equipment(object):
 
     def save_script_as(self, path_of_the_folder, file_name):
         extension = '.txt'
-        with open(os.path.join(path_of_the_folder, file_name, extension), "w") as file:
+        with open(os.path.join(path_of_the_folder, file_name) + extension, "w") as file:
             file.write(self.get_script())
         file.close()
 
@@ -169,3 +169,6 @@ class Equipment(object):
 
     def get_filling_ratio_in_percentage(self):
         return '{:.0%}'.format(int(self.resolved)/(int(self.resolved) + int(self.unresolved)))
+
+    def get_nbr_of_var_to_fill_in(self):
+        return int(self.resolved + self.unresolved)

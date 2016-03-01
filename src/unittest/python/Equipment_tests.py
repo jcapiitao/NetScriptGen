@@ -110,3 +110,8 @@ class EquipmentTests(TestCase):
             expected = '2/3'
             got = self.equipment.get_filling_ratio()
             self.assertEqual(expected, got)
+
+    def test_get_nbr_of_var_to_fill_in(self):
+            expected = 3
+            got = self.equipment.get_nbr_of_var_to_fill_in()
+            self.assertEqual(expected, got)

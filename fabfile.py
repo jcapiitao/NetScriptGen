@@ -5,7 +5,7 @@ env.key_filename = '~/.ssh/id_rsa'
 
 @hosts('trystram.net')
 def deploy_dist(dist_dir='/home/web/koken/dl/', bundle_name='netscriptgen.tar.gz'):
-    local('tar czvf /tmp/{0} ~/ownCloud/Developpement/NetScriptGen/target/dist/NetScriptGen-0.1.0/'.format(bundle_name))
+    local('tar czvf /tmp/{0} -C ~/ownCloud/Development/NetScriptGen/target/dist/NetScriptGen-0.1.0/ .'.format(bundle_name))
     put(local_path="/tmp/{0}".format(bundle_name), remote_path='/tmp')
     with cd(dist_dir):
         with settings(warn_only=True):
