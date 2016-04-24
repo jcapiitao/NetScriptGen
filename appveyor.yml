@@ -1,5 +1,7 @@
 build: false
 
+os: Windows Server 2012
+
 environment:
   matrix:
     - PYTHON: "C:\\Python33"

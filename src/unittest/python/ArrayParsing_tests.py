@@ -51,9 +51,9 @@ class ArrayParsingTests(TestCase):
                     'Description': '',
                     'Subnet_arp': '10.2.2.224',
                     'Wildcard_arp': '0.0.0.15',
-                    'Template Default': 'Non',
-                    'Template Snooping': 'Non',
-                    'Template Inspection': 'Non'}
+                    'Template Default': 'Default',
+                    'Template Snooping': 'Snooping',
+                    'Template Inspection': 'Inspection'}
         got = self.sheet.get_all_param_by_index('105')
         self.assertDictEqual(expected, got)
 
@@ -114,4 +114,14 @@ class ArrayParsingTests(TestCase):
     def test_delimitation_between_indexes_and_commands(self):
         expected = 17
         got = self.sheet.delimitation_between_indexes_and_commands()
+        self.assertEqual(expected, got)
+
+    def test_template_content_by_name1(self):
+        expected = '{{Name}} and {{Subnet}} and\n{{Gateway}}'
+        got = self.sheet.template_content_by_name('default')
+        self.assertEqual(expected, got)
+
+    def test_template_content_by_name2(self):
+        expected = ''
+        got = self.sheet.template_content_by_name('inspection')
         self.assertEqual(expected, got)

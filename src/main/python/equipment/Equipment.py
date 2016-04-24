@@ -60,14 +60,14 @@ class Equipment(object):
         # If the parameter is a title of a sheet, we need to get the data from this sheet
         if parameter in self.workbook.keys():
             value_of_the_parameter = self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
-            data = self.workbook[parameter].get_all_param_by_index(value_of_the_parameter)
-            local_templates = self.workbook[parameter].get_local_templates()
+            data_of_the_parameter = self.workbook[parameter].get_all_param_by_index(value_of_the_parameter)
+            print(data_of_the_parameter)
+            template_regex = re.compile('template')
             output = ''
-            for template in local_templates:
-                template_name = 'Template ' + template[0]
-                if template_name in self.workbook[parameter].get_all_headers():
-                    if self.workbook[parameter].get_value_of_var_by_index_and_param(value_of_the_parameter, template_name) == "Oui":
-                        output += self.fill_local_template(self, data, template[1])
+            for _header, _template_name in data_of_the_parameter.items():
+                if template_regex.match(_header.lower()):
+                    template_content = self.workbook[parameter].template_content_by_name(_template_name.lower())
+                    output += self.fill_local_template(self, data_of_the_parameter, template_content)
             return output
         # If the parameter/feature is only a variable (there is not a sheet for this feature)
         else:
@@ -162,7 +162,7 @@ class Equipment(object):
         return int(self.unresolved)
 
     def get_resolved_var(self):
-        return int(self.unresolved)
+        return int(self.resolved)
 
     def get_filling_ratio(self):
         return '{0}/{1}'.format(int(self.resolved),((int(self.resolved) + int(self.unresolved))))

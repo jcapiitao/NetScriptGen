@@ -1,6 +1,8 @@
 # -*-coding:UTF-8 -*
 import sys
 import traceback
+import re
+from collections import OrderedDict
 
 class ArrayParsing(object):
     """"
@@ -64,7 +66,7 @@ class ArrayParsing(object):
             raise KeyError(output)
 
     def get_all_param_by_index(self, index_value):
-        dict_of_params = dict()
+        dict_of_params = OrderedDict()
         for param_value in self.get_all_headers():
             dict_of_params[str(param_value)] = self.get_value_of_var_by_index_and_param(index_value, param_value)
         return dict_of_params
@@ -99,18 +101,13 @@ class ArrayParsing(object):
             indexes.remove('')
         return indexes
 
-    def get_local_templates(self):
-        local_templates = list()
-        command_row = self.get_row_where_value('Default')
-        if command_row != -1:
-            for row_idx in range(command_row, self.get_nbr_of_rows(), 2):
-                template_name_obj = self.xl_sheet.cell(row_idx, 0)
-                template_name = self.to_string(template_name_obj)
-                if template_name != '' and (row_idx + 1) < self.get_nbr_of_rows():
-                    local_templates.append((template_name, str(self.xl_sheet.cell(row_idx + 1, 0).value)))
-                else:
-                    local_templates.append((template_name, ''))
-            return local_templates
+    def template_content_by_name(self, name):
+        for row_idx in range(self.delimitation_between_indexes_and_commands(), self.get_nbr_of_rows()):
+            template_name_obj = self.xl_sheet.cell(row_idx, 0)
+            template_name = self.to_string(template_name_obj)
+            if template_name.lower() == name:
+                template_content_obj = self.xl_sheet.cell(row_idx + 1, 0)
+                return self.to_string(template_content_obj)
 
     def get_row_where_value(self, value):
         for row_idx in range(1, self.xl_sheet.nrows):
@@ -138,7 +135,6 @@ class ArrayParsing(object):
             return False, response
         else:
             return True, response
-
 
     @staticmethod
     def to_string(cell_obj):

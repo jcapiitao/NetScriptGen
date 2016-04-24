@@ -101,6 +101,16 @@ class EquipmentTests(TestCase):
         got = self.equipment.remove_braces("{{Wuce Brayne}}")
         self.assertEqual(expected, got)
 
+    def test_get_unresolved_var(self):
+            expected = 1
+            got = self.equipment.get_unresolved_var()
+            self.assertEqual(expected, got)
+
+    def test_get_resolved_var(self):
+            expected = 2
+            got = self.equipment.get_resolved_var()
+            self.assertEqual(expected, got)
+
     def test_get_filling_ratio_in_percentage(self):
         expected = '67%'
         got = self.equipment.get_filling_ratio_in_percentage()
