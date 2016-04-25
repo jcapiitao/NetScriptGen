@@ -61,14 +61,19 @@ class Equipment(object):
         if parameter in self.workbook.keys():
             value_of_the_parameter = self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
             data_of_the_parameter = self.workbook[parameter].get_all_param_by_index(value_of_the_parameter)
-            print(data_of_the_parameter)
             template_regex = re.compile('template')
             output = ''
             for _header, _template_name in data_of_the_parameter.items():
                 if template_regex.match(_header.lower()):
                     template_content = self.workbook[parameter].template_content_by_name(_template_name.lower())
                     output += self.fill_local_template(self, data_of_the_parameter, template_content)
-            return output
+            if output == '':
+                self.unresolved += 1
+                self.tb += traceback.format_exception_only(FileExistsError,
+                                                           "No subtemplates in sheet '{}'".format(parameter))
+                return "<unresolved>"
+            else:
+                return output
         # If the parameter/feature is only a variable (there is not a sheet for this feature)
         else:
             try:

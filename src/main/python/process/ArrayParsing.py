@@ -18,7 +18,6 @@ class ArrayParsing(object):
     def __init__(self, xl_sheet):
         self.xl_sheet = xl_sheet
         self.sheet_name = xl_sheet.name
-        self.commands = self.get_local_templates()
         self.index = dict()
         self.tb = list()
 

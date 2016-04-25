@@ -11,9 +11,11 @@ class EquipmentTests(TestCase):
     def setUp(self):
         array_test, list_test = 'arrayParsing_test', 'listParsing_test'
         text_test, global_test = 'textParsing_test', 'global_test'
-        my_template = "{{hostname}}\n{{VLAN}}\n{{VLAN!((VLAN!104:Name)):Gateway}}"
+        array_error_test = 'arrayParsing_error_test'
+        my_template = "{{hostname}}\n{{VLAN_error}}\n{{VLAN}}\n{{VLAN!((VLAN!104:Name)):Gateway}}"
         self.workbook = dict()
         self.workbook['VLAN'] = ArrayParsing(get_sheet_test(array_test + '.xlsx'))
+        self.workbook['VLAN_error'] = ArrayParsing(get_sheet_test(array_error_test + '.xlsx'))
         self.workbook[list_test] = ListParsing(get_sheet_test(list_test + '.xlsx'))
         self.workbook[text_test] = TextParsing(get_sheet_test(text_test + '.xlsx'))
         self.workbook['Global'] = ArrayParsing(get_sheet_test(global_test + '.xlsx'))
@@ -22,7 +24,7 @@ class EquipmentTests(TestCase):
         self.equipment.resolved = 2
 
     def test_fill_out_the_template(self):
-        expected = "HOST1\nADMRESEAU-1 and 10.1.255.0 and\n10.179.255.6210.1.0.224\n0.0.0.15\n10.1.1.254"
+        expected = "HOST1\n<unresolved>\nADMRESEAU-1 and 10.1.255.0 and\n10.179.255.6210.1.0.224\n0.0.0.15\n10.1.1.254"
         got = self.equipment.fill_out_the_template()
         self.assertEqual(expected, got)
 
@@ -58,6 +60,11 @@ class EquipmentTests(TestCase):
     def test_get_var_from_global_sheet_is_var(self):
         expected = 'CISCO 3750 V3-48PS'
         got = self.equipment.get_value_of_var_from_global_sheet('Equipment')
+        self.assertEqual(expected, got)
+
+    def test_get_var_from_global_sheet_error(self):
+        expected = '<unresolved>'
+        got = self.equipment.get_value_of_var_from_global_sheet('VLAN_error')
         self.assertEqual(expected, got)
 
     def test_get_var_with_exclamation_and_colon_ArrayParsing(self):
