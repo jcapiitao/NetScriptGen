@@ -60,17 +60,21 @@ class Equipment(object):
         # If the parameter is a title of a sheet, we need to get the data from this sheet
         if parameter in self.workbook.keys():
             value_of_the_parameter = self.workbook['Global'].get_value_of_var_by_index_and_param(self.hostname, parameter)
-            data_of_the_parameter = self.workbook[parameter].get_all_param_by_index(value_of_the_parameter)
+            try:
+                data_of_the_parameter = self.workbook[parameter].get_all_param_by_index(value_of_the_parameter)
+            except KeyError as err:
+                self.unresolved += 1
+                self.tb += traceback.format_exception_only(KeyError, err)
+                return "<unresolved>"
             template_regex = re.compile('template')
             output = ''
             for _header, _template_name in data_of_the_parameter.items():
-                if template_regex.match(_header.lower()):
+                if template_regex.match(_header.lower()) and _template_name:
                     template_content = self.workbook[parameter].template_content_by_name(_template_name.lower())
                     output += self.fill_local_template(self, data_of_the_parameter, template_content)
             if output == '':
                 self.unresolved += 1
-                self.tb += traceback.format_exception_only(FileExistsError,
-                                                           "No subtemplates in sheet '{}'".format(parameter))
+                self.tb += traceback.format_exception_only(Warning, "No subtemplates to being picked up for the var '{}'".format(parameter))
                 return "<unresolved>"
             else:
                 return output

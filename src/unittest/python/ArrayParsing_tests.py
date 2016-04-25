@@ -94,13 +94,6 @@ class ArrayParsingTests(TestCase):
         got = self.sheet.is_duplication(list_of_superheroes)
         self.assertEqual(expected, got)
 
-    def test_get_all_commands(self):
-        expected = [('Default', '{{Name}} and {{Subnet}} and\n{{Gateway}}'),
-                    ('Snooping', '{{Subnet_arp}}\n{{Wildcard_arp}}'),
-                    ('Inspection', '')]
-        got = self.sheet.get_local_templates()
-        self.assertListEqual(expected, got)
-
     def test_get_row_where_value(self):
         expected = 11
         got = self.sheet.get_row_where_value(105)
